@@ -9,7 +9,10 @@ import pandas as pd
 # todo: sortby sweep up and sweep down
 # todo: add file dialogue to select directory
 # todo: make a higher level object / df / dict that acummulates all junctions in one directory
-
+# todo: implement tool that shows plots from several "higher level plots" in on figure
+# todo: implement calc_tools: calculate current density, low bias resistance, ...
+# todo: implement origin export function
+#
 #################
 # File Handling #
 #################
@@ -149,37 +152,45 @@ def joinDfs(ldf, rdf):
     return ldf.join(rdf, how='outer')
 
 
-def visualizeSweeps(dfs, plots=['all', 'odd', 'even'], stats=[False, True, True]):
+def visualizeSweeps(dfs, stats=['mean', 'min', 'max'], plotall=True):
     """
-    Sets up the plots for sweeps: all sweeps & stats min max    :param dfs:         List of data frames to plot
-    :param semilog:     List of boolean values depicting semilog or not
-    :param plots:       list containing even, odd, all
-    :param stat:        List of bools if stats should be shown
-    :return:            True if everything worked
+    Sets up the plots for sweeps: all sweeps & stats min max
+    :param dfs:         List of data frames to plot
+    :param stats:       List of stats to plot (mean, max, min, 25%,50%,75%)
+    :param plotall:     Bool that decides whether all curves (not only stats) are plot in a seperate plot
     """
     oe_stats = []
-    for d in range(0, len(dfs)):
-        df = dfs[d]
-
+    for df in dfs:
         if df.name in ['odd', 'even']:
             stat = df.apply(pd.DataFrame.describe, axis=1)
-            # add _odd or _even suffix to column names so dfs can be joined
-            # df.columns = map(lambda col: '{}_{}'.format(str(col), str(df.name)), df.columns)
             oe_stats.append(stat)
 
-    print(len(oe_stats))
-    joinDfs(oe_stats[0], oe_stats[1])
+    stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
-    for d in range(0, len(dfs)):
-        df = dfs[d]
-        if df.name in plots:
-            df.abs().plot()
-            plt.semilogy()
-            plt.title(df.name)
-            if stats[d]:
-                df.apply(pd.DataFrame.describe, axis=1)[['mean', 'max', 'min']].abs().plot()
-                plt.semilogy()
-                plt.title(df.name)
+    stats_arr = []
+    for string in stats:
+        odd = string + '_odd'
+        even = string + '_even'
+        stats_arr.append(odd)
+        stats_arr.append(even)
+
+    stats_df[stats_arr].abs().plot()
+    plt.semilogy()
+
+    if plotall:
+        dfs[0].abs().plot()
+        plt.semilogy()
+
+    """ for d in range(0, len(dfs)):
+       df = dfs[d]
+       if df.name in plots:
+           df.abs().plot()
+           plt.semilogy()
+           plt.title(df.name)
+           if stats[d]:
+               df.apply(pd.DataFrame.describe, axis=1)[['mean', 'max', 'min']].abs().plot()
+               plt.semilogy()
+               plt.title(df.name)"""
 
     return True
 
@@ -246,4 +257,4 @@ if __name__ == "__main__":
                 currents.append(current)
 
             visualizeSweeps(currents)
-            plt.show()
+    plt.show()
