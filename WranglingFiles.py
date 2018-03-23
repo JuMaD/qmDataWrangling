@@ -152,13 +152,26 @@ def joinDfs(ldf, rdf):
     return ldf.join(rdf, how='outer')
 
 
-def visualizeSweeps(dfs, stats=['mean', 'min', 'max'], plotall=True):
+def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
     """
     Sets up the plots for sweeps: all sweeps & stats min max
     :param dfs:         List of data frames to plot
     :param stats:       List of stats to plot (mean, max, min, 25%,50%,75%)
     :param plotall:     Bool that decides whether all curves (not only stats) are plot in a seperate plot
     """
+    #todo: break into make stats array and plot/save
+    #make plt.close non-blocking
+    plt.ion()
+
+    #generate filename to save to
+    dir = os.path.join(os.path.dirname(datapath),'plots')
+    filepath = os.path.join(dir,os.path.splitext(os.path.basename(datapath))[0])
+    filename_stats = filepath + "_stats.png"
+    filename_all = filepath + "_all.png"
+
+
+
+    #calculate stats for HRS & LRS
     oe_stats = []
     for df in dfs:
         if df.name in ['odd', 'even']:
@@ -167,19 +180,29 @@ def visualizeSweeps(dfs, stats=['mean', 'min', 'max'], plotall=True):
 
     stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
+    #add suffix to labels so all joint columns can be shown
     stats_arr = []
     for string in stats:
         odd = string + '_odd'
         even = string + '_even'
         stats_arr.append(odd)
         stats_arr.append(even)
-
+    #plot all joint columns
     stats_df[stats_arr].abs().plot()
     plt.semilogy()
+    plt.savefig(filename_stats)
+
 
     if plotall:
         dfs[0].abs().plot()
         plt.semilogy()
+        plt.savefig(filename_all)
+
+    plt.show()
+    plt.close('all')
+    return stats_arr,
+
+
 
     """ for d in range(0, len(dfs)):
        df = dfs[d]
@@ -224,37 +247,41 @@ def visualizeSweeps(dfs, stats=['mean', 'min', 'max'], plotall=True):
 
 if __name__ == "__main__":
 
+
     dirname = "testdata"
 
     # do for all .txt files in directory
     for file in os.listdir(dirname):
         if file.endswith(".txt"):
-            # open file and get data
-            filename = os.path.join("testdata", file)
+            if not file.endswith("Resistance.txt"):
+                if not file.endswith("SMU-Puls.txt"):
+                    # open file and get data
+                    filename = os.path.join(dirname, file)
 
-            # split file into several sweeps and get labels
-            labels, string_list = splitString(openFile(filename))
+                    # split file into several sweeps and get labels
+                    labels, string_list = splitString(openFile(filename))
 
-            np_arrays = []
+                    np_arrays = []
 
-            # make numpy array for every sweep and add data to list
+                    # make numpy array for every sweep and add data to list
 
-            for string in string_list:
-                if string == "":
-                    continue
-                np_arrays.append(stringToNumpy(string))
+                    for string in string_list:
+                        if string == "":
+                            continue
+                        np_arrays.append(stringToNumpy(string))
 
-            # turn all data into Pandas data frame, using voltage to join
-            all, odd, even = makePandasDf(np_arrays, labels, 1)
+                    # turn all data into Pandas data frame, using voltage to join
+                    all, odd, even = makePandasDf(np_arrays, labels, 1)
 
-            dfs = [all, odd, even]
-            dfs_names = ['all', 'odd', 'even']
-            # get dfs with current
-            currents = []
-            for d in range(0, len(dfs)):
-                current = filterDf(dfs[d], 'Current [A]')
-                current.name = dfs_names[d]
-                currents.append(current)
+                    dfs = [all, odd, even]
+                    dfs_names = ['all', 'odd', 'even']
+                    # get dfs with current
+                    currents = []
+                    for d in range(0, len(dfs)):
+                        current = filterDf(dfs[d], 'Current [A]')
+                        current.name = dfs_names[d]
+                        currents.append(current)
 
-            visualizeSweeps(currents)
-    plt.show()
+                    visualizeSweeps(currents, filename)
+
+
