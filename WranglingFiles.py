@@ -4,6 +4,7 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from sklearn import linear_model
 
 
 # todo: sortby sweep up and sweep down
@@ -197,12 +198,20 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
     stats_df[stats_arr].abs().plot()
     plt.semilogy()
     plt.savefig(filename_stats)
+    """add linear fit here and plot line?!
+    ransac = linearFit( stats_df[0])
+    line_x = np.arange(stats_df[0].min(), stats_df[0].max())[:, np.newaxis]
+    line_y_ransac = ransac.predict(line_x)
+    plt.plot(line_x, line_y_ransac, color='cornflowerblue',
+             label='RANSAC regressor')"""
 
 
     if plotall:
         dfs[0].abs().plot()
         plt.semilogy()
         plt.savefig(filename_all)
+
+
 
     plt.show()
     plt.close('all')
@@ -221,10 +230,52 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
                plt.semilogy()
                plt.title(df.name)"""
 
+
+    """line_x = np.arange(x.min(), x.max())[:, np.newaxis]
+            line_y_ransac = ransac.predict(line_x)
+            plt.plot(line_x, line_y_ransac, color='cornflowerblue',
+                     label='RANSAC regressor')"""
     return True
 
+################
+# Calculations #
+################
 
-"""
+def linearFit(df, method='ransac', column=1):
+    """
+    Fits given Data. X values are assumed to be index of the df
+    :param df:          DataFrame to be fit
+    :param method:      Method used to fit the data e.g. ransac or linreg
+    :param column:      Index of column with y data
+    :return:            sklearn linear model - use returned.predict(line_x) with line_x = np.arange(X.min(), X.max())[:, np.newaxis]
+    """
+
+
+    #get x and y from df
+    x = np.asarray(df.index.values.tolist())
+    y = np.asarray(df.iloc[:,column].tolist())
+
+    #reshape to 2d so sklearn can work with it
+    x = x.reshape((x.shape[0], 1))
+    y = y.reshape((y.shape[0], 1))
+
+
+    #Fit data accordingly
+
+    if method == 'ransac':
+        ransac = linear_model.RANSACRegressor()
+        ransac.fit(x, y)
+
+
+        return ransac
+
+    if method == 'linreg':
+        lr = linear_model.LinearRegression()
+        lr.fit(X, y)
+        return lr
+
+
+"""""
   Pandas data frame methods that are good to know:
   
   e_currents.abs().plot()
@@ -259,6 +310,7 @@ if __name__ == "__main__":
     # do for all .txt files in directory
     for file in os.listdir(dirname):
         if file.endswith(".txt"):
+            #todo: Change this into a switch-case structure to fetch all three types of txt
             if not file.endswith("Resistance.txt"):
                 if not file.endswith("SMU-Puls.txt"):
                     # open file and get data
@@ -292,6 +344,8 @@ if __name__ == "__main__":
                     saveDfToFile(currents[0].abs(), filename, '_all_abs')
 
                     visualizeSweeps(currents, filename)
+
+                    linearFit(currents[0])
 
 
 
