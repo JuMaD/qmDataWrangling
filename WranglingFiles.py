@@ -75,14 +75,20 @@ def splitString(string, measurement_procedure='sweep', keyword='#Sweep:'):
     return labels, all_string_lists
 
 
-def saveDfToFile(df, path):
+def saveDfToFile(df, datapath, suffix):
     """
     Saves the data frame to the specified path
     :param df:      Dataframe to be saved
     :param path:    relative path to save location
     :return:        true for successful save
     """
-    df.to_csv(path, sep='\t')
+    # generate filename to save to
+    dir = os.path.join(os.path.dirname(datapath), 'csv')
+    filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
+    savepath = filepath + suffix
+
+
+    df.to_csv(savepath, sep='\t')
 
 
 ########################
@@ -282,6 +288,10 @@ if __name__ == "__main__":
                         current.name = dfs_names[d]
                         currents.append(current)
 
+                    saveDfToFile(currents[0],filename,'_all')
+                    saveDfToFile(currents[0].abs(), filename, '_all_abs')
+
                     visualizeSweeps(currents, filename)
+
 
 
