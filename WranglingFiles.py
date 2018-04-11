@@ -2,7 +2,8 @@ import functools
 import os
 
 import tkinter as tk
-from tkinter import filedialog
+
+from tkinter import filedialog, messagebox
 
 import matplotlib.pyplot as plt
 import matplotlib.colors as mcolors
@@ -348,57 +349,69 @@ if __name__ == "__main__":
         initial_dir = '.'
 
 
-    ####################
-    # Select Directory #
-    ####################
+    ###############
+    # Main Script #
+    ###############
 
-    root = tk.Tk()
-    root.withdraw()
-    dirname = filedialog.askdirectory(initialdir=initial_dir)
-    config.set('Directory', 'home_directory', os.path.dirname(dirname))
+    while True:
+        ####################
+        # Select Directory #
+        ####################
+
+        root = tk.Tk()
+        root.withdraw()
+        dirname = filedialog.askdirectory(initialdir=initial_dir)
+        config.set('Directory', 'home_directory', os.path.dirname(dirname))
 
 
-    ################
-    # Wrangle Data #
-    ################
-    for file in os.listdir(dirname):
-        if file.endswith(".txt"):
-            #todo: Change this into a switch-case structure to fetch all three types of txt
-            if not file.endswith("Resistance.txt"):
-                if not file.endswith("SMU-Puls.txt"):
-                    # open file and get data
-                    filename = os.path.join(dirname, file)
+        ################
+        # Wrangle Data #
+        ################
+        for file in os.listdir(dirname):
+            if file.endswith(".txt"):
+                #todo: Change this into a switch-case structure to fetch all three types of txt
+                if not file.endswith("Resistance.txt"):
+                    if not file.endswith("SMU-Puls.txt"):
+                        # open file and get data
+                        filename = os.path.join(dirname, file)
 
-                    # split file into several sweeps and get labels
-                    labels, string_list = splitString(openFile(filename))
+                        # split file into several sweeps and get labels
+                        labels, string_list = splitString(openFile(filename))
 
-                    np_arrays = []
+                        np_arrays = []
 
-                    # make numpy array for every sweep and add data to list
+                        # make numpy array for every sweep and add data to list
 
-                    for string in string_list:
-                        if string == "":
-                            continue
-                        np_arrays.append(stringToNumpy(string))
+                        for string in string_list:
+                            if string == "":
+                                continue
+                            np_arrays.append(stringToNumpy(string))
 
-                    # turn all data into Pandas data frame, using voltage to join
-                    all, odd, even = makePandasDf(np_arrays, labels, 1)
+                        # turn all data into Pandas data frame, using voltage to join
+                        all, odd, even = makePandasDf(np_arrays, labels, 1)
 
-                    dfs = [all, odd, even]
-                    dfs_names = ['all', 'odd', 'even']
-                    # get dfs with current
-                    currents = []
-                    for d in range(0, len(dfs)):
-                        current = filterDf(dfs[d], 'Current [A]')
-                        current.name = dfs_names[d]
-                        currents.append(current)
+                        dfs = [all, odd, even]
+                        dfs_names = ['all', 'odd', 'even']
+                        # get dfs with current
+                        currents = []
+                        for d in range(0, len(dfs)):
+                            current = filterDf(dfs[d], 'Current [A]')
+                            current.name = dfs_names[d]
+                            currents.append(current)
 
-                    saveDfToFile(currents[0],filename,'_all')
-                    saveDfToFile(currents[0].abs(), filename, '_all_abs')
+                        saveDfToFile(currents[0],filename,'_all')
+                        saveDfToFile(currents[0].abs(), filename, '_all_abs')
 
-                    visualizeSweeps(currents, filename)
+                        visualizeSweeps(currents, filename)
 
-                    linearFit(currents[0])
+                        linearFit(currents[0])
+
+        again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
+
+        if again:
+            continue
+        else:
+            break
 
 
     #####################
