@@ -1,6 +1,6 @@
 import functools
 import os
-
+import gc
 import tkinter as tk
 
 from tkinter import filedialog, messagebox
@@ -13,6 +13,8 @@ from itertools import chain
 from sklearn import linear_model
 
 import configparser
+
+pd.options.compute.use_bottleneck = True
 
 
 
@@ -111,37 +113,50 @@ def makePandasDf(np_arrays, labels, index_column=1):
     :return:                pandas dataframes for all, odd and even number in list - labeled array
     """
 
-    data_frames = []
-    e_data_frames = []
-    o_data_frames = []
 
     # turn numpy arrays into data frames and join them at the indicated index
     for i in range(0, len(np_arrays)):
+        print(f'column {i}')
 
         np_array = np_arrays[i]
         num_labels = labels[:]
 
         data_frame = pd.DataFrame(data=np_array,
                                   columns=num_labels)
+        data_frame.drop_duplicates('Voltage [V]', inplace=True)
         data_frame.set_index(num_labels[index_column], inplace=True)
 
         data_frame.columns = map(lambda col: '{}_{}'.format(str(col), i), data_frame.columns)
 
-        data_frames.append(data_frame)
-        if i % 2 == 0:
-            e_data_frames.append(data_frame)
+        print('df done')
+
+
+        if i == 0:
+            final_df = data_frame.copy()
+            e_final_df = data_frame.copy()
         else:
-            o_data_frames.append(data_frame)
+            if i == 1:
+                o_final_df = data_frame.copy()
 
-    final_df = functools.reduce(joinDfs, data_frames)
-    e_final_df = functools.reduce(joinDfs, e_data_frames)
-    o_final_df = functools.reduce(joinDfs, o_data_frames)
+            else:
 
-    # todo: generalize and encapsulate filter!
-    currents = final_df.filter(like='Current [A]')
-    e_currents = e_final_df.filter(like='Current [A]')
-    o_currents = o_final_df.filter(like='Current [A]')
+                final_df = joinDfs(final_df,data_frame)
 
+                print('join1')
+                #data_frames.append(data_frame)
+                if i % 2 == 0:
+                    #e_data_frames.append(data_frame)
+                    e_final_df = joinDfs(e_final_df, data_frame)
+                else:
+                    #o_data_frames.append(data_frame)
+                    o_final_df = joinDfs(o_final_df, data_frame)
+                print('join2')
+
+
+    #final_df = functools.reduce(joinDfs, data_frames)
+    #e_final_df = functools.reduce(joinDfs, e_data_frames)
+    #o_final_df = functools.reduce(joinDfs, o_data_frames)
+    print('dfs done')
     return final_df, o_final_df, e_final_df
 
 
@@ -214,19 +229,6 @@ def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], 
 
 
 
-
-    """ for d in range(0, len(dfs)):
-       df = dfs[d]
-       if df.name in plots:
-           df.abs().plot()
-           plt.semilogy()
-           plt.title(df.name)
-           if stats[d]:
-               df.apply(pd.DataFrame.describe, axis=1)[['mean', 'max', 'min']].abs().plot()
-               plt.semilogy()
-               plt.title(df.name)"""
-
-
     """line_x = np.arange(x.min(), x.max())[:, np.newaxis]
             line_y_ransac = ransac.predict(line_x)
             plt.plot(line_x, line_y_ransac, color='cornflowerblue',
@@ -252,7 +254,6 @@ def CalcStats(dfs):
 
     return stats_df
 
-
 def linearFit(df, method='ransac', column=1):
     """
     Fits given Data. X values are assumed to be index of the df
@@ -262,14 +263,17 @@ def linearFit(df, method='ransac', column=1):
     :return:            sklearn linear model - use returned.predict(line_x) with line_x = np.arange(X.min(), X.max())[:, np.newaxis]
     """
 
-
     #get x and y from df
     x = np.asarray(df.index.values.tolist())
     y = np.asarray(df.iloc[:,column].tolist())
 
     #reshape to 2d so sklearn can work with it
+    print(len(y))
+    print(len(x))
     x = x.reshape((x.shape[0], 1))
     y = y.reshape((y.shape[0], 1))
+
+
 
 
     #Fit data accordingly
@@ -377,10 +381,12 @@ if __name__ == "__main__":
                         # Make Dataframes from file #
                         #############################
 
+
                         #todo: encapsulate makeDfs, performCalculations & save data
 
                         # open file and get data
                         filename = os.path.join(dirname, file)
+                        print(filename)
                         # split file into several sweeps and get labels
                         labels, string_list = splitString(openFile(filename))
                         np_arrays = []
@@ -397,6 +403,7 @@ if __name__ == "__main__":
 
                         # get only currents
                         currents = []
+                        print('filter dfs')
                         for d in range(0, len(dfs)):
                             current = filterDf(dfs[d], 'Current [A]')
                             current.name = dfs_names[d]
@@ -406,25 +413,47 @@ if __name__ == "__main__":
                         ########################
 
                         #get stats on currents
+                        print('calc stats')
                         stats_df = CalcStats(currents)
+
+                        #perform linear regression
+
+                        #lr = linearFit(stats_df)
+
+                        #xmin = np.amin(np_arrays[1][:, 1])
+                        #xmax = np.amax(np_arrays[1][:, 1])
+
+                        #line_x = np.arange(xmin, xmax)[:,np.newaxis]
+                        #line_y = lr.predict(line_x)
 
                         #################
                         # Save To Files #
                         #################
-
+                        print('save _all')
+                        print(currents[0])
+                        print(len(np_arrays[0]))
                         saveDfToFile(currents[0],filename,'_all')
                         saveDfToFile(currents[0].abs(), filename, '_all_abs')
+
+                        print('save _stats')
                         saveDfToFile(stats_df, filename, '_stats')
                         saveDfToFile(stats_df, filename, '_stats_abs')
 
                         #############
                         # Visualize #
                         #############
+                        print('vis')
                         visualizeSweeps(currents, stats_df, filename)
 
+                        #plt.semilogy()
+                        #plt.scatter(np_arrays[1][:,1], np.absolute(np_arrays[1][:,2]), color='yellowgreen', marker='.')
+                        #plt.plot(line_x, line_y, color='cornflowerblue',
+                         #        label='RANSAC regressor')
 
 
-                        linearFit(currents[0])
+
+
+
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 
