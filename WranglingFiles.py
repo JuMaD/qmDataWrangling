@@ -167,10 +167,10 @@ def joinDfs(ldf, rdf):
     return ldf.join(rdf, how='outer')
 
 
-def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
+def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], plotall=True):
     """
     Sets up the plots for sweeps: all sweeps & stats min max
-    :param dfs:         List of data frames to plot
+    :param currents:         List of data frames to plot
     :param stats:       List of stats to plot (mean, max, min, 25%,50%,75%)
     :param plotall:     Bool that decides whether all curves (not only stats) are plot in a seperate plot
     """
@@ -179,24 +179,14 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
     plt.ion()
 
     #make colormaps
-    cmap_oddeven = makeColormap(len(dfs[0].columns))
+    cmap_oddeven = makeColormap(len(currents[0].columns))
     cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap', ['#009933','#cc3300','#99ffbb','#ffc6b3','#33ff77','#ff8c66'])
+
     #generate filename to save to
     dir = os.path.join(os.path.dirname(datapath),'plots')
     filepath = os.path.join(dir,os.path.splitext(os.path.basename(datapath))[0])
     filename_stats = filepath + "_stats.png"
     filename_all = filepath + "_all.png"
-
-
-
-    #calculate stats for HRS & LRS
-    oe_stats = []
-    for df in dfs:
-        if df.name in ['odd', 'even']:
-            stat = df.apply(pd.DataFrame.describe, axis=1)
-            oe_stats.append(stat)
-
-    stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
     #add suffix to labels so all joint columns can be shown
     stats_arr = []
@@ -205,29 +195,22 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
         even = string + '_even'
         stats_arr.append(odd)
         stats_arr.append(even)
-    #plot all joint columns
-    stats_df[stats_arr].abs().plot(colormap = cmap_stats)
 
+    #plot stats
+    stats_df[stats_arr].abs().plot(colormap = cmap_stats)
     plt.semilogy()
     plt.savefig(filename_stats)
-    """add linear fit here and plot line?!
-    ransac = linearFit( stats_df[0])
-    line_x = np.arange(stats_df[0].min(), stats_df[0].max())[:, np.newaxis]
-    line_y_ransac = ransac.predict(line_x)
-    plt.plot(line_x, line_y_ransac, color='cornflowerblue',
-             label='RANSAC regressor')"""
 
-
+    #plot all
     if plotall:
-        dfs[0].abs().plot(colormap = cmap_oddeven)
+        currents[0].abs().plot(colormap = cmap_oddeven)
         plt.semilogy()
+        plt.title(os.path.splitext(os.path.basename(datapath))[0])
         plt.savefig(filename_all)
-
-
 
     plt.show()
     plt.close('all')
-    return stats_arr,
+
 
 
 
@@ -252,6 +235,22 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
 ################
 # Calculations #
 ################
+def CalcStats(dfs):
+    """Calls pandas describe on all dataframes in list dfs
+    :param  dfs:    List of pandas dfs
+    :return         pd df with stats"""
+
+    # calculate stats for HRS & LRS
+    oe_stats = []
+    for df in dfs:
+        if df.name in ['odd', 'even']:
+            stat = df.apply(pd.DataFrame.describe, axis=1)
+            oe_stats.append(stat)
+
+    stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
+
+    return stats_df
+
 
 def linearFit(df, method='ransac', column=1):
     """
@@ -372,37 +371,57 @@ if __name__ == "__main__":
                 #todo: Change this into a switch-case structure to fetch all three types of txt
                 if not file.endswith("Resistance.txt"):
                     if not file.endswith("SMU-Puls.txt"):
+
+                        #############################
+                        # Make Dataframes from file #
+                        #############################
+
+                        #todo: encapsulate makeDfs, performCalculations & save data
+
                         # open file and get data
                         filename = os.path.join(dirname, file)
-
                         # split file into several sweeps and get labels
                         labels, string_list = splitString(openFile(filename))
-
                         np_arrays = []
-
                         # make numpy array for every sweep and add data to list
-
                         for string in string_list:
                             if string == "":
                                 continue
                             np_arrays.append(stringToNumpy(string))
-
                         # turn all data into Pandas data frame, using voltage to join
                         all, odd, even = makePandasDf(np_arrays, labels, 1)
 
                         dfs = [all, odd, even]
                         dfs_names = ['all', 'odd', 'even']
-                        # get dfs with current
+
+                        # get only currents
                         currents = []
                         for d in range(0, len(dfs)):
                             current = filterDf(dfs[d], 'Current [A]')
                             current.name = dfs_names[d]
                             currents.append(current)
+                        ########################
+                        # Perform Calculations #
+                        ########################
+
+                        #get stats on currents
+                        stats_df = CalcStats(currents)
+
+                        #################
+                        # Save To Files #
+                        #################
 
                         saveDfToFile(currents[0],filename,'_all')
                         saveDfToFile(currents[0].abs(), filename, '_all_abs')
+                        saveDfToFile(stats_df, filename, '_stats')
+                        saveDfToFile(stats_df, filename, '_stats_abs')
 
-                        visualizeSweeps(currents, filename)
+                        #############
+                        # Visualize #
+                        #############
+                        visualizeSweeps(currents, stats_df, filename)
+
+
 
                         linearFit(currents[0])
 
