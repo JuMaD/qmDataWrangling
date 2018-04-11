@@ -1,13 +1,20 @@
 import functools
 import os
 
+import tkinter as tk
+from tkinter import filedialog
+
 import matplotlib.pyplot as plt
+import matplotlib.colors as mcolors
 import numpy as np
 import pandas as pd
+from itertools import chain
 from sklearn import linear_model
 
+import configparser
 
-# todo: sortby sweep up and sweep down
+
+
 # todo: add file dialogue to select directory
 # todo: make a higher level object / df / dict that acummulates all junctions in one directory
 # todo: implement tool that shows plots from several "higher level plots" in on figure
@@ -170,6 +177,9 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
     #make plt.close non-blocking
     plt.ion()
 
+    #make colormaps
+    cmap_oddeven = makeColormap(len(dfs[0].columns))
+    cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap', ['#009933','#cc3300','#99ffbb','#ffc6b3','#33ff77','#ff8c66'])
     #generate filename to save to
     dir = os.path.join(os.path.dirname(datapath),'plots')
     filepath = os.path.join(dir,os.path.splitext(os.path.basename(datapath))[0])
@@ -195,7 +205,8 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
         stats_arr.append(odd)
         stats_arr.append(even)
     #plot all joint columns
-    stats_df[stats_arr].abs().plot()
+    stats_df[stats_arr].abs().plot(colormap = cmap_stats)
+
     plt.semilogy()
     plt.savefig(filename_stats)
     """add linear fit here and plot line?!
@@ -207,7 +218,7 @@ def visualizeSweeps(dfs, datapath, stats=['mean', 'min', 'max'], plotall=True):
 
 
     if plotall:
-        dfs[0].abs().plot()
+        dfs[0].abs().plot(colormap = cmap_oddeven)
         plt.semilogy()
         plt.savefig(filename_all)
 
@@ -274,6 +285,27 @@ def linearFit(df, method='ransac', column=1):
         lr.fit(X, y)
         return lr
 
+#########################
+# Convenience Functions #
+#########################
+
+def makeColormap(values=1024):
+    """creates an intermixed colormap of two color maps to distingush between odd and even sweeps
+      :param values   Number of total colors required, i.e. number of sweeps
+    """
+
+    # sample the colormaps - use less than full range to avoid white and black and twice the same color
+    colors1 = plt.cm.Reds(np.linspace(0.3, 0.9,values/2))
+    colors2 = plt.cm.Greens(np.linspace(0.3, 0.9, values/2))
+
+    # combine them, alternating between both lists, and build a new colormap
+    colors = list(chain.from_iterable(zip(colors1, colors2)))
+
+
+
+    mymap = mcolors.LinearSegmentedColormap.from_list('my_colormap', colors)
+
+    return mymap
 
 """""
   Pandas data frame methods that are good to know:
@@ -304,10 +336,31 @@ def linearFit(df, method='ransac', column=1):
 
 if __name__ == "__main__":
 
+    config = configparser.ConfigParser()
+    ####################
+    # Read Config File #
+    ####################
 
-    dirname = "testdata"
+    config.read('config.ini')
+    try:
+        initial_dir = config['Directory']['home_directory']
+    except:
+        initial_dir = '.'
 
-    # do for all .txt files in directory
+
+    ####################
+    # Select Directory #
+    ####################
+
+    root = tk.Tk()
+    root.withdraw()
+    dirname = filedialog.askdirectory(initialdir=initial_dir)
+    config.set('Directory', 'home_directory', os.path.dirname(dirname))
+
+
+    ################
+    # Wrangle Data #
+    ################
     for file in os.listdir(dirname):
         if file.endswith(".txt"):
             #todo: Change this into a switch-case structure to fetch all three types of txt
@@ -348,4 +401,11 @@ if __name__ == "__main__":
                     linearFit(currents[0])
 
 
+    #####################
+    # write config file #
+    #####################
+
+    cfgfile = open('config.ini', 'w')
+    config.write(cfgfile)
+    cfgfile.close()
 
