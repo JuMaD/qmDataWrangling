@@ -199,6 +199,7 @@ def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], 
     #plot stats
     stats_df[stats_arr].abs().plot(colormap = cmap_stats)
     plt.semilogy()
+    plt.title(os.path.splitext(os.path.basename(datapath))[0])
     plt.savefig(filename_stats)
 
     #plot all
