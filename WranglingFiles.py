@@ -2,6 +2,7 @@ import functools
 import os
 import gc
 import tkinter as tk
+import datetime
 
 from tkinter import filedialog, messagebox
 
@@ -12,18 +13,17 @@ import pandas as pd
 from itertools import chain
 from sklearn import linear_model
 
+import logging
+
 import configparser
 
 pd.options.compute.use_bottleneck = True
 
 
-
-# todo: add file dialogue to select directory
 # todo: make a higher level object / df / dict that acummulates all junctions in one directory
 # todo: implement tool that shows plots from several "higher level plots" in on figure
 # todo: implement calc_tools: calculate current density, low bias resistance, ...
-# todo: implement origin export function
-#
+
 #################
 # File Handling #
 #################
@@ -98,7 +98,6 @@ def saveDfToFile(df, datapath, suffix):
     filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
     savepath = filepath + suffix
 
-
     df.to_csv(savepath, sep='\t')
 
 
@@ -113,10 +112,9 @@ def makePandasDf(np_arrays, labels, index_column=1):
     :return:                pandas dataframes for all, odd and even number in list - labeled array
     """
 
-
     # turn numpy arrays into data frames and join them at the indicated index
     for i in range(0, len(np_arrays)):
-        print(f'column {i}')
+        logging.debug(f'column {i}')
 
         np_array = np_arrays[i]
         num_labels = labels[:]
@@ -128,9 +126,6 @@ def makePandasDf(np_arrays, labels, index_column=1):
 
         data_frame.columns = map(lambda col: '{}_{}'.format(str(col), i), data_frame.columns)
 
-        print('df done')
-
-
         if i == 0:
             final_df = data_frame.copy()
             e_final_df = data_frame.copy()
@@ -140,23 +135,20 @@ def makePandasDf(np_arrays, labels, index_column=1):
 
             else:
 
-                final_df = joinDfs(final_df,data_frame)
+                final_df = joinDfs(final_df, data_frame)
 
-                print('join1')
-                #data_frames.append(data_frame)
+                # data_frames.append(data_frame)
                 if i % 2 == 0:
-                    #e_data_frames.append(data_frame)
+                    # e_data_frames.append(data_frame)
                     e_final_df = joinDfs(e_final_df, data_frame)
                 else:
-                    #o_data_frames.append(data_frame)
+                    # o_data_frames.append(data_frame)
                     o_final_df = joinDfs(o_final_df, data_frame)
-                print('join2')
 
-
-    #final_df = functools.reduce(joinDfs, data_frames)
-    #e_final_df = functools.reduce(joinDfs, e_data_frames)
-    #o_final_df = functools.reduce(joinDfs, o_data_frames)
-    print('dfs done')
+    # final_df = functools.reduce(joinDfs, data_frames)
+    # e_final_df = functools.reduce(joinDfs, e_data_frames)
+    # o_final_df = functools.reduce(joinDfs, o_data_frames)
+    logging.debug('Data frames created')
     return final_df, o_final_df, e_final_df
 
 
@@ -189,21 +181,23 @@ def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], 
     :param stats:       List of stats to plot (mean, max, min, 25%,50%,75%)
     :param plotall:     Bool that decides whether all curves (not only stats) are plot in a seperate plot
     """
-    #todo: break into make stats array and plot/save
-    #make plt.close non-blocking
+
+    # make plt.close non-blocking
     plt.ion()
 
-    #make colormaps
+    # make colormaps
     cmap_oddeven = makeColormap(len(currents[0].columns))
-    cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap', ['#009933','#cc3300','#99ffbb','#ffc6b3','#33ff77','#ff8c66'])
+    cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap',
+                                                           ['#009933', '#cc3300', '#99ffbb', '#ffc6b3', '#33ff77',
+                                                            '#ff8c66'])
 
-    #generate filename to save to
-    dir = os.path.join(os.path.dirname(datapath),'plots')
-    filepath = os.path.join(dir,os.path.splitext(os.path.basename(datapath))[0])
+    # generate filename to save to
+    dir = os.path.join(os.path.dirname(datapath), 'plots')
+    filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
     filename_stats = filepath + "_stats.png"
     filename_all = filepath + "_all.png"
 
-    #add suffix to labels so all joint columns can be shown
+    # add suffix to labels so all joint columns can be shown
     stats_arr = []
     for string in stats:
         odd = string + '_odd'
@@ -211,15 +205,17 @@ def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], 
         stats_arr.append(odd)
         stats_arr.append(even)
 
-    #plot stats
-    stats_df[stats_arr].abs().plot(colormap = cmap_stats)
+    # plot stats
+    ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+    ax.set_ylabel('Current [A]')
     plt.semilogy()
     plt.title(os.path.splitext(os.path.basename(datapath))[0])
     plt.savefig(filename_stats)
 
-    #plot all
+    # plot all
     if plotall:
-        currents[0].abs().plot(colormap = cmap_oddeven)
+        ax2 = currents[0].abs().plot(colormap=cmap_oddeven)
+        ax2.set_ylabel('Current [A]')
         plt.semilogy()
         plt.title(os.path.splitext(os.path.basename(datapath))[0])
         plt.savefig(filename_all)
@@ -227,17 +223,17 @@ def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], 
     plt.show()
     plt.close('all')
 
-
-
     """line_x = np.arange(x.min(), x.max())[:, np.newaxis]
             line_y_ransac = ransac.predict(line_x)
             plt.plot(line_x, line_y_ransac, color='cornflowerblue',
                      label='RANSAC regressor')"""
     return True
 
+
 ################
 # Calculations #
 ################
+# todo: implement LBR (Low bias resistance) estimator and save data
 def CalcStats(dfs):
     """Calls pandas describe on all dataframes in list dfs
     :param  dfs:    List of pandas dfs
@@ -254,6 +250,7 @@ def CalcStats(dfs):
 
     return stats_df
 
+
 def linearFit(df, method='ransac', column=1):
     """
     Fits given Data. X values are assumed to be index of the df
@@ -263,25 +260,21 @@ def linearFit(df, method='ransac', column=1):
     :return:            sklearn linear model - use returned.predict(line_x) with line_x = np.arange(X.min(), X.max())[:, np.newaxis]
     """
 
-    #get x and y from df
+    # get x and y from df
     x = np.asarray(df.index.values.tolist())
-    y = np.asarray(df.iloc[:,column].tolist())
+    y = np.asarray(df.iloc[:, column].tolist())
 
-    #reshape to 2d so sklearn can work with it
+    # reshape to 2d so sklearn can work with it
     print(len(y))
     print(len(x))
     x = x.reshape((x.shape[0], 1))
     y = y.reshape((y.shape[0], 1))
 
-
-
-
-    #Fit data accordingly
+    # Fit data accordingly
 
     if method == 'ransac':
         ransac = linear_model.RANSACRegressor()
         ransac.fit(x, y)
-
 
         return ransac
 
@@ -289,6 +282,7 @@ def linearFit(df, method='ransac', column=1):
         lr = linear_model.LinearRegression()
         lr.fit(X, y)
         return lr
+
 
 #########################
 # Convenience Functions #
@@ -300,17 +294,16 @@ def makeColormap(values=1024):
     """
 
     # sample the colormaps - use less than full range to avoid white and black and twice the same color
-    colors1 = plt.cm.Reds(np.linspace(0.3, 0.9,values/2))
-    colors2 = plt.cm.Greens(np.linspace(0.3, 0.9, values/2))
+    colors1 = plt.cm.Reds(np.linspace(0.3, 0.9, values / 2))
+    colors2 = plt.cm.Greens(np.linspace(0.3, 0.9, values / 2))
 
     # combine them, alternating between both lists, and build a new colormap
     colors = list(chain.from_iterable(zip(colors1, colors2)))
 
-
-
     mymap = mcolors.LinearSegmentedColormap.from_list('my_colormap', colors)
 
     return mymap
+
 
 """""
   Pandas data frame methods that are good to know:
@@ -340,18 +333,22 @@ def makeColormap(values=1024):
   # print(final_df.head())"""
 
 if __name__ == "__main__":
-
+    logging.basicConfig(filename='RuntimeLog.log', level=logging.INFO)
+    logging.info('LOGGING STARTED:'+str(datetime.datetime.now()))
     config = configparser.ConfigParser()
     ####################
     # Read Config File #
     ####################
 
     config.read('config.ini')
+
     try:
         initial_dir = config['Directory']['home_directory']
     except:
         initial_dir = '.'
+        logging.error('No directory in config file!')
 
+    logging.info('Config file read and parameters set.')
 
     ###############
     # Main Script #
@@ -366,14 +363,17 @@ if __name__ == "__main__":
         root.withdraw()
         dirname = filedialog.askdirectory(initialdir=initial_dir)
         config.set('Directory', 'home_directory', os.path.dirname(dirname))
-
+        csv_path = os.path.join(dirname, 'csv')
+        if not os.path.exists(csv_path):
+            os.makedirs(csv_path)
+            os.makedirs(os.path.join(dirname, 'plots'))
 
         ################
         # Wrangle Data #
         ################
         for file in os.listdir(dirname):
             if file.endswith(".txt"):
-                #todo: Change this into a switch-case structure to fetch all three types of txt
+                # todo: Change this into a switch-case structure to fetch all three types of txt
                 if not file.endswith("Resistance.txt"):
                     if not file.endswith("SMU-Puls.txt"):
 
@@ -382,11 +382,11 @@ if __name__ == "__main__":
                         #############################
 
 
-                        #todo: encapsulate makeDfs, performCalculations & save data
+                        # todo: encapsulate makeDfs, performCalculations & save data
 
                         # open file and get data
                         filename = os.path.join(dirname, file)
-                        print(filename)
+                        logging.info(f'Opening file: {filename}')
                         # split file into several sweeps and get labels
                         labels, string_list = splitString(openFile(filename))
                         np_arrays = []
@@ -403,7 +403,7 @@ if __name__ == "__main__":
 
                         # get only currents
                         currents = []
-                        print('filter dfs')
+
                         for d in range(0, len(dfs)):
                             current = filterDf(dfs[d], 'Current [A]')
                             current.name = dfs_names[d]
@@ -412,48 +412,40 @@ if __name__ == "__main__":
                         # Perform Calculations #
                         ########################
 
-                        #get stats on currents
-                        print('calc stats')
+                        # get stats on currents
+
                         stats_df = CalcStats(currents)
 
-                        #perform linear regression
+                        # perform linear regression
 
-                        #lr = linearFit(stats_df)
+                        # lr = linearFit(stats_df)
 
-                        #xmin = np.amin(np_arrays[1][:, 1])
-                        #xmax = np.amax(np_arrays[1][:, 1])
+                        # xmin = np.amin(np_arrays[1][:, 1])
+                        # xmax = np.amax(np_arrays[1][:, 1])
 
-                        #line_x = np.arange(xmin, xmax)[:,np.newaxis]
-                        #line_y = lr.predict(line_x)
+                        # line_x = np.arange(xmin, xmax)[:,np.newaxis]
+                        # line_y = lr.predict(line_x)
 
                         #################
                         # Save To Files #
                         #################
-                        print('save _all')
-                        print(currents[0])
-                        print(len(np_arrays[0]))
-                        saveDfToFile(currents[0],filename,'_all')
+
+                        saveDfToFile(currents[0], filename, '_all')
                         saveDfToFile(currents[0].abs(), filename, '_all_abs')
 
-                        print('save _stats')
                         saveDfToFile(stats_df, filename, '_stats')
-                        saveDfToFile(stats_df, filename, '_stats_abs')
+                        saveDfToFile(stats_df.abs(), filename, '_stats_abs')
 
                         #############
                         # Visualize #
                         #############
-                        print('vis')
+
                         visualizeSweeps(currents, stats_df, filename)
 
-                        #plt.semilogy()
-                        #plt.scatter(np_arrays[1][:,1], np.absolute(np_arrays[1][:,2]), color='yellowgreen', marker='.')
-                        #plt.plot(line_x, line_y, color='cornflowerblue',
-                         #        label='RANSAC regressor')
-
-
-
-
-
+                        # plt.semilogy()
+                        # plt.scatter(np_arrays[1][:,1], np.absolute(np_arrays[1][:,2]), color='yellowgreen', marker='.')
+                        # plt.plot(line_x, line_y, color='cornflowerblue',
+                        #        label='RANSAC regressor')
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 
@@ -462,7 +454,6 @@ if __name__ == "__main__":
         else:
             break
 
-
     #####################
     # write config file #
     #####################
@@ -470,4 +461,4 @@ if __name__ == "__main__":
     cfgfile = open('config.ini', 'w')
     config.write(cfgfile)
     cfgfile.close()
-
+    logging.info('Saved config file')
