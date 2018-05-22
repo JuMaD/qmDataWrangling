@@ -198,33 +198,54 @@ def CalcStats(dfs):
 
     return stats_df
 
-def CalcFN(dfs, alpha=2, column=1):
+def CalcFN(dfs, alpha=2):
     """Calculates ln(I/V^alpha) and 1/V and returns a df to plot a fowler nordheim plot
        :param  dfs:    List of pandas dfs
        :return         pd df with 1/V"""
 
-    oe_fn = []
+    fn_dfs = []
     for df in dfs:
+
         if df.name in ['odd', 'even']:
 
             # get x and y from df
             x = np.asarray(df.index.values.tolist())
-            y = np.absolute(np.asarray(df.iloc[:, column].tolist()))
-
+            y = np.absolute(np.asarray(df))
             # Calculate ln(I/V^alpha) and 1/V
             reciprocal = np.reciprocal(x)
+
             power = np.power(reciprocal, alpha)
-            j_v = np.multiply(power, y)
+            power = np.expand_dims(power, axis=0).transpose()
+            j_v = y * power
             log = np.log(j_v)
 
             #make it a df again
             data_frame = pd.DataFrame(data=log)
-            
+            data_frame.set_index(reciprocal, inplace=True)
+
+            columns = []
+            for column in range(0, len(data_frame.columns)):
+                name = df.columns[column].split('_')[1]
+                columns.append(f'ln(I/V^{alpha})_{name}')
+
+            #data_frame.columns = [f'ln(I/V^{alpha})']
+            data_frame.columns = columns
+            data_frame.index.name = '1/X'
+            fn_dfs.append(data_frame)
+    fn_df = fn_dfs[0].join(fn_dfs[1], how='outer', lsuffix='_odd', rsuffix='_even')
+    fn_dfs.append(fn_df)
+
+    fn_list =[]
 
 
-    fn_df = oe_fn[0].join(oe_fn[1], how='outer', lsuffix='_odd', rsuffix='_even')
+    for element in reversed(fn_dfs):
+        fn_list.append(element)
 
-    return fn_df
+    dfs_names = ['all', 'odd', 'even']
+    for i in range(0,len(fn_list)):
+        fn_list[i].name = dfs_names[i]
+
+    return fn_list
 
 def linearFit(df, method='ransac', column=1):
     """
@@ -262,7 +283,7 @@ def linearFit(df, method='ransac', column=1):
 #  Visualizations #
 ###################
 
-def plotSweeps(df,datapath, suffix, semilogy=True):
+def plotSweeps(df,datapath, suffix, semilogy=True, takeabs=True):
     """"
     :param df:          List of dataframes to plot in one plot.
     :param datapath:    Path to plot to.
@@ -279,7 +300,11 @@ def plotSweeps(df,datapath, suffix, semilogy=True):
     filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
     filename_all = filepath + "_"+suffix + ".png"
 
-    ax2 = df[0].abs().plot(colormap=cmap_oddeven)
+    if takeabs:
+        ax2 = df[0].abs().plot(colormap=cmap_oddeven)
+    else:
+        ax2 = df[0].plot(colormap=cmap_oddeven)
+
     ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
     if semilogy:
         plt.semilogy()
@@ -330,7 +355,6 @@ def plotStats(stats_df, datapath, stats=['mean', 'min', 'max'], ylabel='Current 
 
     plt.show()
     plt.close('all')
-
 
 #########################
 # Convenience Functions #
@@ -455,6 +479,8 @@ if __name__ == "__main__":
                             current = filterDf(dfs[d], 'Current [A]')
                             current.name = dfs_names[d]
                             currents.append(current)
+
+
                         ########################
                         # Perform Calculations #
                         ########################
@@ -463,7 +489,11 @@ if __name__ == "__main__":
                         stats_df = CalcStats(currents)
 
                         #calculate fn plots
-                        #fn_df = CalcFN(currents)
+
+                        fn_df = CalcFN(currents)
+                        print(type(fn_df[0]))
+                        print(type(currents[0]))
+                        fn_stats = CalcStats(fn_df)
 
 
 
@@ -477,9 +507,10 @@ if __name__ == "__main__":
 
                         tosave = {  # "all": currents[0],
                             "all_abs": currents[0].abs(),
-                            # "stats": stats_df ,
+                            "stats": stats_df,
                             "stats_abs": stats_df.abs(),
-                            # "fn":fn_df
+                            "fn":fn_df[0],
+                            "fn_stats": fn_stats,
                         }
 
                         for key, value in tosave.items():
@@ -492,15 +523,21 @@ if __name__ == "__main__":
                         #############
 
                         # todo:make tosave a selectable in GUI
+                        # todo: clean up plot fn_stats (just rewrite "toplot" in bool dict and then for for key ... + use plotStats)
                         toplot = {  # "all": currents[0],
-                            "all_abs": currents[0].abs(),
-                            # "stats": stats_df ,
-                            "stats_abs": stats_df.abs(),
-                            # "fn":fn_df
+                            "all": currents,
+                            "stats": stats_df,
+                            "fn": fn_df,
+                            #"fn_stats": fn_df,
                         }
+                        for key, value in toplot.items():
+                            if 'stats' in key:
+                                plotStats(value, filename)
+                            elif 'fn' in key:
+                                plotSweeps(value, filename, suffix='fn', semilogy=False, takeabs=False)
+                            else:
+                                plotSweeps(value, filename, suffix='all')
 
-                        plotSweeps(currents, filename, suffix='all')
-                        plotStats(stats_df.abs(), filename)
                         #for key, value in toplot.items():
                          #   visualizeSweeps(currents, stats_df, filename)
 
