@@ -174,66 +174,14 @@ def joinDfs(ldf, rdf):
     return ldf.join(rdf, how='outer')
 
 
-def visualizeSweeps(currents, stats_df, datapath, stats=['mean', 'min', 'max'], plotall=True):
-    """
-    Sets up the plots for sweeps: all sweeps & stats min max
-    :param currents:         List of data frames to plot
-    :param stats:       List of stats to plot (mean, max, min, 25%,50%,75%)
-    :param plotall:     Bool that decides whether all curves (not only stats) are plot in a seperate plot
-    """
-
-    # make plt.close non-blocking
-    plt.ion()
-
-    # make colormaps
-    cmap_oddeven = makeColormap(len(currents[0].columns))
-    cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap',
-                                                           ['#009933', '#cc3300', '#99ffbb', '#ffc6b3', '#33ff77',
-                                                            '#ff8c66'])
-
-    # generate filename to save to
-    dir = os.path.join(os.path.dirname(datapath), 'plots')
-    filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
-    filename_stats = filepath + "_stats.png"
-    filename_all = filepath + "_all.png"
-
-    # add suffix to labels so all joint columns can be shown
-    stats_arr = []
-    for string in stats:
-        odd = string + '_odd'
-        even = string + '_even'
-        stats_arr.append(odd)
-        stats_arr.append(even)
-
-    # plot stats
-    ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
-    ax.set_ylabel('Current [A]')
-    plt.semilogy()
-    plt.title(os.path.splitext(os.path.basename(datapath))[0])
-    plt.savefig(filename_stats)
-
-    # plot all
-    if plotall:
-        ax2 = currents[0].abs().plot(colormap=cmap_oddeven)
-        ax2.set_ylabel('Current [A]')
-        plt.semilogy()
-        plt.title(os.path.splitext(os.path.basename(datapath))[0])
-        plt.savefig(filename_all)
-
-    plt.show()
-    plt.close('all')
-
-    """line_x = np.arange(x.min(), x.max())[:, np.newaxis]
-            line_y_ransac = ransac.predict(line_x)
-            plt.plot(line_x, line_y_ransac, color='cornflowerblue',
-                     label='RANSAC regressor')"""
-    return True
 
 
 ################
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
+# todo: implement memory window calculation
+
 def CalcStats(dfs):
     """Calls pandas describe on all dataframes in list dfs
     :param  dfs:    List of pandas dfs
@@ -269,14 +217,14 @@ def CalcFN(dfs, alpha=2, column=1):
             j_v = np.multiply(power, y)
             log = np.log(j_v)
 
-            print('inside FN')
-            print(type(log))
+            #make it a df again
+            data_frame = pd.DataFrame(data=log)
+            
 
-            oe_fn.append(log)
 
-    #stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
+    fn_df = oe_fn[0].join(oe_fn[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
-    return stats_df
+    return fn_df
 
 def linearFit(df, method='ransac', column=1):
     """
@@ -309,6 +257,79 @@ def linearFit(df, method='ransac', column=1):
         lr = linear_model.LinearRegression()
         lr.fit(X, y)
         return lr
+
+###################
+#  Visualizations #
+###################
+
+def plotSweeps(df,datapath, suffix, semilogy=True):
+    """"
+    :param df:          List of dataframes to plot in one plot.
+    :param datapath:    Path to plot to.
+    :param suffix       Suffix to datapathh for plots.
+    """
+    #make plt-close non-blocking
+    plt.ion()
+
+    #make colormap
+    cmap_oddeven = makeColormap(len(df[0].columns))
+
+    # generate filename to save to
+    dir = os.path.join(os.path.dirname(datapath), 'plots')
+    filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
+    filename_all = filepath + "_"+suffix + ".png"
+
+    ax2 = df[0].abs().plot(colormap=cmap_oddeven)
+    ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
+    if semilogy:
+        plt.semilogy()
+    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    plt.savefig(filename_all)
+
+    plt.show()
+    plt.close('all')
+
+def plotStats(stats_df, datapath, stats=['mean', 'min', 'max'], ylabel='Current [A]', semilogy=True):
+    """
+
+    :param stats_df:    Dataframe containing the stats.
+    :param datapath:    Path to save the Plot to.
+    :param stats:       List of stats to plot options are (mean, max, min, 25%,50%,75%)
+    :param ylabel       Label displayed at y-axis
+    :param semilogy:    Set the graph to semilog
+    """
+    # make 'plt.close' non-blocking
+    plt.ion()
+
+    # make colormap
+    cmap_stats = mcolors.LinearSegmentedColormap.from_list('my_colormap',
+                                                           ['#009933', '#cc3300', '#99ffbb', '#ffc6b3', '#33ff77',
+                                                            '#ff8c66'])
+
+    # generate filename to save to
+    dir = os.path.join(os.path.dirname(datapath), 'plots')
+    filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
+    filename_stats = filepath + "_stats.png"
+
+
+    # add suffix to labels so all joint columns can be shown
+    stats_arr = []
+    for string in stats:
+        odd = string + '_odd'
+        even = string + '_even'
+        stats_arr.append(odd)
+        stats_arr.append(even)
+
+    # plot stats
+    ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+    ax.set_ylabel(ylabel)
+    if semilogy == True:
+        plt.semilogy()
+    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    plt.savefig(filename_stats)
+
+    plt.show()
+    plt.close('all')
 
 
 #########################
@@ -439,41 +460,51 @@ if __name__ == "__main__":
                         ########################
 
                         # get stats on currents
-
                         stats_df = CalcStats(currents)
 
-                        CalcFN(currents)
+                        #calculate fn plots
+                        #fn_df = CalcFN(currents)
 
-                        # perform linear regression
 
-                        # lr = linearFit(stats_df)
 
-                        # xmin = np.amin(np_arrays[1][:, 1])
-                        # xmax = np.amax(np_arrays[1][:, 1])
 
-                        # line_x = np.arange(xmin, xmax)[:,np.newaxis]
-                        # line_y = lr.predict(line_x)
 
                         #################
                         # Save To Files #
                         #################
 
-                        saveDfToFile(currents[0], filename, '_all')
-                        saveDfToFile(currents[0].abs(), filename, '_all_abs')
+                        #todo:make tosave a selectable in GUI
 
-                        saveDfToFile(stats_df, filename, '_stats')
-                        saveDfToFile(stats_df.abs(), filename, '_stats_abs')
+                        tosave = {  # "all": currents[0],
+                            "all_abs": currents[0].abs(),
+                            # "stats": stats_df ,
+                            "stats_abs": stats_df.abs(),
+                            # "fn":fn_df
+                        }
+
+                        for key, value in tosave.items():
+                            saveDfToFile(value, filename,'_'+key)
+
+
 
                         #############
                         # Visualize #
                         #############
 
-                        visualizeSweeps(currents, stats_df, filename)
+                        # todo:make tosave a selectable in GUI
+                        toplot = {  # "all": currents[0],
+                            "all_abs": currents[0].abs(),
+                            # "stats": stats_df ,
+                            "stats_abs": stats_df.abs(),
+                            # "fn":fn_df
+                        }
 
-                        # plt.semilogy()
-                        # plt.scatter(np_arrays[1][:,1], np.absolute(np_arrays[1][:,2]), color='yellowgreen', marker='.')
-                        # plt.plot(line_x, line_y, color='cornflowerblue',
-                        #        label='RANSAC regressor')
+                        plotSweeps(currents, filename, suffix='all')
+                        plotStats(stats_df.abs(), filename)
+                        #for key, value in toplot.items():
+                         #   visualizeSweeps(currents, stats_df, filename)
+
+
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 
