@@ -200,7 +200,7 @@ def CalcStats(dfs):
 
 def CalcFN(dfs, alpha=2):
     """Calculates ln(I/V^alpha) and 1/V and returns a df to plot a fowler nordheim plot
-       :param  dfs:    List of pandas dfs
+       :param  dfs:    List of pandas dfs: all, odd, even
        :return         pd df with 1/V"""
 
     fn_dfs = []
@@ -246,6 +246,49 @@ def CalcFN(dfs, alpha=2):
         fn_list[i].name = dfs_names[i]
 
     return fn_list
+
+def CalcMemoryWindow(dfs):
+    """
+    Calculates the "memory window" i.e. the difference between odd and even sweeps.
+    :param dfs:     List of data frames: all, odd, even
+    :return:        Data frame containing the memory window for all sweeps
+    """
+
+    x = np.asarray(dfs[0].index.values.tolist())
+
+    for df in dfs:
+
+        if df.name == 'odd':
+            y_odd = np.asarray(df)
+        if df.name == 'even':
+            y_even = np.asarray(df)
+
+    delta = np.subtract(y_odd,y_even)
+
+    # make it a df again
+    data_frame = pd.DataFrame(data=delta)
+    data_frame.set_index(x, inplace=True)
+
+    columns = []
+    for column in range(0, len(data_frame.columns)):
+        name = dfs[0].columns[column].split('_')[1]
+        columns.append(f'deltaI_{name}')
+
+    data_frame.columns = columns
+    data_frame.index.name = 'X'
+
+    #change into list to make compatible with plot methods
+    delta_list = [data_frame]
+
+
+    return(delta_list)
+
+
+
+
+
+
+
 
 def linearFit(df, method='ransac', column=1):
     """
@@ -314,7 +357,7 @@ def plotSweeps(df,datapath, suffix, semilogy=True, takeabs=True):
     plt.show()
     plt.close('all')
 
-def plotStats(stats_df, datapath, stats=['mean', 'min', 'max'], ylabel='Current [A]', semilogy=True):
+def plotStats(stats_df, datapath, suffix, stats=['mean', 'min', 'max'], ylabel='Current [A]', semilogy=True):
     """
 
     :param stats_df:    Dataframe containing the stats.
@@ -334,7 +377,7 @@ def plotStats(stats_df, datapath, stats=['mean', 'min', 'max'], ylabel='Current 
     # generate filename to save to
     dir = os.path.join(os.path.dirname(datapath), 'plots')
     filepath = os.path.join(dir, os.path.splitext(os.path.basename(datapath))[0])
-    filename_stats = filepath + "_stats.png"
+    filename_stats = filepath + "_"+suffix+".png"
 
 
     # add suffix to labels so all joint columns can be shown
@@ -488,12 +531,14 @@ if __name__ == "__main__":
                         # get stats on currents
                         stats_df = CalcStats(currents)
 
-                        #calculate fn plots
+                        #calculate fn data
 
                         fn_df = CalcFN(currents)
-                        print(type(fn_df[0]))
-                        print(type(currents[0]))
                         fn_stats = CalcStats(fn_df)
+
+                        #Memory window
+
+                        window_df = CalcMemoryWindow(currents)
 
 
 
@@ -511,6 +556,7 @@ if __name__ == "__main__":
                             "stats_abs": stats_df.abs(),
                             "fn":fn_df[0],
                             "fn_stats": fn_stats,
+                            "mwindow": window_df[0],
                         }
 
                         for key, value in tosave.items():
@@ -525,18 +571,24 @@ if __name__ == "__main__":
                         # todo:make tosave a selectable in GUI
                         # todo: clean up plot fn_stats (just rewrite "toplot" in bool dict and then for for key ... + use plotStats)
                         toplot = {  # "all": currents[0],
-                            "all": currents,
-                            "stats": stats_df,
-                            "fn": fn_df,
-                            #"fn_stats": fn_df,
+                            "all": True,
+                            "stats": True,
+                            "fn": True,
+                            "fn_stats": True,
+                            "mwindow":True,
                         }
-                        for key, value in toplot.items():
-                            if 'stats' in key:
-                                plotStats(value, filename)
-                            elif 'fn' in key:
-                                plotSweeps(value, filename, suffix='fn', semilogy=False, takeabs=False)
-                            else:
-                                plotSweeps(value, filename, suffix='all')
+
+                        if toplot["all"]:
+                            plotSweeps(currents, filename, suffix='all')
+                        if toplot["stats"]:
+                            plotStats(stats_df, filename, suffix='stats')
+                        if toplot["fn"]:
+                            plotSweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
+                        if toplot["fn_stats"]:
+                            plotStats(fn_stats, filename, suffix='fn_stats')
+                        if toplot["mwindow"]:
+                            plotSweeps(window_df, filename, suffix='mwindow', takeabs=False)
+
 
                         #for key, value in toplot.items():
                          #   visualizeSweeps(currents, stats_df, filename)
