@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from sklearn import linear_model
+from sklearn.metrics import r2_score
 
 pd.options.compute.use_bottleneck = True
 
@@ -330,6 +331,9 @@ def linear_fit(df, method='ransac', column=1):
     x = np.asarray(df.index.values.tolist())
     y = np.asarray(df.iloc[:, column].tolist())
 
+    print(x)
+    print(y)
+
     # reshape to 2d so sklearn can work with it
     x = x.reshape((x.shape[0], 1))
     y = y.reshape((y.shape[0], 1))
@@ -337,9 +341,23 @@ def linear_fit(df, method='ransac', column=1):
     # Fit data accordingly
 
     if method == 'ransac':
+        #todo: move coefficent and score into return
         ransac = linear_model.RANSACRegressor()
         ransac.fit(x, y)
-        print(ransac.estimator_.coef_)
+        print("Coefficient:" + str(ransac.estimator_.coef_))
+
+
+        #draw
+        line_x = np.linspace(x.min(), x.max(), x.shape[0])[:, np.newaxis]
+
+        line_y_ransac = ransac.predict(line_x)
+        print("R^2 Score: " + str(r2_score(y, line_y_ransac)))
+
+        plt.scatter(x, y, color='yellowgreen', marker='.',
+                    label='datapoints')
+        plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
+                 label='RANSAC regressor')
+        plt.show()
 
         return ransac
 
@@ -581,8 +599,10 @@ if __name__ == "__main__":
                             window_stats = calc_stats(window_df)
 
                             #linear fit --- TEST AREA
-                            print(stats_df.head())
-                            linear_fit(stats_df)
+                            #todo: move (sliding)mask into linear_fit method
+                            mask = (stats_df.index > -1) & (stats_df.index <= 1)
+                            print(stats_df.loc[mask])
+                            linear_fit(stats_df.loc[mask])
 
 
 
