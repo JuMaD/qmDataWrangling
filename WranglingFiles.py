@@ -14,8 +14,7 @@ from sklearn import linear_model
 
 pd.options.compute.use_bottleneck = True
 
-
-# todo: make a higher level object / df / dict that acummulates both junctions in one directory
+# todo: make a higher level object / df / dict that acummulates all junctions in one directory
 # todo: implement tool that shows plots from several "higher level plots" in on figure
 # todo: implement calc_tools: calculate current density, low bias resistance, ...
 
@@ -178,9 +177,17 @@ def join_dfs(ldf, rdf):
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
-# todo: implement memory window calculation
 
-# noinspection PyShadowingNames,PyShadowingNames
+def calculate(functions):
+    """
+    Encapsulates all calculations to be made
+    :param functions: List of functions to execute on the geiven data
+    :return:
+    """
+
+
+
+
 def calc_stats(dfs):
     """Calls pandas describe on both dataframes in list dfs
     :param  dfs:    List of pandas dfs
@@ -188,12 +195,17 @@ def calc_stats(dfs):
 
     # calculate stats for HRS & LRS
     oe_stats = []
-    for df in dfs:
-        if df.name in ['odd', 'even']:
-            stat = df.apply(pd.DataFrame.describe, axis=1)
-            oe_stats.append(stat)
+    stats_df = []
+    if len(dfs) == 1:
+        stat = dfs[0].apply(pd.DataFrame.describe, axis = 1)
+        stats_df.append(stat)
+    else:
+        for df in dfs:
+            if df.name in ['odd', 'even']:
+                stat = df.apply(pd.DataFrame.describe, axis=1)
+                oe_stats.append(stat)
 
-    stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
+        stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
     return stats_df
 
@@ -377,9 +389,10 @@ def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', sem
     :param ylabel       Label displayed at y-axis.
     :param semilogy:    Set the graph to semilog.
     """
-    # make 'plt.close' non-blocking
+
     if stats is None:
         stats = ['mean', 'min', 'max']
+    # make 'plt.close' non-blocking
     plt.ion()
 
     # make colormap
@@ -392,16 +405,23 @@ def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', sem
     filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
     filename_stats = filepath + "_" + suffix + ".png"
 
-    # add suffix to labels so both joint columns can be shown
-    stats_arr = []
-    for string in stats:
-        odd = string + '_odd'
-        even = string + '_even'
-        stats_arr.append(odd)
-        stats_arr.append(even)
 
-    # plot stats
-    ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+    if len(stats_df) == 1:
+
+        ax = stats_df[0][stats].abs().plot(colormap=cmap_stats)
+
+    else:
+        # add suffix to labels so both joint columns can be shown
+        stats_arr = []
+        for string in stats:
+            odd = string + '_odd'
+            even = string + '_even'
+            stats_arr.append(odd)
+            stats_arr.append(even)
+
+        # plot stats
+        ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+
     ax.set_ylabel(ylabel)
     if semilogy:
         plt.semilogy()
@@ -470,7 +490,7 @@ if __name__ == "__main__":
 
     config.read('config.ini')
 
-    # noinspection PyBroadException
+
     try:
         initial_dir = config['Directory']['home_directory']
     except:
@@ -506,7 +526,7 @@ if __name__ == "__main__":
                         # Make Dataframes from file #
                         #############################
 
-                        # todo: encapsulate makeDfs, performCalculations & save data
+                        # todo: encapsulate make_dfs, perform_calculations & save_data
 
                         # open file and get data
                         filename = os.path.join(dirname, file)
@@ -541,13 +561,13 @@ if __name__ == "__main__":
                         stats_df = calc_stats(currents)
 
                         # calculate fn data
-
                         fn_df = calc_fowler_nordheim(currents)
                         fn_stats = calc_stats(fn_df)
 
                         # Memory window
-
                         window_df = calc_memory_window(currents)
+                        window_stats = calc_stats(window_df)
+
 
                         #################
                         # Save To Files #
@@ -592,6 +612,7 @@ if __name__ == "__main__":
                             plot_stats(fn_stats, filename, suffix='fn_stats')
                         if toplot["mwindow"]:
                             plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
+                            plot_stats(window_stats, filename, suffix='window_stats')
 
                         # for key, value in toplot.items():
                         #   visualizeSweeps(currents, stats_df, filename)
