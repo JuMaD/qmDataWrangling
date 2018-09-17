@@ -134,6 +134,7 @@ def make_pandas_df(np_arrays, labels, index_column=1):
         else:
             if i == 1:
                 o_final_df = data_frame.copy()
+                final_df = join_dfs(final_df, data_frame)
 
             else:
 
@@ -148,6 +149,11 @@ def make_pandas_df(np_arrays, labels, index_column=1):
                     o_final_df = join_dfs(o_final_df, data_frame)
 
         logging.debug('Data frames created')
+
+        #todo: make sure odd and even have the same shape
+
+
+
     return final_df, o_final_df, e_final_df
 
 
@@ -279,9 +285,13 @@ def calc_memory_window(dfs, method="divide"):
             y_odd = np.asarray(df)
         if df.name == 'even':
             y_even = np.asarray(df)
+
+
+
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
         delta2 = np.divide(np.abs(y_even), np.abs(y_odd))
+
     elif method == "subtract":
         delta1 = np.subtract(np.maximum(np.abs(y_odd), np.abs(y_even)), np.minimum(np.abs(y_odd), np.abs(y_even)))
         delta2 = np.subtract(np.maximum(np.abs(y_odd), np.abs(y_even)), np.minimum(np.abs(y_odd), np.abs(y_even)))
@@ -566,6 +576,7 @@ if __name__ == "__main__":
                             fn_stats = calc_stats(fn_df)
 
                             # Memory window
+
                             window_df = calc_memory_window(currents)
                             window_stats = calc_stats(window_df)
 
