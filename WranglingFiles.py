@@ -325,14 +325,12 @@ def linear_fit(df, method='ransac', column=1):
     :return:            sklearn linear model
                         - use returned.predict(line_x) with line_x = np.arange(X.min(), X.max())[:, np.newaxis]
     """
-
+    #todo: make it a rolling regression over the whole dataset
     # get x and y from df
     x = np.asarray(df.index.values.tolist())
     y = np.asarray(df.iloc[:, column].tolist())
 
     # reshape to 2d so sklearn can work with it
-    print(len(y))
-    print(len(x))
     x = x.reshape((x.shape[0], 1))
     y = y.reshape((y.shape[0], 1))
 
@@ -341,12 +339,14 @@ def linear_fit(df, method='ransac', column=1):
     if method == 'ransac':
         ransac = linear_model.RANSACRegressor()
         ransac.fit(x, y)
+        print(ransac.estimator_.coef_)
 
         return ransac
 
     if method == 'linreg':
         lr = linear_model.LinearRegression()
         lr.fit(x, y)
+        print(lr.coef_)
         return lr
 
 
@@ -579,6 +579,11 @@ if __name__ == "__main__":
 
                             window_df = calc_memory_window(currents)
                             window_stats = calc_stats(window_df)
+
+                            #linear fit --- TEST AREA
+                            print(stats_df.head())
+                            linear_fit(stats_df)
+
 
 
                             #################
