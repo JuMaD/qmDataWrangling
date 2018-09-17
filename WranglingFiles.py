@@ -542,80 +542,81 @@ if __name__ == "__main__":
                         # turn both data into Pandas data frame, using voltage to join
                         both, odd, even = make_pandas_df(np_arrays, labels, 1)
 
-                        dfs = [both, odd, even]
-                        dfs_names = ['both', 'odd', 'even']
+                        if odd is not None and even is not None:
+                            dfs = [both, odd, even]
+                            dfs_names = ['both', 'odd', 'even']
 
-                        # get only currents
-                        currents = []
+                            # get only currents
+                            currents = []
 
-                        for d in range(0, len(dfs)):
-                            current = filter_df(dfs[d], 'Current [A]')
-                            current.name = dfs_names[d]
-                            currents.append(current)
+                            for d in range(0, len(dfs)):
+                                current = filter_df(dfs[d], 'Current [A]')
+                                current.name = dfs_names[d]
+                                currents.append(current)
 
-                        ########################
-                        # Perform Calculations #
-                        ########################
+                            ########################
+                            # Perform Calculations #
+                            ########################
 
-                        # get stats on currents
-                        stats_df = calc_stats(currents)
+                            # get stats on currents
+                            stats_df = calc_stats(currents)
 
-                        # calculate fn data
-                        fn_df = calc_fowler_nordheim(currents)
-                        fn_stats = calc_stats(fn_df)
+                            # calculate fn data
+                            fn_df = calc_fowler_nordheim(currents)
+                            fn_stats = calc_stats(fn_df)
 
-                        # Memory window
-                        window_df = calc_memory_window(currents)
-                        window_stats = calc_stats(window_df)
+                            # Memory window
+                            window_df = calc_memory_window(currents)
+                            window_stats = calc_stats(window_df)
 
 
-                        #################
-                        # Save To Files #
-                        #################
+                            #################
+                            # Save To Files #
+                            #################
 
-                        # todo:make tosave a selectable in GUI
+                            # todo:make tosave a selectable in GUI
 
-                        tosave = {  # "both": currents[0],
-                            "all_abs": currents[0].abs(),
-                            "stats": stats_df,
-                            "stats_abs": stats_df.abs(),
-                            "fn": fn_df[0],
-                            "fn_stats": fn_stats,
-                            "mwindow": window_df[0],
-                        }
+                            tosave = {  # "both": currents[0],
+                                "all_abs": currents[0].abs(),
+                                "stats": stats_df,
+                                "stats_abs": stats_df.abs(),
+                                "fn": fn_df[0],
+                                "fn_stats": fn_stats,
+                                "mwindow": window_df[0],
+                            }
 
-                        for key, value in tosave.items():
-                            save_df_to_file(value, filename, '_' + key)
+                            for key, value in tosave.items():
+                                save_df_to_file(value, filename, '_' + key)
 
-                        #############
-                        # Visualize #
-                        #############
+                            #############
+                            # Visualize #
+                            #############
 
-                        # todo:make tosave a selectable in GUI
-                        # todo: clean up plot fn_stats
-                        # todo: (just rewrite "toplot" in bool dict and then for for key ... + use plot_stats)
-                        toplot = {  # "both": currents[0],
-                            "both": True,
-                            "stats": True,
-                            "fn": True,
-                            "fn_stats": True,
-                            "mwindow": True,
-                        }
+                            # todo:make tosave a selectable in GUI
+                            # todo: clean up plot fn_stats
+                            # todo: (just rewrite "toplot" in bool dict and then for for key ... + use plot_stats)
+                            toplot = {  # "both": currents[0],
+                                "both": True,
+                                "stats": True,
+                                "fn": True,
+                                "fn_stats": True,
+                                "mwindow": True,
+                            }
 
-                        if toplot["both"]:
-                            plot_sweeps(currents, filename, suffix='both')
-                        if toplot["stats"]:
-                            plot_stats(stats_df, filename, suffix='stats')
-                        if toplot["fn"]:
-                            plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
-                        if toplot["fn_stats"]:
-                            plot_stats(fn_stats, filename, suffix='fn_stats')
-                        if toplot["mwindow"]:
-                            plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
-                            plot_stats(window_stats, filename, suffix='window_stats')
+                            if toplot["both"]:
+                                plot_sweeps(currents, filename, suffix='both')
+                            if toplot["stats"]:
+                                plot_stats(stats_df, filename, suffix='stats')
+                            if toplot["fn"]:
+                                plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
+                            if toplot["fn_stats"]:
+                                plot_stats(fn_stats, filename, suffix='fn_stats')
+                            if toplot["mwindow"]:
+                                plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
+                                plot_stats(window_stats, filename, suffix='window_stats')
 
-                        # for key, value in toplot.items():
-                        #   visualizeSweeps(currents, stats_df, filename)
+                            # for key, value in toplot.items():
+                            #   visualizeSweeps(currents, stats_df, filename)
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 

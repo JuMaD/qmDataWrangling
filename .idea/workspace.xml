@@ -7,6 +7,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="calc_stats and plot_stats adjusted to accomodate calculation results that do not differ between odd and even (i.e. have only one data frame as result)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,72 +23,21 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="433" lean-forward="true" selection-start-line="433" selection-end-line="433" />
+            <state relative-caret-position="338">
+              <caret line="542" column="78" selection-start-line="542" selection-start-column="78" selection-end-line="542" selection-end-column="78" />
               <folding>
-                <element signature="e#713#955#0" />
-                <element signature="e#713#867#1" />
-                <element signature="e#1005#1638#0" />
-                <element signature="e#1005#1256#1" />
-                <element signature="e#1423#1540#0" />
-                <element signature="e#1720#2683#0" />
-                <element signature="e#1693#2100#1" />
-                <element signature="e#2168#2646#0" />
-                <element signature="e#2497#2646#0" />
-                <element signature="e#2730#3168#0" />
-                <element signature="e#2730#2926#1" />
-                <element signature="e#3171#3195#0" />
-                <element signature="e#3303#5147#0" />
-                <element signature="e#3303#3726#1" />
-                <element signature="e#4032#5113#0" />
-                <element signature="e#4310#4381#0" />
-                <element signature="e#4408#4885#0" />
-                <element signature="e#4502#4885#0" />
-                <element signature="e#4644#4743#0" />
-                <element signature="e#4786#4885#0" />
-                <element signature="e#5194#5507#0" />
-                <element signature="e#5194#5448#1" />
-                <element signature="e#5537#5750#0" />
-                <element signature="e#5537#5712#1" />
-                <element signature="e#5943#6076#1" />
-                <element signature="e#6427#7924#0" />
-                <element signature="e#6427#6609#1" />
-                <element signature="e#6655#7592#0" />
-                <element signature="e#6699#7592#0" />
-                <element signature="e#7318#7415#0" />
-                <element signature="e#8230#9749#0" />
-                <element signature="e#7957#8183#1" />
-                <element signature="e#8262#8383#0" />
-                <element signature="e#8531#8636#0" />
-                <element signature="e#8677#8795#0" />
-                <element signature="e#9312#9410#0" />
-                <element signature="e#8966#9883#0" />
-                <element signature="e#8966#9344#1" />
-                <element signature="e#9684#9771#0" />
-                <element signature="e#9808#9883#0" />
-                <element signature="e#10016#10892#0" />
-                <element signature="e#10016#10188#1" />
-                <element signature="e#12172#13906#0" />
-                <element signature="e#11008#11313#1" />
-                <element signature="e#12995#13638#0" />
-                <element signature="e#12503#12681#1" />
-                <element signature="e#13148#13809#1" />
-                <element signature="e#13842#19727#0" />
-                <element signature="e#14020#14040#0" />
-                <element signature="e#14212#14283#0" />
-                <element signature="e#14347#14362#0" />
-                <element signature="e#14428#14448#0" />
-                <element signature="e#14798#14875#0" />
-                <element signature="e#14885#14901#0" />
-                <element signature="e#16019#16144#0" />
-                <element signature="e#16579#16729#0" />
-                <element signature="e#17461#17819#0" />
-                <element signature="e#17972#17985#0" />
-                <element signature="e#18292#18556#0" />
-                <element signature="e#19221#19255#0" />
-                <element signature="e#19531#19552#0" />
-                <marker date="1537190208741" expanded="true" signature="5929:6078" ph="..." />
+                <element signature="e#0#19#0" expanded="true" />
+                <marker date="1537191696189" expanded="true" signature="5929:6078" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="561">
+              <caret line="59" column="78" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -108,9 +58,15 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="JuMaD &lt;julian.dlugosch@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -130,7 +86,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,22 +93,18 @@
               <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
               <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Continuum/Anaconda3/python.exe" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1537190329158</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="calc_stats and plot_stats adjusted to accomodate calculation results that do not differ between odd and even (i.e. have only one data frame as result)">
+      <created>1537190480227</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1537190480227</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -242,16 +200,12 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4992908" visible="true" weight="0.18656716" />
-      <window_info id="Structure" order="1" sideWeight="0.50070924" side_tool="true" visible="true" weight="0.18656716" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.18869936" />
+      <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" visible="true" weight="0.18869936" />
       <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
-      <window_info anchor="bottom" id="Regex Tester" />
-      <window_info anchor="bottom" id="SonarLint" sideWeight="0.49946696" weight="0.32981783" />
-      <window_info anchor="bottom" id="Inspection Results" sideWeight="0.7409382" weight="0.4928092" />
-      <window_info anchor="bottom" id="Messages" weight="0.32981783" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3240652" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3240652" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39922103" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -260,6 +214,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25906184" side_tool="true" weight="0.4928092" />
       <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="SonarLint" order="11" sideWeight="0.49946696" weight="0.32981783" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.7409382" weight="0.4928092" />
+      <window_info anchor="bottom" id="Regex Tester" order="13" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -311,23 +269,8 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2d-Hg3_01_IVSweep_mwindow.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_all.png">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="157" column="114" selection-start-line="157" selection-start-column="114" selection-end-line="157" selection-end-column="114" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
     </entry>
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2b-Hg7_01_IVSweep_mwindow.png">
       <provider selected="true" editor-type-id="images" />
@@ -365,73 +308,25 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn_stats.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="157" column="114" selection-start-line="157" selection-start-column="114" selection-end-line="157" selection-end-column="114" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="561">
+          <caret line="59" column="78" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="433" lean-forward="true" selection-start-line="433" selection-end-line="433" />
+        <state relative-caret-position="338">
+          <caret line="542" column="78" selection-start-line="542" selection-start-column="78" selection-end-line="542" selection-end-column="78" />
           <folding>
-            <element signature="e#713#955#0" />
-            <element signature="e#713#867#1" />
-            <element signature="e#1005#1638#0" />
-            <element signature="e#1005#1256#1" />
-            <element signature="e#1423#1540#0" />
-            <element signature="e#1720#2683#0" />
-            <element signature="e#1693#2100#1" />
-            <element signature="e#2168#2646#0" />
-            <element signature="e#2497#2646#0" />
-            <element signature="e#2730#3168#0" />
-            <element signature="e#2730#2926#1" />
-            <element signature="e#3171#3195#0" />
-            <element signature="e#3303#5147#0" />
-            <element signature="e#3303#3726#1" />
-            <element signature="e#4032#5113#0" />
-            <element signature="e#4310#4381#0" />
-            <element signature="e#4408#4885#0" />
-            <element signature="e#4502#4885#0" />
-            <element signature="e#4644#4743#0" />
-            <element signature="e#4786#4885#0" />
-            <element signature="e#5194#5507#0" />
-            <element signature="e#5194#5448#1" />
-            <element signature="e#5537#5750#0" />
-            <element signature="e#5537#5712#1" />
-            <element signature="e#5943#6076#1" />
-            <element signature="e#6427#7924#0" />
-            <element signature="e#6427#6609#1" />
-            <element signature="e#6655#7592#0" />
-            <element signature="e#6699#7592#0" />
-            <element signature="e#7318#7415#0" />
-            <element signature="e#8230#9749#0" />
-            <element signature="e#7957#8183#1" />
-            <element signature="e#8262#8383#0" />
-            <element signature="e#8531#8636#0" />
-            <element signature="e#8677#8795#0" />
-            <element signature="e#9312#9410#0" />
-            <element signature="e#8966#9883#0" />
-            <element signature="e#8966#9344#1" />
-            <element signature="e#9684#9771#0" />
-            <element signature="e#9808#9883#0" />
-            <element signature="e#10016#10892#0" />
-            <element signature="e#10016#10188#1" />
-            <element signature="e#12172#13906#0" />
-            <element signature="e#11008#11313#1" />
-            <element signature="e#12995#13638#0" />
-            <element signature="e#12503#12681#1" />
-            <element signature="e#13148#13809#1" />
-            <element signature="e#13842#19727#0" />
-            <element signature="e#14020#14040#0" />
-            <element signature="e#14212#14283#0" />
-            <element signature="e#14347#14362#0" />
-            <element signature="e#14428#14448#0" />
-            <element signature="e#14798#14875#0" />
-            <element signature="e#14885#14901#0" />
-            <element signature="e#16019#16144#0" />
-            <element signature="e#16579#16729#0" />
-            <element signature="e#17461#17819#0" />
-            <element signature="e#17972#17985#0" />
-            <element signature="e#18292#18556#0" />
-            <element signature="e#19221#19255#0" />
-            <element signature="e#19531#19552#0" />
-            <marker date="1537190208741" expanded="true" signature="5929:6078" ph="..." />
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1537191696189" expanded="true" signature="5929:6078" ph="..." />
           </folding>
         </state>
       </provider>
