@@ -283,7 +283,6 @@ def calc_memory_window(dfs, method="divide"):
     columns = []
     for column in range(0, len(data_frame.columns)):
         name = dfs[0].columns[column].split('_')[1]
-        print(name)
         columns.append(f'deltaI_{name}')
 
     data_frame.columns = columns
@@ -364,7 +363,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
     plt.savefig(filename_all)
 
     plt.show()
-    plt.close('both')
+    plt.close('all')
 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
@@ -410,7 +409,7 @@ def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', sem
     plt.savefig(filename_stats)
 
     plt.show()
-    plt.close('both')
+    plt.close('all')
 
 
 #########################
