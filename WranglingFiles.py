@@ -13,6 +13,7 @@ import pandas as pd
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 from decimal import Decimal
+
 pd.options.compute.use_bottleneck = True
 
 
@@ -183,7 +184,7 @@ def join_dfs(ldf, rdf):
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
-#todo: encapsulate all calculate functions here
+# todo: encapsulate all calculate functions here
 def calculate(functions):
     """
     Encapsulates all calculations to be made
@@ -311,7 +312,52 @@ def calc_memory_window(dfs, method="divide"):
     return delta_list
 
 
-def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = False, datapath = None):
+def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
+    """Calculates the differential resistance
+    :param df:  Data frame with IV data
+    :param window_range: range defining the subset of df that is used for the fit (see linear_fit)
+    :param fit_method: fit method used to fit the data (see linear_fit)
+    :return  list containing a df with the result of the calculations
+    """
+    # fill nan values with 0s
+    df = df.fillna(0)
+
+    voltages = df.index.values.tolist()
+
+    max_voltage = np.max(voltages)
+    last = voltages[np.abs(voltages - (max_voltage - window_range / 2)).argmin() - 1]
+
+    min_voltage = np.min(voltages)
+    first = voltages[np.abs(voltages - (min_voltage + window_range / 2)).argmin() + 1]
+
+    voltage_list = [num for num in voltages if first <= num <= last]
+
+    for c in range(len(df.columns)):
+        df_column = df.iloc[:, [c]]
+        resistance_list = []
+        resistance_df = None
+
+        for voltage in voltage_list:
+            try:
+                fit_results = linear_fit(df_column, column=0, start=voltage, method=fit_method, fit_range=window_range)
+                resistance_list.append(fit_results["resistance"])
+            except:
+                resistance_list.append(np.nan)
+        print(f'{c+1}/{len(df.columns)}')
+
+        if c == 0:
+            resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
+                                          f'Resistance [Ohm]_{c}': resistance_list})
+            resistance_df.set_index('Voltage [V]', inplace=True)
+        else:
+            resistance_df[f'Resistance [Ohm]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
+
+    resistance_df_list = [resistance_df]
+
+    return resistance_df_list
+
+
+def linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
@@ -328,10 +374,9 @@ def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = Fa
     """
     # todo: make it a rolling regression over the whole dataset
     # get x and y from df
-    #get only a part of the data frame and extract numpy array
-    mask = (df.index > -1 * fit_range / 2 + start) & (df.index <= fit_range/ 2 + start)
+    # get only a part of the data frame and extract numpy array
+    mask = (df.index > -1 * fit_range / 2 + start) & (df.index <= fit_range / 2 + start)
     masked_df = df.loc[mask]
-
     x = np.asarray(masked_df.index.values.tolist())
     y = np.asarray(masked_df.iloc[:, column].tolist())
 
@@ -343,15 +388,15 @@ def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = Fa
 
     if method == 'ransac':
 
-        #fit and get parameters
+        # fit and get parameters
 
         ransac = linear_model.RANSACRegressor()
         ransac.fit(x, y)
 
         coef = ransac.estimator_.coef_[0][0]
         intercept = ransac.estimator_.intercept_[0]
-        resistance = "{:.2e}".format(Decimal(1/coef))
-
+        # resistance = "{:.2e}".format(Decimal(1 / coef))
+        resistance = 1 / coef
         line_x = np.linspace(x.min(), x.max(), x.shape[0])[:, np.newaxis]
         line_y_ransac = ransac.predict(line_x)
         r2 = r2_score(y, line_y_ransac)
@@ -361,7 +406,6 @@ def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = Fa
             print(f'R^2: {r2}')
             print(f'Resistance: {resistance} Ohm')
 
-
             plt.scatter(x, y, color='yellowgreen', marker='.',
                         label='datapoints')
             plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
@@ -370,9 +414,7 @@ def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = Fa
 
             plt.show()
 
-
-
-        return {'coefficient': coef, 'intercept': intercept, 'R2': r2}
+        return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
     if method == 'linreg':
         lr = linear_model.LinearRegression()
@@ -428,7 +470,6 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
     if takeabs:
         ax2 = df[0].abs().plot(colormap=cmap_oddeven)
     else:
-        print(df[0])
         ax2 = df[0].plot(colormap=cmap_oddeven)
 
     ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
@@ -636,39 +677,9 @@ if __name__ == "__main__":
                     # linear fit --- TEST AREA
                     # todo: encapsulate (howto: pass function arguments??)
                     # todo: change so that multiple columns can be processed!
-                    window_range = 1
-                    df = currents
 
-                    voltages = df.index.values.tolist()
-
-                    max = np.max(voltages)
-                    last = voltages[np.abs(voltages - (max-window_range/2)).argmin()-1]
-
-                    min = np.min(voltages)
-                    first = voltages[np.abs(voltages - (min+window_range/2)).argmin()+1]
-
-                    resistance_list = []
-                    voltage_list = [num for num in voltages if num >= first and num <= last]
-
-                    for voltage in voltage_list:
-                        fit_results = linear_fit(df, method='linreg', fit_range=window_range)
-                        resistance_list.append(fit_results["resistance"])
-
-
-                    resistance_df = pd.DataFrame({'Voltage [V]':voltage_list,
-                                                           'Resistance [Ohm]':resistance_list})
-                    resistance_df.set_index('Voltage [V]', inplace=True)
-
-                    resistance_df_list = [resistance_df]
-
-
-
-
-
-
-
-
-
+                    resistance_df = calc_diff_resistance(currents[0])
+                    resistance_stats = calc_stats(resistance_df)
 
                     #################
                     # Save To Files #
@@ -683,6 +694,8 @@ if __name__ == "__main__":
                         "fn": fn_df[0],
                         "fn_stats": fn_stats,
                         "mwindow": window_df[0],
+                        "mwindow_stats": window_stats[0],
+                        "resistance": resistance_stats[0],
                     }
 
                     for key, value in tosave.items():
@@ -704,23 +717,21 @@ if __name__ == "__main__":
                         "resistance": True,
                     }
 
-
                     if toplot["mwindow"]:
                         plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
-                        plot_stats(window_stats, filename, suffix='window_stats')
+                        plot_stats(window_stats, filename, suffix='mwindow_stats')
                     if toplot["resistance"]:
-                        plot_sweeps(resistance_df_list, filename, suffix='resistance',
+                        plot_sweeps(resistance_df, filename, suffix='resistance',
                                     semilogy=False, takeabs=False)
+                        plot_stats(resistance_stats, filename, suffix='resistance_stats')
                     if toplot["both"]:
-                        plot_sweeps(currents, filename, suffix='both')
+                        plot_sweeps(currents, filename, suffix='all')
                     if toplot["stats"]:
-                        plot_stats(stats_df, filename, suffix='stats')
+                        plot_stats(stats_df, filename, suffix='all_stats')
                     if toplot["fn"]:
                         plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
                     if toplot["fn_stats"]:
                         plot_stats(fn_stats, filename, suffix='fn_stats')
-
-
 
                     # for key, value in toplot.items():
                     #   visualizeSweeps(currents, stats_df, filename)
