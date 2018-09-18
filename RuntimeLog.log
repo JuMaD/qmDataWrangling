@@ -103,3 +103,61 @@ INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangl
 INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn.png
 INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn_stats.png
 INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_mwindow.png
+INFO:root:LOGGING STARTED:2018-09-18 14:57:31.892619
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 14:57:57.118722
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 14:58:36.117972
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 14:59:11.332154
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 15:00:08.646188
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-09-18 15:04:13.748221
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 15:05:44.810982
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 15:07:33.287586
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-09-18 15:07:50.362011
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 15:10:16.411517
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-09-18 15:12:13.006674
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-09-18 15:12:48.679064
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-09-18 15:18:29.185344
+INFO:root:Config file read and parameters set.

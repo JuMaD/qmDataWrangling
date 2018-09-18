@@ -301,7 +301,7 @@ def calc_memory_window(dfs, method="divide"):
     columns = []
     for column in range(0, len(data_frame.columns)):
         name = dfs[0].columns[column].split('_')[1]
-        columns.append(f'deltaI_{name}')
+        columns.append(f'$\Delta I$_{name}')
 
     data_frame.columns = columns
     data_frame.index.name = 'Voltage (V)'
@@ -335,7 +335,6 @@ def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
     for c in range(len(df.columns)):
         df_column = df.iloc[:, [c]]
         resistance_list = []
-        resistance_df = None
 
         for voltage in voltage_list:
             try:
@@ -347,10 +346,10 @@ def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
 
         if c == 0:
             resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
-                                          f'Resistance [Ohm]_{c}': resistance_list})
+                                          f'Resistance [$\Omega$]_{c}': resistance_list})
             resistance_df.set_index('Voltage [V]', inplace=True)
         else:
-            resistance_df[f'Resistance [Ohm]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
+            resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
     resistance_df_list = [resistance_df]
 
@@ -404,7 +403,7 @@ def linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False,
         if debug:
             print(f'Fit Function: y = {coef}x + {intercept}')
             print(f'R^2: {r2}')
-            print(f'Resistance: {resistance} Ohm')
+            print(f'Resistance: {resistance} $\Omega$')
 
             plt.scatter(x, y, color='yellowgreen', marker='.',
                         label='datapoints')
@@ -431,7 +430,7 @@ def linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False,
         if debug:
             print(f'Fit Function: y = {coef}x + {intercept}')
             print(f'R^2: {r2}')
-            print(f'Resistance: {resistance} Ohm')
+            print(f'Resistance: {resistance} $\Omega$')
 
             plt.scatter(x, y, color='yellowgreen', marker='.',
                         label='datapoints')
@@ -483,14 +482,14 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
-def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', semilogy=True):
+def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True):
     """
 
     :param stats_df:    Dataframe containing the stats.
     :param datapath:    Path to save the Plot to.
     :param suffix:      Suffix for filename after datapath.
     :param stats:       List of stats to plot options are (mean, max, min, 25%,50%,75%).
-    :param ylabel       Label displayed at y-axis.
+    :param y_label       Label displayed at y-axis.
     :param semilogy:    Set the graph to semilog.
     """
 
@@ -525,7 +524,7 @@ def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', sem
         # plot stats
         ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
 
-    ax.set_ylabel(ylabel)
+    ax.set_ylabel(y_label)
     if semilogy:
         plt.semilogy()
     plt.title(os.path.splitext(os.path.basename(datapath))[0])
@@ -719,11 +718,11 @@ if __name__ == "__main__":
 
                     if toplot["mwindow"]:
                         plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
-                        plot_stats(window_stats, filename, suffix='mwindow_stats')
+                        plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats')
                     if toplot["resistance"]:
                         plot_sweeps(resistance_df, filename, suffix='resistance',
                                     semilogy=False, takeabs=False)
-                        plot_stats(resistance_stats, filename, suffix='resistance_stats')
+                        plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]', suffix='resistance_stats')
                     if toplot["both"]:
                         plot_sweeps(currents, filename, suffix='all')
                     if toplot["stats"]:
@@ -731,7 +730,7 @@ if __name__ == "__main__":
                     if toplot["fn"]:
                         plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
                     if toplot["fn_stats"]:
-                        plot_stats(fn_stats, filename, suffix='fn_stats')
+                        plot_stats(fn_stats, filename,y_label=r'$\ln{I/V^2}$', suffix='fn_stats')
 
                     # for key, value in toplot.items():
                     #   visualizeSweeps(currents, stats_df, filename)
