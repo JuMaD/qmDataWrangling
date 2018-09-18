@@ -12,8 +12,9 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 from sklearn.metrics import r2_score
-
+from decimal import Decimal
 pd.options.compute.use_bottleneck = True
+
 
 # todo: make a higher level object / df / dict that acummulates all junctions in one directory
 # todo: implement tool that shows plots from several "higher level plots" in on figure
@@ -151,9 +152,7 @@ def make_pandas_df(np_arrays, labels, index_column=1):
 
         logging.debug('Data frames created')
 
-        #todo: make sure odd and even have the same shape
-
-
+        # todo: make sure odd and even have the same shape
 
     return final_df, o_final_df, e_final_df
 
@@ -184,15 +183,13 @@ def join_dfs(ldf, rdf):
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
-
+#todo: encapsulate all calculate functions here
 def calculate(functions):
     """
     Encapsulates all calculations to be made
     :param functions: List of functions to execute on the geiven data
     :return:
     """
-
-
 
 
 def calc_stats(dfs):
@@ -204,7 +201,7 @@ def calc_stats(dfs):
     oe_stats = []
     stats_df = []
     if len(dfs) == 1:
-        stat = dfs[0].apply(pd.DataFrame.describe, axis = 1)
+        stat = dfs[0].apply(pd.DataFrame.describe, axis=1)
         stats_df.append(stat)
     else:
         for df in dfs:
@@ -248,7 +245,6 @@ def calc_fowler_nordheim(dfs, alpha=2):
                 name = df.columns[column].split('_')[1]
                 columns.append(f'ln(I/V^{alpha})_{name}')
 
-
             data_frame.columns = columns
             data_frame.index.name = '1/X'
             fn_dfs.append(data_frame)
@@ -287,8 +283,6 @@ def calc_memory_window(dfs, method="divide"):
         if df.name == 'even':
             y_even = np.asarray(df)
 
-
-
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
         delta2 = np.divide(np.abs(y_even), np.abs(y_odd))
@@ -317,22 +311,29 @@ def calc_memory_window(dfs, method="divide"):
     return delta_list
 
 
-def linear_fit(df, method='ransac', column=1):
+def linear_fit(df, fit_range=1, start = 0, method='ransac', column=1, debug = False, datapath = None):
     """
-    Fits given Data. X values are assumed to be index of the df
+    Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
+    X values are assumed to be index of the df.
+
     :param df:          DataFrame to be fit
+    :param start        middle point of the range to be analyzed
+    :param fit_range    Range of x values to be used for fitting
     :param method:      Method used to fit the data e.g. ransac or linreg
     :param column:      Index of column with y data
-    :return:            sklearn linear model
-                        - use returned.predict(line_x) with line_x = np.arange(X.min(), X.max())[:, np.newaxis]
-    """
-    #todo: make it a rolling regression over the whole dataset
-    # get x and y from df
-    x = np.asarray(df.index.values.tolist())
-    y = np.asarray(df.iloc[:, column].tolist())
+    :param debug:        Turns off/on the debug function: plotting the fit and displaying the return
+    :param datapath     Datapath being displayed in the debug plot
+    :return:            Dictionarry with {coefficent, resistance, R2}
 
-    print(x)
-    print(y)
+    """
+    # todo: make it a rolling regression over the whole dataset
+    # get x and y from df
+    #get only a part of the data frame and extract numpy array
+    mask = (df.index > -1 * fit_range / 2 + start) & (df.index <= fit_range/ 2 + start)
+    masked_df = df.loc[mask]
+
+    x = np.asarray(masked_df.index.values.tolist())
+    y = np.asarray(masked_df.iloc[:, column].tolist())
 
     # reshape to 2d so sklearn can work with it
     x = x.reshape((x.shape[0], 1))
@@ -341,31 +342,64 @@ def linear_fit(df, method='ransac', column=1):
     # Fit data accordingly
 
     if method == 'ransac':
-        #todo: move coefficent and score into return
+
+        #fit and get parameters
+
         ransac = linear_model.RANSACRegressor()
         ransac.fit(x, y)
-        print("Coefficient:" + str(ransac.estimator_.coef_))
 
+        coef = ransac.estimator_.coef_[0][0]
+        intercept = ransac.estimator_.intercept_[0]
+        resistance = "{:.2e}".format(Decimal(1/coef))
 
-        #draw
         line_x = np.linspace(x.min(), x.max(), x.shape[0])[:, np.newaxis]
-
         line_y_ransac = ransac.predict(line_x)
-        print("R^2 Score: " + str(r2_score(y, line_y_ransac)))
+        r2 = r2_score(y, line_y_ransac)
 
-        plt.scatter(x, y, color='yellowgreen', marker='.',
-                    label='datapoints')
-        plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
-                 label='RANSAC regressor')
-        plt.show()
+        if debug:
+            print(f'Fit Function: y = {coef}x + {intercept}')
+            print(f'R^2: {r2}')
+            print(f'Resistance: {resistance} Ohm')
 
-        return ransac
+
+            plt.scatter(x, y, color='yellowgreen', marker='.',
+                        label='datapoints')
+            plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
+                     label='RANSAC regressor')
+            plt.title(os.path.splitext(os.path.basename(datapath))[0])
+
+            plt.show()
+
+
+
+        return {'coefficient': coef, 'intercept': intercept, 'R2': r2}
 
     if method == 'linreg':
         lr = linear_model.LinearRegression()
         lr.fit(x, y)
-        print(lr.coef_)
-        return lr
+
+        coef = lr.coef_[0][0]
+        intercept = lr.intercept_[0]
+        resistance = "{:.2e}".format(Decimal(1 / coef))
+
+        line_x = np.linspace(x.min(), x.max(), x.shape[0])[:, np.newaxis]
+        line_y = lr.predict(line_x)
+        r2 = r2_score(y, line_y)
+
+        if debug:
+            print(f'Fit Function: y = {coef}x + {intercept}')
+            print(f'R^2: {r2}')
+            print(f'Resistance: {resistance} Ohm')
+
+            plt.scatter(x, y, color='yellowgreen', marker='.',
+                        label='datapoints')
+            plt.plot(line_x, line_y, color='cornflowerblue', linewidth=2,
+                     label='LINREG regressor')
+            plt.title(os.path.splitext(os.path.basename(datapath))[0])
+
+            plt.show()
+
+        return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
 
 ###################
@@ -394,6 +428,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
     if takeabs:
         ax2 = df[0].abs().plot(colormap=cmap_oddeven)
     else:
+        print(df[0])
         ax2 = df[0].plot(colormap=cmap_oddeven)
 
     ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
@@ -433,7 +468,6 @@ def plot_stats(stats_df, datapath, suffix, stats=None, ylabel='Current [A]', sem
     filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
     filename_stats = filepath + "_" + suffix + ".png"
 
-
     if len(stats_df) == 1:
 
         ax = stats_df[0][stats].abs().plot(colormap=cmap_stats)
@@ -470,6 +504,8 @@ def make_colormap(values=1024):
     """
 
     # sample the colormaps - use less than full range to avoid white and black and twice the same color
+    if values == 1:
+        return plt.cm.Greens
     colors1 = plt.cm.Reds(np.linspace(0.3, 0.9, round(values / 2)))
     colors2 = plt.cm.Greens(np.linspace(0.3, 0.9, round(values / 2)))
 
@@ -518,7 +554,6 @@ if __name__ == "__main__":
 
     config.read('config.ini')
 
-
     try:
         initial_dir = config['Directory']['home_directory']
     except:
@@ -550,109 +585,145 @@ if __name__ == "__main__":
         ################
         for file in os.listdir(dirname):
             if file.endswith(".txt") and not file.endswith("Resistance.txt") and not file.endswith("SMU-Puls.txt"):
-                        #############################
-                        # Make Dataframes from file #
-                        #############################
+                #############################
+                # Make Dataframes from file #
+                #############################
 
-                        # todo: encapsulate make_dfs, perform_calculations & save_data
+                # todo: encapsulate make_dfs, perform_calculations & save_data
 
-                        # open file and get data
-                        filename = os.path.join(dirname, file)
-                        logging.info(f'Opening file: {filename}')
-                        # split file into several sweeps and get labels
-                        labels, string_list = split_string(open_file(filename))
-                        np_arrays = []
-                        # make numpy array for every sweep and add data to list
-                        for string in string_list:
-                            if string == "":
-                                continue
-                            np_arrays.append(string_to_numpy(string))
-                        # turn both data into Pandas data frame, using voltage to join
-                        both, odd, even = make_pandas_df(np_arrays, labels, 1)
+                # open file and get data
+                filename = os.path.join(dirname, file)
+                logging.info(f'Opening file: {filename}')
+                # split file into several sweeps and get labels
+                labels, string_list = split_string(open_file(filename))
+                np_arrays = []
+                # make numpy array for every sweep and add data to list
+                for string in string_list:
+                    if string == "":
+                        continue
+                    np_arrays.append(string_to_numpy(string))
+                # turn both data into Pandas data frame, using voltage to join
+                both, odd, even = make_pandas_df(np_arrays, labels, 1)
 
-                        if odd is not None and even is not None:
-                            dfs = [both, odd, even]
-                            dfs_names = ['both', 'odd', 'even']
+                if odd is not None and even is not None:
+                    dfs = [both, odd, even]
+                    dfs_names = ['both', 'odd', 'even']
 
-                            # get only currents
-                            currents = []
+                    # get only currents
+                    currents = []
 
-                            for d in range(0, len(dfs)):
-                                current = filter_df(dfs[d], 'Current [A]')
-                                current.name = dfs_names[d]
-                                currents.append(current)
+                    for d in range(0, len(dfs)):
+                        current = filter_df(dfs[d], 'Current [A]')
+                        current.name = dfs_names[d]
+                        currents.append(current)
 
-                            ########################
-                            # Perform Calculations #
-                            ########################
+                    ########################
+                    # Perform Calculations #
+                    ########################
 
-                            # get stats on currents
-                            stats_df = calc_stats(currents)
+                    # get stats on currents
+                    stats_df = calc_stats(currents)
 
-                            # calculate fn data
-                            fn_df = calc_fowler_nordheim(currents)
-                            fn_stats = calc_stats(fn_df)
+                    # calculate fn data
+                    fn_df = calc_fowler_nordheim(currents)
+                    fn_stats = calc_stats(fn_df)
 
-                            # Memory window
+                    # Memory window
 
-                            window_df = calc_memory_window(currents)
-                            window_stats = calc_stats(window_df)
+                    window_df = calc_memory_window(currents)
+                    window_stats = calc_stats(window_df)
 
-                            #linear fit --- TEST AREA
-                            #todo: move (sliding)mask into linear_fit method
-                            mask = (stats_df.index > -1) & (stats_df.index <= 1)
-                            print(stats_df.loc[mask])
-                            linear_fit(stats_df.loc[mask])
+                    # linear fit --- TEST AREA
+                    # todo: encapsulate (howto: pass function arguments??)
+                    # todo: change so that multiple columns can be processed!
+                    window_range = 1
+                    df = currents
+
+                    voltages = df.index.values.tolist()
+
+                    max = np.max(voltages)
+                    last = voltages[np.abs(voltages - (max-window_range/2)).argmin()-1]
+
+                    min = np.min(voltages)
+                    first = voltages[np.abs(voltages - (min+window_range/2)).argmin()+1]
+
+                    resistance_list = []
+                    voltage_list = [num for num in voltages if num >= first and num <= last]
+
+                    for voltage in voltage_list:
+                        fit_results = linear_fit(df, method='linreg', fit_range=window_range)
+                        resistance_list.append(fit_results["resistance"])
+
+
+                    resistance_df = pd.DataFrame({'Voltage [V]':voltage_list,
+                                                           'Resistance [Ohm]':resistance_list})
+                    resistance_df.set_index('Voltage [V]', inplace=True)
+
+                    resistance_df_list = [resistance_df]
 
 
 
-                            #################
-                            # Save To Files #
-                            #################
 
-                            # todo:make tosave a selectable in GUI
 
-                            tosave = {  # "both": currents[0],
-                                "all_abs": currents[0].abs(),
-                                "stats": stats_df,
-                                "stats_abs": stats_df.abs(),
-                                "fn": fn_df[0],
-                                "fn_stats": fn_stats,
-                                "mwindow": window_df[0],
-                            }
 
-                            for key, value in tosave.items():
-                                save_df_to_file(value, filename, '_' + key)
 
-                            #############
-                            # Visualize #
-                            #############
 
-                            # todo:make tosave a selectable in GUI
-                            # todo: clean up plot fn_stats
-                            # todo: (just rewrite "toplot" in bool dict and then for for key ... + use plot_stats)
-                            toplot = {  # "both": currents[0],
-                                "both": True,
-                                "stats": True,
-                                "fn": True,
-                                "fn_stats": True,
-                                "mwindow": True,
-                            }
 
-                            if toplot["both"]:
-                                plot_sweeps(currents, filename, suffix='both')
-                            if toplot["stats"]:
-                                plot_stats(stats_df, filename, suffix='stats')
-                            if toplot["fn"]:
-                                plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
-                            if toplot["fn_stats"]:
-                                plot_stats(fn_stats, filename, suffix='fn_stats')
-                            if toplot["mwindow"]:
-                                plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
-                                plot_stats(window_stats, filename, suffix='window_stats')
 
-                            # for key, value in toplot.items():
-                            #   visualizeSweeps(currents, stats_df, filename)
+                    #################
+                    # Save To Files #
+                    #################
+
+                    # todo:make tosave a selectable in GUI
+
+                    tosave = {  # "both": currents[0],
+                        "all_abs": currents[0].abs(),
+                        "stats": stats_df,
+                        "stats_abs": stats_df.abs(),
+                        "fn": fn_df[0],
+                        "fn_stats": fn_stats,
+                        "mwindow": window_df[0],
+                    }
+
+                    for key, value in tosave.items():
+                        save_df_to_file(value, filename, '_' + key)
+
+                    #############
+                    # Visualize #
+                    #############
+
+                    # todo:make tosave a selectable in GUI
+                    # todo: clean up plot fn_stats
+                    # todo: (just rewrite "toplot" in bool dict and then for for key ... + use plot_stats)
+                    toplot = {  # "both": currents[0],
+                        "both": True,
+                        "stats": True,
+                        "fn": True,
+                        "fn_stats": True,
+                        "mwindow": True,
+                        "resistance": True,
+                    }
+
+
+                    if toplot["mwindow"]:
+                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
+                        plot_stats(window_stats, filename, suffix='window_stats')
+                    if toplot["resistance"]:
+                        plot_sweeps(resistance_df_list, filename, suffix='resistance',
+                                    semilogy=False, takeabs=False)
+                    if toplot["both"]:
+                        plot_sweeps(currents, filename, suffix='both')
+                    if toplot["stats"]:
+                        plot_stats(stats_df, filename, suffix='stats')
+                    if toplot["fn"]:
+                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
+                    if toplot["fn_stats"]:
+                        plot_stats(fn_stats, filename, suffix='fn_stats')
+
+
+
+                    # for key, value in toplot.items():
+                    #   visualizeSweeps(currents, stats_df, filename)
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 
