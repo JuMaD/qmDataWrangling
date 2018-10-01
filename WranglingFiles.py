@@ -324,7 +324,7 @@ def calc_memory_window(dfs, method="divide"):
     return delta_list
 
 
-def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
+def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
     """Calculates the differential resistance
     :param df:  Data frame with IV data
     :param window_range: range defining the subset of df that is used for the fit (see calc_linear_fit)
@@ -464,6 +464,20 @@ def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=F
         return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
 
+def get_slice(resistance_df, at=0):
+    """
+    #todo:refine get_slice docstring
+    :param resistance_df:   datafrane to slice
+    :param at:  value that is compared to index value to slice
+    :return: slice at position
+    """
+    voltages = resistance_df.index.values.tolist()
+    zero = voltages[np.abs(np.subtract(voltages, at)).argmin()]
+    sliced = resistance_df.loc[zero]
+
+    return sliced
+
+
 ###################
 #  Visualizations #
 ###################
@@ -557,6 +571,28 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
         plt.semilogy()
     plt.title(os.path.splitext(os.path.basename(datapath))[0])
     plt.savefig(filename_stats)
+
+    plt.show()
+    plt.close('all')
+
+
+def plot_slice(df, datapath, suffix):
+    # make plt-close non-blocking
+    plt.ion()
+
+    # make colormap
+    # cmap_oddeven = make_colormap(len(df[0].columns))
+
+    # generate filename to save to
+    file_dir = os.path.join(os.path.dirname(datapath), 'plots')
+    filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
+    filename_all = filepath + "_" + suffix + ".png"
+
+    plt.scatter(df.index, df)
+    # ax2.set_ylabel(df.values[0].split('_')[0])
+
+    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    plt.savefig(filename_all)
 
     plt.show()
     plt.close('all')
@@ -705,8 +741,11 @@ if __name__ == "__main__":
                     # todo: encapsulate (howto: pass function arguments??)
                     # todo: change so that multiple columns can be processed!
 
-                    resistance_df = calc_diff_resistance(currents[0])
-                    resistance_stats = calc_stats(resistance_df)
+                    resistance_dfs = calc_diff_resistance(currents[0])
+
+                    resistance_slice = get_slice(resistance_dfs[0])
+
+                    resistance_stats = calc_stats(resistance_dfs)
 
                     #################
                     # Save To Files #
@@ -742,13 +781,14 @@ if __name__ == "__main__":
                         "fn_stats": True,
                         "mwindow": True,
                         "resistance": True,
+                        "resistance_slice": True
                     }
 
                     if toplot["mwindow"]:
                         plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False)
                         plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats')
                     if toplot["resistance"]:
-                        plot_sweeps(resistance_df, filename, suffix='resistance',
+                        plot_sweeps(resistance_dfs, filename, suffix='resistance',
                                     semilogy=False, take_abs=False)
                         plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]', suffix='resistance_stats')
                     if toplot["both"]:
@@ -760,6 +800,8 @@ if __name__ == "__main__":
                     if toplot["fn_stats"]:
                         plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
                                    take_abs=False)
+                    if toplot["resistance_slice"]:
+                        plot_slice(resistance_slice, filename, "LBR")
 
                     # for key, value in toplot.items():
                     #   visualizeSweeps(currents, stats_df, filename)
