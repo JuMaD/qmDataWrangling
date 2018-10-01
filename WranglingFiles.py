@@ -3,6 +3,7 @@ import datetime
 import logging
 import os
 import tkinter as tk
+from decimal import Decimal
 from itertools import chain
 from tkinter import filedialog, messagebox
 
@@ -12,7 +13,6 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 from sklearn.metrics import r2_score
-from decimal import Decimal
 
 pd.options.compute.use_bottleneck = True
 
@@ -184,13 +184,21 @@ def join_dfs(ldf, rdf):
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
-# todo: encapsulate all calculate functions here
+# todo: encapsulate all calculations inside calculate
+functions = {"resistance": {"all": True, "stats": True}, "fn": {"all": True, "stats": True}}
+
 def calculate(functions):
     """
     Encapsulates all calculations to be made
-    :param functions: List of functions to execute on the geiven data
+    :param functions:   Dictionary of functions to execute on the given data
     :return:
     """
+    for function in functions.keys():
+        if functions[function]['all']:
+            print(function + " all " + str(functions[function]['all']))
+        if functions[function]['stats']:
+            print(function + " stats " + str(functions[function]['stats']))
+
 
 
 def calc_stats(dfs):
@@ -280,9 +288,13 @@ def calc_memory_window(dfs, method="divide"):
 
     for df in dfs:
         if df.name == 'odd':
-            y_odd = np.asarray(df)
+            y_odd = np.copy(np.asarray(df))
         if df.name == 'even':
-            y_even = np.asarray(df)
+            y_even = np.copy(np.asarray(df))
+
+    if y_even.shape != y_odd.shape:
+        y_even.resize(y_odd.shape)
+
 
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
@@ -315,9 +327,9 @@ def calc_memory_window(dfs, method="divide"):
 def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
     """Calculates the differential resistance
     :param df:  Data frame with IV data
-    :param window_range: range defining the subset of df that is used for the fit (see linear_fit)
-    :param fit_method: fit method used to fit the data (see linear_fit)
-    :return  list containing a df with the result of the calculations
+    :param window_range: range defining the subset of df that is used for the fit (see calc_linear_fit)
+    :param fit_method: fit method used to fit the data (see calc_linear_fit)
+    :return  list containing dfs ('all', 'even', 'odd') with the result of the calculations
     """
     # fill nan values with 0s
     df = df.fillna(0)
@@ -335,10 +347,12 @@ def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
     for c in range(len(df.columns)):
         df_column = df.iloc[:, [c]]
         resistance_list = []
+        r2_list = []
 
         for voltage in voltage_list:
             try:
-                fit_results = linear_fit(df_column, column=0, start=voltage, method=fit_method, fit_range=window_range)
+                fit_results = calc_linear_fit(df_column, column=0, start=voltage, method=fit_method,
+                                              fit_range=window_range)
                 resistance_list.append(fit_results["resistance"])
             except:
                 resistance_list.append(np.nan)
@@ -351,12 +365,19 @@ def calc_diff_resistance(df, window_range=1, fit_method='ransac'):
         else:
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
-    resistance_df_list = [resistance_df]
+    e_resistance_df = resistance_df.iloc[0:, 0::2].copy()
+    o_resistance_df = resistance_df.iloc[0:, 1::2].copy()
+
+    resistance_df.name = 'all'
+    e_resistance_df.name = 'even'
+    o_resistance_df.name = 'odd'
+
+    resistance_df_list = [resistance_df, e_resistance_df, o_resistance_df]
 
     return resistance_df_list
 
 
-def linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None):
+def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
@@ -447,12 +468,12 @@ def linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False,
 #  Visualizations #
 ###################
 
-def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
+def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True):
     """"
     :param df:          List of dataframes to plot in one plot.
     :param datapath:    Path to plot to.
     :param semilogy:    Bool that decides whether y axis is plotted in log scale.
-    :param takeabs:     Bool that decides whether absolute value is plotted.
+    :param take_abs:     Bool that decides whether absolute value is plotted.
     :param suffix       Suffix to datapath for plots.
     """
     # make plt-close non-blocking
@@ -466,7 +487,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
     filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
     filename_all = filepath + "_" + suffix + ".png"
 
-    if takeabs:
+    if take_abs:
         ax2 = df[0].abs().plot(colormap=cmap_oddeven)
     else:
         ax2 = df[0].plot(colormap=cmap_oddeven)
@@ -482,15 +503,16 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, takeabs=True):
 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
-def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True):
+def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True):
     """
 
     :param stats_df:    Dataframe containing the stats.
     :param datapath:    Path to save the Plot to.
     :param suffix:      Suffix for filename after datapath.
     :param stats:       List of stats to plot options are (mean, max, min, 25%,50%,75%).
-    :param y_label       Label displayed at y-axis.
+    :param y_label      Label displayed at y-axis.
     :param semilogy:    Set the graph to semilog.
+    :param take_abs:    Take abs before plotting if true.
     """
 
     if stats is None:
@@ -509,8 +531,10 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
     filename_stats = filepath + "_" + suffix + ".png"
 
     if len(stats_df) == 1:
-
-        ax = stats_df[0][stats].abs().plot(colormap=cmap_stats)
+        if take_abs:
+            ax = stats_df[0][stats].abs().plot(colormap=cmap_stats)
+        else:
+            ax = stats_df[0][stats].plot(colormap=cmap_stats)
 
     else:
         # add suffix to labels so both joint columns can be shown
@@ -522,7 +546,11 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
             stats_arr.append(even)
 
         # plot stats
-        ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+
+        if take_abs:
+            ax = stats_df[stats_arr].abs().plot(colormap=cmap_stats)
+        else:
+            ax = stats_df[stats_arr].plot(colormap=cmap_stats)
 
     ax.set_ylabel(y_label)
     if semilogy:
@@ -694,7 +722,7 @@ if __name__ == "__main__":
                         "fn_stats": fn_stats,
                         "mwindow": window_df[0],
                         "mwindow_stats": window_stats[0],
-                        "resistance": resistance_stats[0],
+                        "resistance": resistance_stats,
                     }
 
                     for key, value in tosave.items():
@@ -717,20 +745,21 @@ if __name__ == "__main__":
                     }
 
                     if toplot["mwindow"]:
-                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, takeabs=False)
+                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False)
                         plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats')
                     if toplot["resistance"]:
                         plot_sweeps(resistance_df, filename, suffix='resistance',
-                                    semilogy=False, takeabs=False)
+                                    semilogy=False, take_abs=False)
                         plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]', suffix='resistance_stats')
                     if toplot["both"]:
                         plot_sweeps(currents, filename, suffix='all')
                     if toplot["stats"]:
                         plot_stats(stats_df, filename, suffix='all_stats')
                     if toplot["fn"]:
-                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, takeabs=False)
+                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False)
                     if toplot["fn_stats"]:
-                        plot_stats(fn_stats, filename,y_label=r'$\ln{I/V^2}$', suffix='fn_stats')
+                        plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
+                                   take_abs=False)
 
                     # for key, value in toplot.items():
                     #   visualizeSweeps(currents, stats_df, filename)
