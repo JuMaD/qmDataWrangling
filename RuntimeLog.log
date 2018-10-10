@@ -557,3 +557,888 @@ INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013
 INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
 INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
 INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 10:57:03.875572
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 10:59:18.672050
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:12:19.656141
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:12:35.360711
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:13:22.957471
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:16:55.268700
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:20:08.953066
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:20:51.620332
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:21:28.965066
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:22:16.063776
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:22:34.187588
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-10-10 11:24:20.047173
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:25:01.003268
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:26:15.485716
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:27:03.436510
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:30:14.090574
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:30:58.215986
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:31:50.214185
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:32:45.560719
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:33:43.343497
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:34:34.976660
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:36:41.097271
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:37:18.612022
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:40:21.985357
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:41:24.130571
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:42:47.942951
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-10-10 11:45:15.398696
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-10-10 11:45:34.894645
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:47:13.436498
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:49:41.199273
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:50:53.044457
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:51:36.194771
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:51:51.254277
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:52:26.044756
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:52:44.425594
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 11:53:10.106162
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:54:43.955546
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:56:02.195369
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:56:12.368386
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:58:06.458794
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 11:58:17.192867
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:58:59.461094
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 11:59:27.010848
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:00:43.923539
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:01:46.405786
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:02:05.645710
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:03:35.023647
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:04:36.095754
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:05:04.444588
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 12:05:59.934137
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:50:20.086125
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:53:46.687783
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:56:11.361249
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:56:22.327346
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 12:57:00.090122
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:57:29.899102
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:58:00.073119
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 12:59:12.382350
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:00:10.232134
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:00:58.751985
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:02:23.574467
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:03:52.393348
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:14:14.079510
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:14:29.447047
+INFO:root:Config file read and parameters set.
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:14:36.601762
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:14:57.693871
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:15:27.805882
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:16:03.434445
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:17:15.155616
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:18:18.877988
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:18:56.026702
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:21:21.593257
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:22:11.802278
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:22:40.531150
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:25:36.153711
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 13:28:45.694663
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:31:15.620654
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:33:12.230314
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:33:29.829074
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 13:34:18.216912
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:35:47.814871
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:46:30.690152
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 13:47:02.260309
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:00:20.164091
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:01:14.229497
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:01:32.516326
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:01:48.993973
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:02:10.392113
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:02:40.758149
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:03:43.815454
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:03:58.649937
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:04:17.043777
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:04:35.893661
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:05:07.196791
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:05:46.718743
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:06:21.541225
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2018-10-10 14:06:27.388810
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:06:53.760447
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:07:34.657536
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:16:59.405005
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:18:43.473411
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:19:36.077671
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:20:20.527115
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:20:50.649127
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:23:36.130674
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:23:50.206081
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:27:43.846443
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:28:27.253783
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:32:26.974753
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:36:57.560809
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:38:20.806132
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:41:17.424793
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:root:LOGGING STARTED:2018-10-10 14:42:24.681518
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:44:12.476296
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:45:09.703018
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:46:19.708018
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:root:LOGGING STARTED:2018-10-10 14:46:33.944441
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:46:56.266673
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:49:00.741120
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
+INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2018-10-10 14:52:01.562200
+INFO:root:Config file read and parameters set.

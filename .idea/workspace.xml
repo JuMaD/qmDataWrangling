@@ -5,8 +5,10 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Fixed issue that omitted 2nd sweep when generating pd data frames">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Adjusted to new file format with header">
+      <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
     </list>
@@ -24,85 +26,52 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-156">
-              <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
+            <state relative-caret-position="150">
+              <caret line="375" column="46" selection-start-line="375" selection-start-column="46" selection-end-line="375" selection-end-column="46" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#337#431#0" />
-                <element signature="e#683#925#0" />
-                <element signature="e#683#837#1" />
-                <element signature="e#977#1611#0" />
-                <element signature="e#977#1228#1" />
-                <element signature="e#1395#1512#0" />
-                <element signature="e#1694#2707#0" />
-                <element signature="e#1694#2095#1" />
-                <element signature="e#2192#2670#0" />
-                <element signature="e#2521#2670#0" />
-                <element signature="e#2757#3275#0" />
-                <element signature="e#2757#3023#1" />
-                <element signature="e#3278#3302#0" />
-                <element signature="e#3412#3838#1" />
-                <element signature="e#4822#4922#0" />
-                <element signature="e#5210#5537#0" />
-                <element signature="e#5210#5471#1" />
-                <element signature="e#5568#5781#0" />
-                <element signature="e#5568#5743#1" />
-                <element signature="e#5784#5800#0" />
-                <element signature="e#5934#6073#0" />
-                <element signature="e#5934#6073#2" />
-                <element signature="e#6103#6717#0" />
-                <element signature="e#6103#6237#1" />
-                <element signature="e#6341#6423#0" />
-                <element signature="e#6442#6696#0" />
-                <element signature="e#6469#6600#0" />
-                <element signature="e#6516#6600#0" />
-                <element signature="e#6764#8272#0" />
-                <element signature="e#6764#7008#1" />
-                <element signature="e#7054#7938#0" />
-                <element signature="e#7098#7938#0" />
-                <element signature="e#7718#7815#0" />
-                <element signature="e#8325#8647#1" />
-                <element signature="e#9552#9636#0" />
-                <element signature="e#10824#10843#0" />
-                <element signature="e#10957#12006#0" />
-                <element signature="e#10957#11287#1" />
-                <element signature="e#12172#13823#0" />
-                <element signature="e#12172#12540#1" />
-                <element signature="e#12807#12933#0" />
-                <element signature="e#13289#13624#0" />
-                <element signature="e#13411#13537#0" />
-                <element signature="e#13826#13851#0" />
-                <element signature="e#13941#14598#0" />
-                <element signature="e#13941#14119#1" />
-                <element signature="e#14601#15262#1" />
-                <element signature="e#15475#15495#0" />
-                <element signature="e#15668#15739#0" />
-                <element signature="e#15803#15818#0" />
-                <element signature="e#15884#15904#0" />
-                <element signature="e#16254#16331#0" />
-                <element signature="e#16341#16357#0" />
-                <element signature="e#16589#16618#0" />
-                <element signature="e#17344#17471#0" />
-                <element signature="e#18060#18219#0" />
-                <element signature="e#18089#18113#0" />
-                <element signature="e#19091#19479#0" />
-                <element signature="e#19388#19401#0" />
-                <element signature="e#20025#20316#0" />
-                <element signature="e#20936#21106#0" />
-                <element signature="e#20780#20815#0" />
-                <marker date="1537206800319" expanded="false" signature="6049:6198" ph="..." />
+                <element signature="e#7865#9372#0" />
+                <element signature="e#16516#16876#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexes/base.py">
+        <entry file="file://$PROJECT_DIR$/testdata/D0013-2a-Hg3_03_IVSweep.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
+            <state relative-caret-position="1462">
+              <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="60" selection-start-line="60" selection-end-line="60" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5610">
+              <caret line="407" selection-start-line="407" selection-end-line="407" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all_stats.png">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -110,15 +79,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
               <caret line="1" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="17">
-              <caret line="59" column="78" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -135,10 +95,21 @@
       <find>fn_df</find>
       <find>calc_stats</find>
       <find>plot stats</find>
-      <find>plot_stats</find>
       <find>calc_memory</find>
-      <find>print</find>
       <find>linear</find>
+      <find>pandas</find>
+      <find>pandas_df</find>
+      <find>split_string</find>
+      <find>print</find>
+      <find>make_pandas</find>
+      <find>make_pandas_df</find>
+      <find>header</find>
+      <find>plt.</find>
+      <find>toplot</find>
+      <find>plot_stats</find>
+      <find>plt.title</find>
+      <find>is none</find>
+      <find>calc_linear_fit</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,6 +119,7 @@
         <option value="JuMaD &lt;julian.dlugosch@gmail.com&gt;" />
       </list>
     </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -171,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -187,14 +160,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/Continuum/Anaconda3/python.exe" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -304,23 +276,23 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49787235" visible="true" weight="0.18869936" />
-      <window_info id="Structure" order="1" sideWeight="0.50212765" side_tool="true" visible="true" weight="0.18869936" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.63705105" visible="true" weight="0.13965885" />
+      <window_info id="Structure" order="1" sideWeight="0.36294895" side_tool="true" visible="true" weight="0.13965885" />
       <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3240652" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.3240652" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39922103" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32981783" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25906184" side_tool="true" weight="0.4928092" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32981783" />
-      <window_info anchor="bottom" id="SonarLint" order="11" sideWeight="0.49946696" weight="0.32981783" />
-      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.7409382" weight="0.4928092" />
-      <window_info anchor="bottom" id="Regex Tester" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
+      <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
+      <window_info active="true" anchor="bottom" id="Inspection Results" order="11" sideWeight="0.7409382" visible="true" weight="0.4928092" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.641419" />
+      <window_info anchor="bottom" id="Regex Tester" order="13" weight="0.32981783" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -337,20 +309,11 @@
     <MESSAGE value="calc_stats and plot_stats adjusted to accomodate calculation results that do not differ between odd and even (i.e. have only one data frame as result)" />
     <MESSAGE value="Script ignores files that do not have at least one full up and down sweep" />
     <MESSAGE value="Fixed issue that omitted 2nd sweep when generating pd data frames" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed issue that omitted 2nd sweep when generating pd data frames" />
+    <MESSAGE value="Adjusted to new file format with header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted to new file format with header" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/D0013-2a-Hg3_03_IVSweep.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_fn_stats.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -366,9 +329,7 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2d-Hg3_01_IVSweep_mwindow.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_all.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_all.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2b-Hg7_01_IVSweep_mwindow.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -393,15 +354,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_window_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_window_stats.png" />
     <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -414,6 +368,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_fn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_both.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_window_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2b-Hg7_01_IVSweep_window_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2d-Hg3_01_IVSweep_window_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_mwindow.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexes/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51238">
+          <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_mwindow_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_resistance_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_both.png" />
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="60" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5610">
+          <caret line="407" selection-start-line="407" selection-end-line="407" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -421,112 +426,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_fn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_both.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_both.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_window_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2b-Hg7_01_IVSweep_window_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2d-Hg3_01_IVSweep_window_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_mwindow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/indexes/base.py">
+    <entry file="file://$PROJECT_DIR$/testdata/D0013-2a-Hg3_03_IVSweep.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="3077" selection-start-line="3077" selection-end-line="3077" />
+        <state relative-caret-position="1462">
+          <caret line="86" column="32" selection-start-line="86" selection-start-column="32" selection-end-line="86" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="335" lean-forward="true" selection-start-line="335" selection-end-line="335" />
+        <state relative-caret-position="150">
+          <caret line="375" column="46" selection-start-line="375" selection-start-column="46" selection-end-line="375" selection-end-column="46" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#337#431#0" />
-            <element signature="e#683#925#0" />
-            <element signature="e#683#837#1" />
-            <element signature="e#977#1611#0" />
-            <element signature="e#977#1228#1" />
-            <element signature="e#1395#1512#0" />
-            <element signature="e#1694#2707#0" />
-            <element signature="e#1694#2095#1" />
-            <element signature="e#2192#2670#0" />
-            <element signature="e#2521#2670#0" />
-            <element signature="e#2757#3275#0" />
-            <element signature="e#2757#3023#1" />
-            <element signature="e#3278#3302#0" />
-            <element signature="e#3412#3838#1" />
-            <element signature="e#4822#4922#0" />
-            <element signature="e#5210#5537#0" />
-            <element signature="e#5210#5471#1" />
-            <element signature="e#5568#5781#0" />
-            <element signature="e#5568#5743#1" />
-            <element signature="e#5784#5800#0" />
-            <element signature="e#5934#6073#0" />
-            <element signature="e#5934#6073#2" />
-            <element signature="e#6103#6717#0" />
-            <element signature="e#6103#6237#1" />
-            <element signature="e#6341#6423#0" />
-            <element signature="e#6442#6696#0" />
-            <element signature="e#6469#6600#0" />
-            <element signature="e#6516#6600#0" />
-            <element signature="e#6764#8272#0" />
-            <element signature="e#6764#7008#1" />
-            <element signature="e#7054#7938#0" />
-            <element signature="e#7098#7938#0" />
-            <element signature="e#7718#7815#0" />
-            <element signature="e#8325#8647#1" />
-            <element signature="e#9552#9636#0" />
-            <element signature="e#10824#10843#0" />
-            <element signature="e#10957#12006#0" />
-            <element signature="e#10957#11287#1" />
-            <element signature="e#12172#13823#0" />
-            <element signature="e#12172#12540#1" />
-            <element signature="e#12807#12933#0" />
-            <element signature="e#13289#13624#0" />
-            <element signature="e#13411#13537#0" />
-            <element signature="e#13826#13851#0" />
-            <element signature="e#13941#14598#0" />
-            <element signature="e#13941#14119#1" />
-            <element signature="e#14601#15262#1" />
-            <element signature="e#15475#15495#0" />
-            <element signature="e#15668#15739#0" />
-            <element signature="e#15803#15818#0" />
-            <element signature="e#15884#15904#0" />
-            <element signature="e#16254#16331#0" />
-            <element signature="e#16341#16357#0" />
-            <element signature="e#16589#16618#0" />
-            <element signature="e#17344#17471#0" />
-            <element signature="e#18060#18219#0" />
-            <element signature="e#18089#18113#0" />
-            <element signature="e#19091#19479#0" />
-            <element signature="e#19388#19401#0" />
-            <element signature="e#20025#20316#0" />
-            <element signature="e#20936#21106#0" />
-            <element signature="e#20780#20815#0" />
-            <marker date="1537206800319" expanded="false" signature="6049:6198" ph="..." />
+            <element signature="e#7865#9372#0" />
+            <element signature="e#16516#16876#0" />
           </folding>
         </state>
       </provider>
     </entry>
+  </component>
+  <component name="regexState">
+    <option name="map">
+      <map>
+        <entry key="flags" value="40" />
+        <entry key="mode" value="1" />
+        <entry key="regex" value="(?&lt;=Umax \[V\])[^#]+&#10;" />
+        <entry key="text" value="#Operator: HS #Date: 2018.09.26 17:13 #Material-ID: QM-0000 #Experiment: D0027 #Variation: 3 #Substrate: a #Measurement Setup: Hg #Size:  #Position: 5 #Function: IV Sweep #Umax [V] = 3.5 #Umin [V] = -3.5 #Step Points = 125 #Cycles = 3 #Duration [S] = 300m #Delay [S] = 0 #NPLC [S] = 100m #DVolt [V]: 56.5m #Volt / Time [V/s]: 141.1m #Direction: Positiv" />
+      </map>
+    </option>
   </component>
 </project>

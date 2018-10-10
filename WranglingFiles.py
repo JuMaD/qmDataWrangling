@@ -2,6 +2,7 @@ import configparser
 import datetime
 import logging
 import os
+import re
 import tkinter as tk
 from decimal import Decimal
 from itertools import chain
@@ -70,20 +71,34 @@ def split_string(string, measurement_procedure='sweep', keyword='#Sweep:'):
     all_string_lists = None
 
     if measurement_procedure == 'sweep':
+        # split header and main string
+        parts = string.split("\n\n")
+
+        # todo: use header values in functions! (dictonary- name:value is available already)
+
+        header_values = {}
+        if len(parts) > 1:
+            header_lines = parts[0].split('\n')
+            for line in header_lines:
+                header_name = re.search('(?<=#)(.*?)(?=[:,=])', line).group(0)
+                regex_value = '(?<=' + re.escape(header_name) + ')[^#]+'
+                header_value = re.search(regex_value, line).group(0)[2:]
+                header_values[header_name.split(" ")[0].replace(" ", "")] = header_value.replace(" ", "_")
+
         # split at keyword
-        list_strings = string.split(keyword)
+        list_strings = parts[len(parts)-1].split(keyword)
 
         # preserve first row that are the labels
         labels = list_strings[0].strip().split("\t")
 
         # break down string into list that can be converted to numpy
         all_string_lists = []
-        for i in range(0, len(list_strings) - 1):
+        for i in range(1, len(list_strings) - 1):
             # remove first row of each split
             list_strings[i] = list_strings[i].split("\n", 1)[1]
             all_string_lists.append(list_strings[i])
 
-    return labels, all_string_lists
+    return labels, all_string_lists, header_values
 
 
 def save_df_to_file(df, datapath, suffix):
@@ -105,11 +120,12 @@ def save_df_to_file(df, datapath, suffix):
 ########################
 # Data Frame Functions #
 ########################
-def make_pandas_df(np_arrays, labels, index_column=1):
+def make_pandas_df(np_arrays, labels, index_column=1, start_index=2):
     """Creates a Pandas dataframe joining both np_arrays at index_column
     :param  np_arrays:      Array containing both np_arrays to be joined
     :param  labels:         List of Strings containing the Labels - needs to have np_array.shape(0) elements
     :param  index_column:   index of the column to be used as index
+    :param start_index      Column index at which the returned pandas dataframes
     :return:                pandas dataframes for both, odd and even number in list - labeled array
     """
 
@@ -153,7 +169,10 @@ def make_pandas_df(np_arrays, labels, index_column=1):
 
         logging.debug('Data frames created')
 
-        # todo: make sure odd and even have the same shape
+    final_df = final_df[final_df.columns[2*start_index:final_df.shape[0]]]
+
+    o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]]
+    e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]]
 
     return final_df, o_final_df, e_final_df
 
@@ -187,6 +206,7 @@ def join_dfs(ldf, rdf):
 # todo: encapsulate all calculations inside calculate
 functions = {"resistance": {"all": True, "stats": True}, "fn": {"all": True, "stats": True}}
 
+
 def calculate(functions):
     """
     Encapsulates all calculations to be made
@@ -200,7 +220,6 @@ def calculate(functions):
             print(function + " stats " + str(functions[function]['stats']))
 
 
-
 def calc_stats(dfs):
     """Calls pandas describe on both dataframes in list dfs
     :param  dfs:    List of pandas dfs
@@ -209,6 +228,7 @@ def calc_stats(dfs):
     # calculate stats for HRS & LRS
     oe_stats = []
     stats_df = []
+
     if len(dfs) == 1:
         stat = dfs[0].apply(pd.DataFrame.describe, axis=1)
         stats_df.append(stat)
@@ -293,8 +313,9 @@ def calc_memory_window(dfs, method="divide"):
             y_even = np.copy(np.asarray(df))
 
     if y_even.shape != y_odd.shape:
-        y_even.resize(y_odd.shape)
 
+        y_even.resize(y_odd.shape)
+        x.resize(y_odd.shape[0])
 
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
@@ -354,6 +375,7 @@ def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
                 fit_results = calc_linear_fit(df_column, column=0, start=voltage, method=fit_method,
                                               fit_range=window_range)
                 resistance_list.append(fit_results["resistance"])
+                r2_list.append(fit_results["r2"])
             except:
                 resistance_list.append(np.nan)
         print(f'{c+1}/{len(df.columns)}')
@@ -377,7 +399,7 @@ def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
     return resistance_df_list
 
 
-def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None):
+def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None, title=None):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
@@ -387,7 +409,8 @@ def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=F
     :param fit_range    Range of x values to be used for fitting
     :param method:      Method used to fit the data e.g. ransac or linreg
     :param column:      Index of column with y data
-    :param debug:        Turns off/on the debug function: plotting the fit and displaying the return
+    :param debug:       Turns off/on the debug function: plotting the fit and displaying the return
+    :paran title:       Displayed Title
     :param datapath     Datapath being displayed in the debug plot
     :return:            Dictionarry with {coefficent, resistance, R2}
 
@@ -430,7 +453,11 @@ def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=F
                         label='datapoints')
             plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
                      label='RANSAC regressor')
-            plt.title(os.path.splitext(os.path.basename(datapath))[0])
+
+            if title is None:
+                plt.title(os.path.splitext(os.path.basename(datapath))[0])
+            else:
+                plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
 
             plt.show()
 
@@ -457,7 +484,10 @@ def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=F
                         label='datapoints')
             plt.plot(line_x, line_y, color='cornflowerblue', linewidth=2,
                      label='LINREG regressor')
-            plt.title(os.path.splitext(os.path.basename(datapath))[0])
+            if title is None:
+                plt.title(os.path.splitext(os.path.basename(datapath))[0])
+            else:
+                plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
 
             plt.show()
 
@@ -482,12 +512,13 @@ def get_slice(resistance_df, at=0):
 #  Visualizations #
 ###################
 
-def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True):
+def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
     """"
     :param df:          List of dataframes to plot in one plot.
     :param datapath:    Path to plot to.
     :param semilogy:    Bool that decides whether y axis is plotted in log scale.
-    :param take_abs:     Bool that decides whether absolute value is plotted.
+    :param take_abs:    Bool that decides whether absolute value is plotted.
+    :param title:       Displayed Title of the Plot
     :param suffix       Suffix to datapath for plots.
     """
     # make plt-close non-blocking
@@ -509,7 +540,10 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True):
     ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
     if semilogy:
         plt.semilogy()
-    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    if title is None:
+        plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    else:
+        plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
     plt.savefig(filename_all)
 
     plt.show()
@@ -517,7 +551,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True):
 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
-def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True):
+def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True, title=None):
     """
 
     :param stats_df:    Dataframe containing the stats.
@@ -569,14 +603,19 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
     ax.set_ylabel(y_label)
     if semilogy:
         plt.semilogy()
-    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+
+    if title is None:
+        plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    else:
+        plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+
     plt.savefig(filename_stats)
 
     plt.show()
     plt.close('all')
 
 
-def plot_slice(df, datapath, suffix):
+def plot_slice(df, datapath, suffix, title):
     # make plt-close non-blocking
     plt.ion()
 
@@ -591,7 +630,10 @@ def plot_slice(df, datapath, suffix):
     plt.scatter(df.index, df)
     # ax2.set_ylabel(df.values[0].split('_')[0])
 
-    plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    if title is None:
+        plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    else:
+        plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
     plt.savefig(filename_all)
 
     plt.show()
@@ -699,7 +741,8 @@ if __name__ == "__main__":
                 filename = os.path.join(dirname, file)
                 logging.info(f'Opening file: {filename}')
                 # split file into several sweeps and get labels
-                labels, string_list = split_string(open_file(filename))
+                labels, string_list, header = split_string(open_file(filename))
+                print(header)
                 np_arrays = []
                 # make numpy array for every sweep and add data to list
                 for string in string_list:
@@ -717,7 +760,9 @@ if __name__ == "__main__":
                     currents = []
 
                     for d in range(0, len(dfs)):
-                        current = filter_df(dfs[d], 'Current [A]')
+                        # todo: implement something to choose Current or Current Density
+                        filter = 'Current [A]'
+                        current = filter_df(dfs[d], filter)
                         current.name = dfs_names[d]
                         currents.append(current)
 
@@ -784,24 +829,30 @@ if __name__ == "__main__":
                         "resistance_slice": True
                     }
 
+                    if 'Material-ID' in header:
+                        title = header['Material-ID']
+                    else:
+                        title = None
+
                     if toplot["mwindow"]:
-                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False)
-                        plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats')
+                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False, title=title)
+                        plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats', title=title)
                     if toplot["resistance"]:
                         plot_sweeps(resistance_dfs, filename, suffix='resistance',
-                                    semilogy=False, take_abs=False)
-                        plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]', suffix='resistance_stats')
+                                    semilogy=False, take_abs=False, title=title)
+                        plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
+                                   suffix='resistance_stats', title=title)
                     if toplot["both"]:
-                        plot_sweeps(currents, filename, suffix='all')
+                        plot_sweeps(currents, filename, suffix='all', title=title)
                     if toplot["stats"]:
-                        plot_stats(stats_df, filename, suffix='all_stats')
+                        plot_stats(stats_df, filename, suffix='all_stats', title=title)
                     if toplot["fn"]:
-                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False)
+                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False, title=title)
                     if toplot["fn_stats"]:
                         plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
-                                   take_abs=False)
+                                   take_abs=False, title=title)
                     if toplot["resistance_slice"]:
-                        plot_slice(resistance_slice, filename, "LBR")
+                        plot_slice(resistance_slice, filename, "LBR", title=title)
 
                     # for key, value in toplot.items():
                     #   visualizeSweeps(currents, stats_df, filename)
