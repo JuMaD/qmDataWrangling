@@ -1,0 +1,26 @@
+
+  Pandas data frame methods that are good to know:
+
+  e_currents.abs().plot()
+  plt.title('e_Sweep')
+  plt.semilogy()
+  o_currents.abs().plot()
+  plt.title('o_Sweep')
+  plt.semilogy()
+
+  # rowstats
+  stats = currents.apply(pd.DataFrame.describe, axis=1)
+  e_stats = e_currents.apply(pd.DataFrame.describe, axis=1)
+  o_stats = o_currents.apply(pd.DataFrame.describe, axis=1)
+
+  e_stats[['mean', 'max', 'min', '50%']].abs().plot()
+  plt.semilogy()
+  plt.title('e_Stats')
+  o_stats[['mean', 'max', 'min']].abs().plot()
+  plt.semilogy()
+  plt.title('o_Stats')
+  plt.grid(True)
+  plt.show()
+
+  final_df.reset_index(inplace=True)
+  # print(final_df.head())
