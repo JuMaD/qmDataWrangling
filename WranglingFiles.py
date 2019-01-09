@@ -39,14 +39,14 @@ def open_file(fpath):
 
 
 def string_to_numpy(string, seperator='\t'):
-    """Turns a csv string of numbers into a 2D numpy array
+    """"Turns a csv string of numbers into a 2D numpy array
     :param string:      input string that has csv format and only numbers
     :param seperator:   csv seperator within a row
     :return:            numpy array with values from csv string
     """
 
     # create list of rows
-    rows = string.split("\n")
+    rows = string.split('\n')
     row_list = []
 
     # turn each row into a np vector and save them in a list
@@ -114,7 +114,8 @@ def save_df_to_file(df, datapath, suffix):
     # generate filename to save to
     file_dir = os.path.join(os.path.dirname(datapath), 'csv')
     filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
-    savepath = filepath + suffix
+    savepath = filepath + suffix + '.csv'
+
 
     df.to_csv(savepath, sep='\t')
 
@@ -206,21 +207,6 @@ def join_dfs(ldf, rdf):
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
 # todo: encapsulate all calculations inside calculate
-functions = {"resistance": {"all": True, "stats": True}, "fn": {"all": True, "stats": True}}
-
-
-def calculate(functions):
-    """
-    Encapsulates all calculations to be made
-    :param functions:   Dictionary of functions to execute on the given data
-    :return:
-    """
-    for function in functions.keys():
-        if functions[function]['all']:
-            print(function + " all " + str(functions[function]['all']))
-        if functions[function]['stats']:
-            print(function + " stats " + str(functions[function]['stats']))
-
 
 def calc_stats(dfs):
     """Calls pandas describe on both dataframes in list dfs
@@ -296,7 +282,7 @@ def calc_fowler_nordheim(dfs, alpha=2):
 
 def calc_memory_window(dfs, method="divide"):
     """
-    Calculates the "memory window" i.e. the difference between the absolute values of odd and even sweeps.
+    Calculates the "memory window" i.e. the difference or ratio between the absolute values of odd and even sweeps.
     :param dfs:     List of data frames: both, odd, even
     :param method:  Method to calculate the window: divide or subtract
     :return:        Data frame containing the memory window for both sweeps
@@ -778,19 +764,21 @@ if __name__ == "__main__":
                         title = None
 
 
-                    if config.getboolean('Plot', 'currents'):
-                        plot_sweeps(currents, filename, suffix='all', title=title)
+                    tosave["all-"+config['Parameters']['filter'].replace(' ','_')] = currents[0]
 
                     if config.getboolean('Calculate','absolute'):
-                        tosave["all_abs"] = currents[0].abs()
+                        tosave["all_abs-"+config['Parameters']['filter'].replace(' ','_')] = currents[0].abs()
+
+                        if config.getboolean('Plot', 'currents'):
+                            plot_sweeps(currents, filename, suffix='all-'+config['Parameters']['filter'].replace(' ','_'), title=title)
 
                     if config.getboolean('Calculate','stats'):
                         # get stats on currents
                         stats_df = calc_stats(currents)
-                        tosave["stats"] = stats_df
+                        tosave["stats-"+config['Parameters']['filter'].replace(' ','_')] = stats_df
 
                         if config.getboolean('Calculate','stats'):
-                            plot_stats(stats_df, filename, y_label=filter, suffix='all_stats', title=title)
+                            plot_stats(stats_df, filename, y_label=filter, suffix='all_stats-'+config['Parameters']['filter'].replace(' ','_'), title=title)
 
 
                     if config.getboolean('Calculate','fowler_nordheim'):
@@ -808,25 +796,24 @@ if __name__ == "__main__":
 
                     # Memory window
                     if config.getboolean('Calculate','memory_window'):
-                        window_df = calc_memory_window(currents)
+                        window_df = calc_memory_window(currents, method=config['Parameters']['mem_method'])
                         window_stats = calc_stats(window_df)
-                        tosave["mwindow"] = window_df[0]
-                        tosave["mwindow_stats"] = window_stats[0]
+                        tosave['mwindow_'+config['Parameters']['mem_method']] = window_df[0]
+                        tosave['mwindow_'+config['Parameters']['mem_method']+'_stats'] = window_stats[0]
 
                         if config.getboolean('Plot','memory_window'):
-                            plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False, title=title)
-                            plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats', title=title)
+                            plot_sweeps(window_df, filename, suffix='mwindow_'+config['Parameters']['mem_method'], semilogy=True, take_abs=False, title=title)
+                            plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_'+config['Parameters']['mem_method']+'_stats', title=title)
 
 
                     # linear fit --- TEST AREA
-                    # todo: encapsulate (howto: pass function arguments??)
-                    # todo: change so that multiple columns can be processed!
+                    # todo: change LBR Fit so that multiple columns can be processed!
                     if config.getboolean('Calculate','differential_resistance'):
 
                         resistance_dfs = calc_diff_resistance(currents[0])
                         resistance_slice = get_slice(resistance_dfs[0], at=config['Parameters'].getfloat('resistance_slice'))
                         resistance_stats = calc_stats(resistance_dfs)
-                        tosave["resistance"] = resistance_stats
+                        tosave['resistance'] = resistance_stats
 
                         if config.getboolean('Plot','resistance'):
                             plot_sweeps(resistance_dfs, filename, suffix='resistance',
@@ -834,7 +821,7 @@ if __name__ == "__main__":
                             plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
                                    suffix='resistance_stats', title=title)
                         if config.getboolean('Plot','resistance_slice'):
-                            plot_slice(resistance_slice, filename, "LBR", title=title)
+                            plot_slice(resistance_slice, filename, 'LBR', title=title)
 
                     #################
                     # Save To Files #
@@ -857,7 +844,7 @@ if __name__ == "__main__":
 
 
 
-        again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
+        again = messagebox.askyesno('Finished!', f'Finished wrangling files in {dirname}!\n Select another directory?')
 
         if again:
             continue

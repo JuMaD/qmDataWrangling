@@ -1,1444 +1,155 @@
-INFO:root:LOGGING STARTED:2018-05-23 12:22:59.564644
+INFO:root:LOGGING STARTED:2019-01-09 13:59:51.570460
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_mwindow.png
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-05-23 12:26:01.172812
+INFO:root:LOGGING STARTED:2019-01-09 14:02:53.239731
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_03_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg3_04_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0013-2a-Hg9_00_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2b-Hg7_01_IVSweep_mwindow.png
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:Calculating Stats
-INFO:root:Calculating Fowler Nordheim with alpha = 2
-INFO:root:Calculating Stats
-INFO:root:Calculating memory window.
-INFO:root:Plotting all and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_all.png
-INFO:root:Plotting stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_stats.png
-INFO:root:Plotting fn and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn.png
-INFO:root:Plotting fn_stats and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_fn_stats.png
-INFO:root:Plotting mwindow and saving it at C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\plots\D0014-2d-Hg3_01_IVSweep_mwindow.png
-INFO:root:LOGGING STARTED:2018-09-18 14:57:31.892619
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 14:57:57.118722
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 14:58:36.117972
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 14:59:11.332154
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:00:08.646188
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-09-18 15:04:13.748221
+INFO:root:LOGGING STARTED:2019-01-09 14:10:02.850750
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:05:44.810982
+INFO:root:LOGGING STARTED:2019-01-09 14:10:56.734442
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:07:33.287586
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 14:11:41.172527
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-09-18 15:07:50.362011
+INFO:root:LOGGING STARTED:2019-01-09 14:12:05.782742
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:10:16.411517
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 14:12:25.261368
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:12:13.006674
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 14:18:22.491126
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-09-18 15:12:48.679064
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-09-18 15:18:29.185344
+INFO:root:LOGGING STARTED:2019-01-09 14:21:18.037071
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-09-18 15:23:51.970504
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 15:26:22.811777
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 16:37:35.602766
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 16:40:13.764486
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 16:40:52.915134
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-18 16:42:41.328523
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-09-19 08:52:30.654470
+INFO:root:LOGGING STARTED:2019-01-09 14:31:11.233350
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-09-19 09:05:13.147907
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:06:05.588910
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:37:19.689487
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:39:24.685495
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:40:03.340318
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:43:47.550255
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:49:01.457339
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-09-19 09:50:02.954925
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_10_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_11_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_11_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_12_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_13_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_13_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_14_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_14_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_15_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_16_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_17_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_17_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_18_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_1_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_2_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_3_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_3_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_3_seq00-02_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_4_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_5_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_5_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_5_seq00-02_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_6_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_6_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_7_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_7_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_8_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_9_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_9_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-05_9_seq00-02_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_11_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_11_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_12_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_13_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_13_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_14_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_15_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_15_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_16_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_17_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_17_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_18_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_1_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_1_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_2_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_3_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_3_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_4_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_5_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_6_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_7_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_7_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_8_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-10_9_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_11_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_11_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_12_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_13-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_13_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_13_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_14_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_15-200cycles_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_15_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_16_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_16_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_17_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_17_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_18_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_1_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_1_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_2_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_2_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_3_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_3_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_4_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_5_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_5_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_6_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_7_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_7_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_8_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_9_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-20_9_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_1-3_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_11-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_11_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_11_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_12_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_13-2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_13_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_13_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_14_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_14_seq01-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_14_seq01-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_16_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_17_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_18_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_18_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_19_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_19_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_1_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_1_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_3-28_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_3-30_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_3_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_4_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_4_seq01-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_4_seq01-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_4_seq01-02_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_4_seq02-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_7_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_7_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_7_seq00-02_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_8_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_9-3V-2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_9-3V_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_9-50cycles_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_9_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-35_9_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_10_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_10_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_11-2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_11_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_12_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_12_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_13_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_14-2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_14-50sweeps_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_14_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_15_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_16-28_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_16_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_16_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_17_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_1_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_1_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_2_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_2_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3-2_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3-2_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3-2_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3_seq00-00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_3_seq00-01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_4_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_5_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_6_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_7_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_8_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/Desktop/temp/selected_files_2018919_84552\MD0002-50u_9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-01 13:52:07.277032
+INFO:root:LOGGING STARTED:2019-01-09 14:50:09.214584
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 13:52:28.141513
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 14:50:47.991214
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 15:47:52.281655
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-01-09 15:56:40.402461
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-01 14:10:02.969920
+INFO:root:LOGGING STARTED:2019-01-09 15:58:08.093230
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:10:36.951280
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:11:49.598958
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:17:58.595662
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:18:39.828304
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:19:13.027084
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:20:35.105840
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:21:14.690099
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:23:11.556359
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:24:49.713871
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 14:26:13.089075
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-01 14:54:52.722773
+INFO:root:LOGGING STARTED:2019-01-09 16:23:18.510256
 INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 15:12:50.421996
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 15:56:52.123577
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 15:58:22.965135
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 15:58:50.878860
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 15:59:59.497325
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:01:16.491561
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:04:42.522921
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 16:05:07.232125
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:05:30.623827
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:06:12.666624
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 16:06:23.496421
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:11:14.796020
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:11:52.402519
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:13:01.351362
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:18:51.054261
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:21:26.055427
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:22:04.249489
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:22:32.081497
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:28:44.570989
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:29:22.718427
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:29:47.639695
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:30:51.417287
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:31:54.965770
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:32:14.954923
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:33:12.144998
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 16:33:28.358110
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:37:16.665706
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:37:50.016389
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-01 16:38:00.518315
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-01 16:40:04.324529
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_03_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg3_04_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0013-2a-Hg9_00_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2b-Hg7_01_IVSweep.txt
-INFO:root:Opening file: C:/Users/Julian/GitHub/qMem_DataWrangling/testdata\D0014-2d-Hg3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 10:57:03.875572
+INFO:root:LOGGING STARTED:2019-01-09 16:31:50.446449
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 10:59:18.672050
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:12:19.656141
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:12:35.360711
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:13:22.957471
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:16:55.268700
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:20:08.953066
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:20:51.620332
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:21:28.965066
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:22:16.063776
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:22:34.187588
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-10 11:24:20.047173
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:25:01.003268
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:26:15.485716
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:27:03.436510
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:30:14.090574
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:30:58.215986
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:31:50.214185
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:32:45.560719
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:33:43.343497
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:34:34.976660
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:36:41.097271
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:37:18.612022
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:40:21.985357
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:41:24.130571
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Lab/Results/MD0003\M0000-0-PS500_00_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:42:47.942951
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-10 11:45:15.398696
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-10 11:45:34.894645
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:47:13.436498
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:49:41.199273
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:50:53.044457
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:51:36.194771
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:51:51.254277
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:52:26.044756
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:52:44.425594
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 11:53:10.106162
+INFO:root:LOGGING STARTED:2019-01-09 16:33:10.650469
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:54:43.955546
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:56:02.195369
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:56:12.368386
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:58:06.458794
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 11:58:17.192867
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:58:59.461094
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 11:59:27.010848
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:00:43.923539
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:01:46.405786
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:02:05.645710
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:03:35.023647
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:04:36.095754
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:05:04.444588
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 12:05:59.934137
+INFO:root:LOGGING STARTED:2019-01-09 16:34:41.968600
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:50:20.086125
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:53:46.687783
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:56:11.361249
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:56:22.327346
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 12:57:00.090122
+INFO:root:LOGGING STARTED:2019-01-09 16:35:58.583261
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:57:29.899102
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:58:00.073119
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 12:59:12.382350
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:00:10.232134
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:00:58.751985
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:02:23.574467
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg7_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg8_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg7_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:03:52.393348
+INFO:root:LOGGING STARTED:2019-01-09 16:46:15.248921
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:14:14.079510
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:14:29.447047
-INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:14:36.601762
+INFO:root:LOGGING STARTED:2019-01-09 16:47:37.778173
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:14:57.693871
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:15:27.805882
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:16:03.434445
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:17:15.155616
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:18:18.877988
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:18:56.026702
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:21:21.593257
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:22:11.802278
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:22:40.531150
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:25:36.153711
+INFO:root:LOGGING STARTED:2019-01-09 16:48:39.288323
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage244" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage253" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage262" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage271" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage280" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage289" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage298" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage307" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage316" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 13:28:45.694663
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:31:15.620654
+INFO:root:LOGGING STARTED:2019-01-09 16:49:09.157310
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 16:53:37.922184
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 16:53:59.606352
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 16:54:42.361627
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:33:12.230314
+INFO:root:LOGGING STARTED:2019-01-09 16:56:13.832773
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:33:29.829074
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 13:34:18.216912
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0893-1b-Hg5_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:35:47.814871
+INFO:root:LOGGING STARTED:2019-01-09 16:59:27.244357
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg7_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg8_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg7_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:46:30.690152
+INFO:root:LOGGING STARTED:2019-01-09 17:01:32.677265
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg7_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg8_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg7_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 13:47:02.260309
+INFO:root:LOGGING STARTED:2019-01-09 17:03:49.169961
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:00:20.164091
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg7_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-01-09 17:05:59.719531
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:01:14.229497
+INFO:root:LOGGING STARTED:2019-01-09 17:06:25.586531
 INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:01:32.516326
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:01:48.993973
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:02:10.392113
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:02:40.758149
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:03:43.815454
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:03:58.649937
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:04:17.043777
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:04:35.893661
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg7_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1b-Hg9_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-893\M0893-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg6_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg8_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MK000X_08Jan2019/M-TK-894\M0894-1a-Hg7_00_IVSweep.txt
 INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:05:07.196791
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:05:46.718743
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:06:21.541225
-INFO:root:Config file read and parameters set.
-INFO:root:LOGGING STARTED:2018-10-10 14:06:27.388810
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:06:53.760447
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:07:34.657536
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:16:59.405005
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:18:43.473411
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:19:36.077671
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:20:20.527115
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:20:50.649127
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:23:36.130674
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:23:50.206081
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:27:43.846443
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:28:27.253783
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:32:26.974753
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:36:57.560809
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:38:20.806132
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:41:17.424793
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:root:LOGGING STARTED:2018-10-10 14:42:24.681518
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:44:12.476296
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:45:09.703018
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:46:19.708018
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:root:LOGGING STARTED:2018-10-10 14:46:33.944441
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x4-3x_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-1x6_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage82" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage91" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage100" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage109" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage118" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage127" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage136" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage145" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage154" as iconphoto: not a photo image
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata\M0002-1d-20u-2x2_00.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage163" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage172" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage181" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage190" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage199" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage208" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage217" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage226" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage235" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:46:56.266673
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:49:00.741120
-INFO:root:Config file read and parameters set.
-INFO:root:Opening file: H:/_all/Software/qMem_DataWrangling/testdata2\D0027-3a-Hg5_02_IVSweep.txt
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage1" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage10" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage19" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage28" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage37" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage46" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage55" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage64" as iconphoto: not a photo image
-INFO:matplotlib.backends._backend_tk:Could not load matplotlib icon: can't use "pyimage73" as iconphoto: not a photo image
-INFO:root:Saved config file
-INFO:root:LOGGING STARTED:2018-10-10 14:52:01.562200
-INFO:root:Config file read and parameters set.

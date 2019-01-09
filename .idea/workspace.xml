@@ -6,18 +6,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/D0013-2a-Hg3_03_IVSweep.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/D0013-2a-Hg3_04_IVSweep.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/D0013-2a-Hg9_00_IVSweep.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/D0014-2b-Hg7_01_IVSweep.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testdata/D0014-2d-Hg3_01_IVSweep.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,41 +35,47 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ini" value="399" />
+          <entry key="ini" value="424" />
           <entry key="log" value="2" />
-          <entry key="py" value="1613" />
+          <entry key="md" value="919" />
+          <entry key="py" value="1894" />
           <entry key="txt" value="271" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ini" value="399" />
+          <entry key="Ini" value="424" />
           <entry key="Log" value="1" />
+          <entry key="Markdown" value="919" />
           <entry key="PLAIN_TEXT" value="272" />
-          <entry key="Python" value="1613" />
+          <entry key="Python" value="1894" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="M0893-1b-Hg5_00_IVSweep_all_abs" value="4" />
+          <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_divide" value="1" />
           <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_stats" value="1" />
+          <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide" value="1" />
           <entry key="M0893-1b-Hg5_00_IVSweep_stats" value="1" />
           <entry key="M0893-1b-Hg5_00_IVSweep_stats_abs" value="1" />
           <entry key="csv" value="3" />
           <entry key="info" value="1" />
           <entry key="ini" value="1" />
-          <entry key="log" value="1" />
-          <entry key="png" value="35" />
+          <entry key="log" value="2" />
+          <entry key="md" value="1" />
+          <entry key="png" value="42" />
           <entry key="py" value="5" />
-          <entry key="txt" value="1" />
+          <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="35" />
+          <entry key="Image" value="42" />
           <entry key="Ini" value="1" />
-          <entry key="Log" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="Log" value="2" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="15" />
           <entry key="Python" value="5" />
         </counts>
       </usages-collector>
@@ -85,6 +84,7 @@
   <component name="FavoritesManager">
     <favorites_list name="DataWrangling">
       <favorite_root url="file://$PROJECT_DIR$/WranglingFiles.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/RuntimeLog.log" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
     </favorites_list>
   </component>
   <component name="FileEditorManager">
@@ -92,15 +92,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="493" column="34" selection-start-line="493" selection-start-column="34" selection-end-line="493" selection-end-column="34" />
+            <state relative-caret-position="17">
+              <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
                 <element signature="e#413#507#0" />
                 <element signature="e#809#1051#0" />
                 <element signature="e#809#963#1" />
-                <element signature="e#1103#1737#0" />
-                <element signature="e#1103#1354#1" />
                 <element signature="e#1521#1638#0" />
                 <element signature="e#1820#3505#0" />
                 <element signature="e#1820#2221#1" />
@@ -108,8 +106,6 @@
                 <element signature="e#2547#2952#0" />
                 <element signature="e#2637#2952#0" />
                 <element signature="e#3304#3453#0" />
-                <element signature="e#3555#4073#0" />
-                <element signature="e#3555#3821#1" />
                 <element signature="e#4076#4100#0" />
                 <element signature="e#4225#6347#0" />
                 <element signature="e#4225#4732#1" />
@@ -124,10 +120,6 @@
                 <element signature="e#6402#6663#1" />
                 <element signature="e#6760#6973#0" />
                 <element signature="e#6760#6935#1" />
-                <element signature="e#6976#6992#0" />
-                <element signature="e#7274#7686#0" />
-                <element signature="e#7274#7420#1" />
-                <element signature="e#7467#7686#0" />
                 <element signature="e#7714#8327#0" />
                 <element signature="e#7714#7848#1" />
                 <element signature="e#7953#8033#0" />
@@ -139,13 +131,8 @@
                 <element signature="e#8664#9547#0" />
                 <element signature="e#8708#9547#0" />
                 <element signature="e#9328#9425#0" />
-                <element signature="e#9934#11856#0" />
-                <element signature="e#9934#10256#1" />
-                <element signature="e#10406#10545#0" />
                 <element signature="e#10590#10679#0" />
                 <element signature="e#10723#10812#0" />
-                <element signature="e#10851#10958#0" />
-                <element signature="e#10999#11220#0" />
                 <element signature="e#11298#11349#0" />
                 <element signature="e#11578#11666#0" />
                 <element signature="e#11932#12294#1" />
@@ -177,7 +164,6 @@
                 <element signature="e#24470#24486#0" />
                 <element signature="e#24639#24668#0" />
                 <element signature="e#25515#25626#0" />
-                <element signature="e#29953#29970#0" />
                 <element signature="e#30503#30524#0" />
               </folding>
             </state>
@@ -185,10 +171,40 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="61" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+            <state relative-caret-position="255">
+              <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="221">
+              <caret line="73" column="97" lean-forward="true" selection-start-line="73" selection-start-column="97" selection-end-line="73" selection-end-column="97" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="136">
+                <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -197,13 +213,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>calc_memory</find>
-      <find>linear</find>
-      <find>pandas</find>
-      <find>pandas_df</find>
-      <find>split_string</find>
-      <find>print</find>
-      <find>make_pandas</find>
       <find>make_pandas_df</find>
       <find>header</find>
       <find>plt.</find>
@@ -211,7 +220,6 @@
       <find>plt.title</find>
       <find>is none</find>
       <find>calc_linear_fit</find>
-      <find>calculate</find>
       <find>calc</find>
       <find>get_slice</find>
       <find>de</find>
@@ -227,6 +235,14 @@
       <find>if config</find>
       <find>]:</find>
       <find>= calc_dif</find>
+      <find>calc_memory</find>
+      <find>method?</find>
+      <find>calc_memory_window</find>
+      <find>&quot;</find>
+      <find>calculate</find>
+      <find>_all</find>
+      <find>save_df_</find>
+      <find>filter =</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -247,6 +263,7 @@
         <option value="$PROJECT_DIR$/oo_WranglingFiles.py" />
         <option value="$PROJECT_DIR$/info" />
         <option value="$PROJECT_DIR$/RuntimeLog.log" />
+        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/WranglingFiles.py" />
         <option value="$PROJECT_DIR$/config.ini" />
       </list>
@@ -391,7 +408,14 @@
       <option name="project" value="LOCAL" />
       <updated>1547034984113</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
+      <created>1547046253970</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1547046253970</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TodoView">
@@ -405,7 +429,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6297872" visible="true" weight="0.26238146" />
       <window_info id="Structure" order="1" sideWeight="0.37021276" side_tool="true" weight="0.26238146" />
@@ -417,14 +440,14 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32981783" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32981783" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
       <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
       <window_info active="true" anchor="bottom" id="Inspection Results" order="11" sideWeight="0.7409382" visible="true" weight="0.4928092" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.641419" />
       <window_info anchor="bottom" id="Regex Tester" order="13" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Messages" order="14" visible="true" weight="0.32981783" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -474,12 +497,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
+          <line>209</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testdata/D0013-2a-Hg3_04_IVSweep.txt" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_mwindow.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg9_00_IVSweep_mwindow.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2d-Hg3_01_IVSweep_mwindow.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_04_IVSweep_all.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0014-2b-Hg7_01_IVSweep_mwindow.png" />
     <entry file="file://$PROJECT_DIR$/doc/conf.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -527,12 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1532" />
-      </provider>
-      <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep-0_header.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -546,13 +569,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_stats">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="61" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_resistance.png">
       <provider selected="true" editor-type-id="images" />
@@ -573,24 +589,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_all_abs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="151" lean-forward="true" selection-start-column="55" selection-end-column="151" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all_stats.png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -599,24 +603,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="136">
+            <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide_stats.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_divide">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1532" />
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="221">
+          <caret line="73" column="97" lean-forward="true" selection-start-line="73" selection-start-column="97" selection-end-line="73" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="61" lean-forward="true" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="493" column="34" selection-start-line="493" selection-start-column="34" selection-end-line="493" selection-end-column="34" />
+        <state relative-caret-position="17">
+          <caret line="105" column="42" selection-start-line="105" selection-start-column="42" selection-end-line="105" selection-end-column="42" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
             <element signature="e#413#507#0" />
             <element signature="e#809#1051#0" />
             <element signature="e#809#963#1" />
-            <element signature="e#1103#1737#0" />
-            <element signature="e#1103#1354#1" />
             <element signature="e#1521#1638#0" />
             <element signature="e#1820#3505#0" />
             <element signature="e#1820#2221#1" />
@@ -624,8 +681,6 @@
             <element signature="e#2547#2952#0" />
             <element signature="e#2637#2952#0" />
             <element signature="e#3304#3453#0" />
-            <element signature="e#3555#4073#0" />
-            <element signature="e#3555#3821#1" />
             <element signature="e#4076#4100#0" />
             <element signature="e#4225#6347#0" />
             <element signature="e#4225#4732#1" />
@@ -640,10 +695,6 @@
             <element signature="e#6402#6663#1" />
             <element signature="e#6760#6973#0" />
             <element signature="e#6760#6935#1" />
-            <element signature="e#6976#6992#0" />
-            <element signature="e#7274#7686#0" />
-            <element signature="e#7274#7420#1" />
-            <element signature="e#7467#7686#0" />
             <element signature="e#7714#8327#0" />
             <element signature="e#7714#7848#1" />
             <element signature="e#7953#8033#0" />
@@ -655,13 +706,8 @@
             <element signature="e#8664#9547#0" />
             <element signature="e#8708#9547#0" />
             <element signature="e#9328#9425#0" />
-            <element signature="e#9934#11856#0" />
-            <element signature="e#9934#10256#1" />
-            <element signature="e#10406#10545#0" />
             <element signature="e#10590#10679#0" />
             <element signature="e#10723#10812#0" />
-            <element signature="e#10851#10958#0" />
-            <element signature="e#10999#11220#0" />
             <element signature="e#11298#11349#0" />
             <element signature="e#11578#11666#0" />
             <element signature="e#11932#12294#1" />
@@ -693,7 +739,6 @@
             <element signature="e#24470#24486#0" />
             <element signature="e#24639#24668#0" />
             <element signature="e#25515#25626#0" />
-            <element signature="e#29953#29970#0" />
             <element signature="e#30503#30524#0" />
           </folding>
         </state>
