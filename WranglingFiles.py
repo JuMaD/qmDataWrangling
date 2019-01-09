@@ -26,6 +26,8 @@ pd.options.compute.use_bottleneck = True
 # File Handling #
 #################
 
+#todo: put variable parameters into config file!
+
 def open_file(fpath):
     """ Function to open a file and return its content
     :param fpath:   Path to the file to be opened 
@@ -312,10 +314,18 @@ def calc_memory_window(dfs, method="divide"):
         if df.name == 'even':
             y_even = np.copy(np.asarray(df))
 
-    if y_even.shape != y_odd.shape:
 
+
+    if len(y_even) < len(y_odd):
+        y_odd.resize(y_even.shape)
+        x.resize(y_even.shape[0])
+        print("Reshape odd")
+    elif len(y_even) > len(y_odd):
         y_even.resize(y_odd.shape)
+        print("Reshape even")
         x.resize(y_odd.shape[0])
+
+
 
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
@@ -327,6 +337,11 @@ def calc_memory_window(dfs, method="divide"):
 
     delta = np.maximum(delta1, delta2)
 
+    if len(delta) < len(x):
+        x.resize(delta.shape[0])
+        print("Reshape x")
+    print(len(delta))
+    print(len(x))
     # make it a df again
     data_frame = pd.DataFrame(data=delta)
     data_frame.set_index(x, inplace=True)
@@ -380,6 +395,10 @@ def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
                 resistance_list.append(np.nan)
         print(f'{c+1}/{len(df.columns)}')
 
+        if len(voltage_list) != len(resistance_list):
+            resistance_list = resistance_list[:len(voltage_list)]
+
+            print("resistance list resized")
         if c == 0:
             resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
                                           f'Resistance [$\Omega$]_{c}': resistance_list})
@@ -663,32 +682,7 @@ def make_colormap(values=1024):
     return mymap
 
 
-"""""
-  Pandas data frame methods that are good to know:
-  
-  e_currents.abs().plot()
-  plt.title('e_Sweep')
-  plt.semilogy()
-  o_currents.abs().plot()
-  plt.title('o_Sweep')
-  plt.semilogy()
 
-  # rowstats
-  stats = currents.apply(pd.DataFrame.describe, axis=1)
-  e_stats = e_currents.apply(pd.DataFrame.describe, axis=1)
-  o_stats = o_currents.apply(pd.DataFrame.describe, axis=1)
-
-  e_stats[['mean', 'max', 'min', '50%']].abs().plot()
-  plt.semilogy()
-  plt.title('e_Stats')
-  o_stats[['mean', 'max', 'min']].abs().plot()
-  plt.semilogy()
-  plt.title('o_Stats')
-  plt.grid(True)
-  plt.show()
-
-  final_df.reset_index(inplace=True)
-  # print(final_df.head())"""
 
 if __name__ == "__main__":
     logging.basicConfig(filename='RuntimeLog.log', level=logging.INFO)
@@ -699,6 +693,8 @@ if __name__ == "__main__":
     ####################
 
     config.read('config.ini')
+
+    filter = config['Parameters']['Filter']
 
     try:
         initial_dir = config['Directory']['home_directory']
@@ -730,7 +726,7 @@ if __name__ == "__main__":
         # Wrangle Data #
         ################
         for file in os.listdir(dirname):
-            if file.endswith(".txt") and not file.endswith("Resistance.txt") and not file.endswith("SMU-Puls.txt"):
+            if file.endswith("IVSweep.txt"):
                 #############################
                 # Make Dataframes from file #
                 #############################
@@ -742,7 +738,13 @@ if __name__ == "__main__":
                 logging.info(f'Opening file: {filename}')
                 # split file into several sweeps and get labels
                 labels, string_list, header = split_string(open_file(filename))
-                print(header)
+
+                # print header to file
+                headerpath = os.path.join(dirname, 'csv')
+                headerfile = os.path.join(headerpath, file[:-4])
+                with open(f'{headerfile}-0_header.csv', 'w') as file:
+                    [file.write('{0},{1}\n'.format(key, value)) for key, value in header.items()]
+
                 np_arrays = []
                 # make numpy array for every sweep and add data to list
                 for string in string_list:
@@ -760,102 +762,100 @@ if __name__ == "__main__":
                     currents = []
 
                     for d in range(0, len(dfs)):
-                        # todo: implement something to choose Current or Current Density
-                        filter = 'Current [A]'
                         current = filter_df(dfs[d], filter)
                         current.name = dfs_names[d]
                         currents.append(current)
 
-                    ########################
-                    # Perform Calculations #
-                    ########################
+                    ###############################
+                    # Perform Calculations & Plot #
+                    ###############################
 
-                    # get stats on currents
-                    stats_df = calc_stats(currents)
-
-                    # calculate fn data
-                    fn_df = calc_fowler_nordheim(currents)
-                    fn_stats = calc_stats(fn_df)
-
-                    # Memory window
-
-                    window_df = calc_memory_window(currents)
-                    window_stats = calc_stats(window_df)
-
-                    # linear fit --- TEST AREA
-                    # todo: encapsulate (howto: pass function arguments??)
-                    # todo: change so that multiple columns can be processed!
-
-                    resistance_dfs = calc_diff_resistance(currents[0])
-
-                    resistance_slice = get_slice(resistance_dfs[0])
-
-                    resistance_stats = calc_stats(resistance_dfs)
-
-                    #################
-                    # Save To Files #
-                    #################
-
-                    # todo:make tosave a selectable in GUI
-
-                    tosave = {  # "both": currents[0],
-                        "all_abs": currents[0].abs(),
-                        "stats": stats_df,
-                        "stats_abs": stats_df.abs(),
-                        "fn": fn_df[0],
-                        "fn_stats": fn_stats,
-                        "mwindow": window_df[0],
-                        "mwindow_stats": window_stats[0],
-                        "resistance": resistance_stats,
-                    }
-
-                    for key, value in tosave.items():
-                        save_df_to_file(value, filename, '_' + key)
-
-                    #############
-                    # Visualize #
-                    #############
-
-                    # todo:make tosave a selectable in GUI
-                    # todo: clean up plot fn_stats
-                    # todo: (just rewrite "toplot" in bool dict and then for for key ... + use plot_stats)
-                    toplot = {  # "both": currents[0],
-                        "both": True,
-                        "stats": True,
-                        "fn": True,
-                        "fn_stats": True,
-                        "mwindow": True,
-                        "resistance": True,
-                        "resistance_slice": True
-                    }
+                    tosave= {}
 
                     if 'Material-ID' in header:
                         title = header['Material-ID']
                     else:
                         title = None
 
-                    if toplot["mwindow"]:
-                        plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False, title=title)
-                        plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats', title=title)
-                    if toplot["resistance"]:
-                        plot_sweeps(resistance_dfs, filename, suffix='resistance',
-                                    semilogy=False, take_abs=False, title=title)
-                        plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
-                                   suffix='resistance_stats', title=title)
-                    if toplot["both"]:
-                        plot_sweeps(currents, filename, suffix='all', title=title)
-                    if toplot["stats"]:
-                        plot_stats(stats_df, filename, suffix='all_stats', title=title)
-                    if toplot["fn"]:
-                        plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False, title=title)
-                    if toplot["fn_stats"]:
-                        plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
-                                   take_abs=False, title=title)
-                    if toplot["resistance_slice"]:
-                        plot_slice(resistance_slice, filename, "LBR", title=title)
 
-                    # for key, value in toplot.items():
-                    #   visualizeSweeps(currents, stats_df, filename)
+                    if config.getboolean('Plot', 'currents'):
+                        plot_sweeps(currents, filename, suffix='all', title=title)
+
+                    if config.getboolean('Calculate','absolute'):
+                        tosave["all_abs"] = currents[0].abs()
+
+                    if config.getboolean('Calculate','stats'):
+                        # get stats on currents
+                        stats_df = calc_stats(currents)
+                        tosave["stats"] = stats_df
+
+                        if config.getboolean('Calculate','stats'):
+                            plot_stats(stats_df, filename, y_label=filter, suffix='all_stats', title=title)
+
+
+                    if config.getboolean('Calculate','fowler_nordheim'):
+                        # calculate fn data
+                        fn_df = calc_fowler_nordheim(currents)
+                        fn_stats = calc_stats(fn_df)
+                        tosave["fn"] = fn_df[0]
+                        tosave["fn_stats"] = fn_stats
+
+                        if config.getboolean('Plot','fowler_nordheim'):
+                            plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False, title=title)
+                        if config.getboolean('Plot','fn_stats'):
+                            plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
+                               take_abs=False, title=title)
+
+                    # Memory window
+                    if config.getboolean('Calculate','memory_window'):
+                        window_df = calc_memory_window(currents)
+                        window_stats = calc_stats(window_df)
+                        tosave["mwindow"] = window_df[0]
+                        tosave["mwindow_stats"] = window_stats[0]
+
+                        if config.getboolean('Plot','memory_window'):
+                            plot_sweeps(window_df, filename, suffix='mwindow', semilogy=True, take_abs=False, title=title)
+                            plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_stats', title=title)
+
+
+                    # linear fit --- TEST AREA
+                    # todo: encapsulate (howto: pass function arguments??)
+                    # todo: change so that multiple columns can be processed!
+                    if config.getboolean('Calculate','differential_resistance'):
+
+                        resistance_dfs = calc_diff_resistance(currents[0])
+                        resistance_slice = get_slice(resistance_dfs[0], at=config['Parameters'].getfloat('resistance_slice'))
+                        resistance_stats = calc_stats(resistance_dfs)
+                        tosave["resistance"] = resistance_stats
+
+                        if config.getboolean('Plot','resistance'):
+                            plot_sweeps(resistance_dfs, filename, suffix='resistance',
+                                        semilogy=False, take_abs=False, title=title)
+                            plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
+                                   suffix='resistance_stats', title=title)
+                        if config.getboolean('Plot','resistance_slice'):
+                            plot_slice(resistance_slice, filename, "LBR", title=title)
+
+                    #################
+                    # Save To Files #
+                    #################
+
+                    for key, value in tosave.items():
+                        save_df_to_file(value, filename, '_' + key)
+
+
+
+                    # todo: clean up plot fn_stats
+
+
+
+
+
+
+
+
+
+
 
         again = messagebox.askyesno("Finished!", f"Finished wrangling files in {dirname}!\n Select another directory?")
 
