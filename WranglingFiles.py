@@ -26,7 +26,7 @@ pd.options.compute.use_bottleneck = True
 # File Handling #
 #################
 
-#todo: put variable parameters into config file!
+
 
 def open_file(fpath):
     """ Function to open a file and return its content
@@ -123,12 +123,13 @@ def save_df_to_file(df, datapath, suffix):
 ########################
 # Data Frame Functions #
 ########################
-def make_pandas_df(np_arrays, labels, index_column=1, start_index=2):
+def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index=2, ):
     """Creates a Pandas dataframe joining both np_arrays at index_column
     :param  np_arrays:      Array containing both np_arrays to be joined
     :param  labels:         List of Strings containing the Labels - needs to have np_array.shape(0) elements
     :param  index_column:   index of the column to be used as index
     :param start_index      Column index at which the returned pandas dataframes
+    :param header_values    Values from the file header used to calculate current density, if needed
     :return:                pandas dataframes for both, odd and even number in list - labeled array
     """
 
@@ -142,6 +143,25 @@ def make_pandas_df(np_arrays, labels, index_column=1, start_index=2):
 
         np_array = np_arrays[i]
         num_labels = labels[:]
+        print(np_array.shape)
+        if np_array.shape[1] < len(num_labels):
+            #assume that the last, missing column is current density
+
+            suffix = re.findall('\D+', header_values ["Size"])[0]
+            size = int(re.findall('\d+', header_values["Size"])[0])
+            if suffix == 'u':
+                area = np.multiply(size**2, 1e-12)
+            if suffix == 'm':
+                area = np.multiply(size**2, 1e-6)
+
+
+            current_density = np.multiply(np_array[:,2] / area, 1e-1)
+
+            #A / m^2 --> *10^3 --> mA / m^2 --> *10^-4 --> total: mA/cm^2 --> 10^-1
+
+            np_array = np.c_[np_array, current_density]
+            print(np_array)
+
 
         data_frame = pd.DataFrame(data=np_array,
                                   columns=num_labels)
@@ -738,7 +758,7 @@ if __name__ == "__main__":
                         continue
                     np_arrays.append(string_to_numpy(string))
                 # turn both data into Pandas data frame, using voltage to join
-                both, odd, even = make_pandas_df(np_arrays, labels, 1)
+                both, odd, even = make_pandas_df(np_arrays, labels, header_values=header)
 
                 if odd is not None and even is not None:
                     dfs = [both, odd, even]
