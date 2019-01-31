@@ -143,11 +143,14 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
 
         np_array = np_arrays[i]
         num_labels = labels[:]
-        print(np_array.shape)
+
         if np_array.shape[1] < len(num_labels):
             #assume that the last, missing column is current density
 
-            suffix = re.findall('\D+', header_values ["Size"])[0]
+            try:
+                suffix = re.findall('\D+', header_values["Size"])[0]
+            except IndexError:
+                suffix = 'u'
             size = int(re.findall('\d+', header_values["Size"])[0])
             if suffix == 'u':
                 area = np.multiply(size**2, 1e-12)
@@ -160,11 +163,12 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
             #A / m^2 --> *10^3 --> mA / m^2 --> *10^-4 --> total: mA/cm^2 --> 10^-1
 
             np_array = np.c_[np_array, current_density]
-            print(np_array)
+
 
 
         data_frame = pd.DataFrame(data=np_array,
                                   columns=num_labels)
+
         data_frame.drop_duplicates('Voltage [V]', inplace=True)
         data_frame.set_index(num_labels[index_column], inplace=True)
 
@@ -192,12 +196,18 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
 
         logging.debug('Data frames created')
 
-    final_df = final_df[final_df.columns[2*start_index:final_df.shape[0]]]
+    final_df = final_df[final_df.columns[2*start_index:final_df.shape[0]]].interpolate(
+        method='linear', limit_direction='forward', axis=0)
 
-    o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]]
-    e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]]
+    o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
+        method='linear', limit_direction='forward', axis=0)
+    e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
+        method='linear', limit_direction='forward', axis=0)
+
+
 
     return final_df, o_final_df, e_final_df
+
 
 
 def filter_df(df, filter_string='Current [A]'):
@@ -238,8 +248,8 @@ def calc_stats(dfs):
     stats_df = []
 
     if len(dfs) == 1:
-        stat = dfs[0].apply(pd.DataFrame.describe, axis=1)
-        stats_df.append(stat)
+        stats_df = dfs[0].apply(pd.DataFrame.describe, axis=1)
+
     else:
         for df in dfs:
             if df.name in ['odd', 'even']:
@@ -248,6 +258,7 @@ def calc_stats(dfs):
 
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
+    stats_df = stats_df.interpolate(method='linear', limit_direction='forward', axis=0)
     return stats_df
 
 
@@ -325,10 +336,10 @@ def calc_memory_window(dfs, method="divide"):
     if len(y_even) < len(y_odd):
         y_odd.resize(y_even.shape)
         x.resize(y_even.shape[0])
-        print("Reshape odd")
+
     elif len(y_even) > len(y_odd):
         y_even.resize(y_odd.shape)
-        print("Reshape even")
+
         x.resize(y_odd.shape[0])
 
 
@@ -345,9 +356,8 @@ def calc_memory_window(dfs, method="divide"):
 
     if len(delta) < len(x):
         x.resize(delta.shape[0])
-        print("Reshape x")
-    print(len(delta))
-    print(len(x))
+
+
     # make it a df again
     data_frame = pd.DataFrame(data=delta)
     data_frame.set_index(x, inplace=True)
@@ -361,12 +371,12 @@ def calc_memory_window(dfs, method="divide"):
     data_frame.index.name = 'Voltage (V)'
 
     # change into list to make compatible with plot methods
-    delta_list = [data_frame]
+    delta_list = data_frame
 
     return delta_list
 
 
-def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
+def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
     """Calculates the differential resistance
     :param df:  Data frame with IV data
     :param window_range: range defining the subset of df that is used for the fit (see calc_linear_fit)
@@ -399,12 +409,12 @@ def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
                 r2_list.append(fit_results["r2"])
             except:
                 resistance_list.append(np.nan)
-        print(f'{c+1}/{len(df.columns)}')
+        logging.info(f'RESISTANCE calculated for column {c+1}of {len(df.columns)}')
 
         if len(voltage_list) != len(resistance_list):
             resistance_list = resistance_list[:len(voltage_list)]
 
-            print("resistance list resized")
+
         if c == 0:
             resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
                                           f'Resistance [$\Omega$]_{c}': resistance_list})
@@ -412,8 +422,10 @@ def calc_diff_resistance(df, window_range=0.1, fit_method='ransac'):
         else:
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
-    e_resistance_df = resistance_df.iloc[0:, 0::2].copy()
-    o_resistance_df = resistance_df.iloc[0:, 1::2].copy()
+    resistance_df.interpolate(method='linear', limit_direction='forward', axis=0)
+    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear', limit_direction='forward', axis=0)
+    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear', limit_direction='forward', axis=0)
+
 
     resistance_df.name = 'all'
     e_resistance_df.name = 'even'
@@ -669,6 +681,23 @@ def plot_slice(df, datapath, suffix, title):
 # Convenience Functions #
 #########################
 
+def find_null_value(df):
+    """
+    Finds all rows in dataframe with at least one NaN value in a cell
+    :param df: data frame to be checked
+    :return:
+    """
+
+    null_columns = df.columns[df.isnull().any()]
+    if len(null_columns) > 0:
+        is_null = 1
+    else:
+        is_null = 0
+
+    all_rows = df[df.isnull().any(axis=1)][null_columns].head()
+
+    return is_null, all_rows
+
 def make_colormap(values=1024):
     """creates an intermixed colormap of two color maps to distingush between odd and even sweeps
       :param values   Number of total colors required, i.e. number of sweeps
@@ -790,7 +819,8 @@ if __name__ == "__main__":
                         tosave["all_abs-"+config['Parameters']['filter'].replace(' ','_')] = currents[0].abs()
 
                         if config.getboolean('Plot', 'currents'):
-                            plot_sweeps(currents, filename, suffix='all-'+config['Parameters']['filter'].replace(' ','_'), title=title)
+                            plot_sweeps(currents, filename,
+                                        suffix='all-'+config['Parameters']['filter'].replace(' ','_'), title=title)
 
                     if config.getboolean('Calculate','stats'):
                         # get stats on currents
@@ -798,7 +828,8 @@ if __name__ == "__main__":
                         tosave["stats-"+config['Parameters']['filter'].replace(' ','_')] = stats_df
 
                         if config.getboolean('Calculate','stats'):
-                            plot_stats(stats_df, filename, y_label=filter, suffix='all_stats-'+config['Parameters']['filter'].replace(' ','_'), title=title)
+                            plot_stats(stats_df, filename, y_label=filter,
+                                       suffix='all_stats-'+config['Parameters']['filter'].replace(' ','_'), title=title)
 
 
                     if config.getboolean('Calculate','fowler_nordheim'):
@@ -817,13 +848,15 @@ if __name__ == "__main__":
                     # Memory window
                     if config.getboolean('Calculate','memory_window'):
                         window_df = calc_memory_window(currents, method=config['Parameters']['mem_method'])
-                        window_stats = calc_stats(window_df)
-                        tosave['mwindow_'+config['Parameters']['mem_method']] = window_df[0]
-                        tosave['mwindow_'+config['Parameters']['mem_method']+'_stats'] = window_stats[0]
+                        window_stats = calc_stats([window_df])
+                        tosave['mwindow_'+config['Parameters']['mem_method']] = window_df
+                        tosave['mwindow_'+config['Parameters']['mem_method']+'_stats'] = window_stats
 
                         if config.getboolean('Plot','memory_window'):
-                            plot_sweeps(window_df, filename, suffix='mwindow_'+config['Parameters']['mem_method'], semilogy=True, take_abs=False, title=title)
-                            plot_stats(window_stats, filename, y_label=r'$\Delta I$', suffix='mwindow_'+config['Parameters']['mem_method']+'_stats', title=title)
+                            plot_sweeps([window_df], filename, suffix='mwindow_'+config['Parameters']['mem_method'],
+                                        semilogy=True, take_abs=False, title=title)
+                            plot_stats([window_stats], filename, y_label=r'$\Delta I$',
+                                       suffix='mwindow_'+config['Parameters']['mem_method']+'_stats', title=title)
 
 
                     # linear fit --- TEST AREA
@@ -836,8 +869,8 @@ if __name__ == "__main__":
                         tosave['resistance'] = resistance_stats
 
                         if config.getboolean('Plot','resistance'):
-                            plot_sweeps(resistance_dfs, filename, suffix='resistance',
-                                        semilogy=False, take_abs=False, title=title)
+                            # plot_sweeps(resistance_dfs, filename, suffix='resistance',
+                               #         semilogy=False, take_abs=False, title=title)
                             plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
                                    suffix='resistance_stats', title=title)
                         if config.getboolean('Plot','resistance_slice'):
