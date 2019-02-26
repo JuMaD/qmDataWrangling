@@ -14,6 +14,7 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 from sklearn.metrics import r2_score
+from tqdm import tqdm
 
 pd.options.compute.use_bottleneck = True
 
@@ -25,7 +26,6 @@ pd.options.compute.use_bottleneck = True
 #################
 # File Handling #
 #################
-
 
 
 def open_file(fpath):
@@ -76,19 +76,17 @@ def split_string(string, measurement_procedure='sweep', keyword='#Sweep:'):
         # split header and main string
         parts = string.split("\n\n")
 
-        # todo: use header values in functions! (dictonary- name:value is available already)
-
         header_values = {}
-        if len(parts) > 1:
-            header_lines = parts[0].split('\n')
-            for line in header_lines:
-                header_name = re.search('(?<=#)(.*?)(?=[:,=])', line).group(0)
-                regex_value = '(?<=' + re.escape(header_name) + ')[^#]+'
-                header_value = re.search(regex_value, line).group(0)[2:]
-                header_values[header_name.split(" ")[0].replace(" ", "")] = header_value.replace(" ", "_")
+
+        header_lines = parts[0].split('\n')
+        for line in header_lines:
+            header_name = re.search('(?<=#)(.*?)(?=[:,=])', line).group(0)
+            regex_value = '(?<=' + re.escape(header_name) + ')[^#]+'
+            header_value = re.search(regex_value, line).group(0)[2:]
+            header_values[header_name.split(" ")[0].replace(" ", "")] = header_value.replace(" ", "_")
 
         # split at keyword
-        list_strings = parts[len(parts)-1].split(keyword)
+        list_strings = parts[len(parts) - 1].split(keyword)
 
         # preserve first row that are the labels
         labels = list_strings[0].strip().split("\t")
@@ -116,7 +114,6 @@ def save_df_to_file(df, datapath, suffix):
     filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
     savepath = filepath + suffix + '.csv'
 
-
     df.to_csv(savepath, sep='\t')
 
 
@@ -124,13 +121,13 @@ def save_df_to_file(df, datapath, suffix):
 # Data Frame Functions #
 ########################
 def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index=2, ):
-    """Creates a Pandas dataframe joining both np_arrays at index_column
-    :param  np_arrays:      Array containing both np_arrays to be joined
-    :param  labels:         List of Strings containing the Labels - needs to have np_array.shape(0) elements
-    :param  index_column:   index of the column to be used as index
-    :param start_index      Column index at which the returned pandas dataframes
-    :param header_values    Values from the file header used to calculate current density, if needed
-    :return:                pandas dataframes for both, odd and even number in list - labeled array
+    """Creates a Pandas dataframe joining both np_arrays at index_column.
+    :param np_arrays:      Array containing both np_arrays to be joined.
+    :param labels:         List of Strings containing the Labels - needs to have np_array.shape(0) elements.
+    :param index_column:   index of the column to be used as index.
+    :param start_index:    Column index at which the returned pandas dataframes starts.
+    :param header_values:  Values from the file header used to calculate current density, if needed.
+    :return:               pandas dataframes for both, odd and even number in list - labeled array
     """
 
     final_df = None
@@ -145,7 +142,7 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
         num_labels = labels[:]
 
         if np_array.shape[1] < len(num_labels):
-            #assume that the last, missing column is current density
+            # assume that the last, missing column is current density
 
             try:
                 suffix = re.findall('\D+', header_values["Size"])[0]
@@ -153,18 +150,17 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
                 suffix = 'u'
             size = int(re.findall('\d+', header_values["Size"])[0])
             if suffix == 'u':
-                area = np.multiply(size**2, 1e-12)
+                area = np.multiply(size ** 2, 1e-12)
             if suffix == 'm':
-                area = np.multiply(size**2, 1e-6)
+                area = np.multiply(size ** 2, 1e-6)
+            else:
+                area = np.multiply(size ** 2, 1e-12)
 
+            current_density = np.multiply(np_array[:, 2] / area, 1e-1)
 
-            current_density = np.multiply(np_array[:,2] / area, 1e-1)
-
-            #A / m^2 --> *10^3 --> mA / m^2 --> *10^-4 --> total: mA/cm^2 --> 10^-1
+            # A / m^2 --> *10^3 --> mA / m^2 --> *10^-4 --> total: mA/cm^2 --> 10^-1
 
             np_array = np.c_[np_array, current_density]
-
-
 
         data_frame = pd.DataFrame(data=np_array,
                                   columns=num_labels)
@@ -196,7 +192,7 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
 
         logging.debug('Data frames created')
 
-    final_df = final_df[final_df.columns[2*start_index:final_df.shape[0]]].interpolate(
+    final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
         method='linear', limit_direction='forward', axis=0)
 
     o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
@@ -204,10 +200,7 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
     e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
         method='linear', limit_direction='forward', axis=0)
 
-
-
     return final_df, o_final_df, e_final_df
-
 
 
 def filter_df(df, filter_string='Current [A]'):
@@ -331,8 +324,6 @@ def calc_memory_window(dfs, method="divide"):
         if df.name == 'even':
             y_even = np.copy(np.asarray(df))
 
-
-
     if len(y_even) < len(y_odd):
         y_odd.resize(y_even.shape)
         x.resize(y_even.shape[0])
@@ -341,8 +332,6 @@ def calc_memory_window(dfs, method="divide"):
         y_even.resize(y_odd.shape)
 
         x.resize(y_odd.shape[0])
-
-
 
     if method == "divide":
         delta1 = np.divide(np.abs(y_odd), np.abs(y_even))
@@ -356,7 +345,6 @@ def calc_memory_window(dfs, method="divide"):
 
     if len(delta) < len(x):
         x.resize(delta.shape[0])
-
 
     # make it a df again
     data_frame = pd.DataFrame(data=delta)
@@ -414,7 +402,6 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
         if len(voltage_list) != len(resistance_list):
             resistance_list = resistance_list[:len(voltage_list)]
 
-
         if c == 0:
             resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
                                           f'Resistance [$\Omega$]_{c}': resistance_list})
@@ -423,9 +410,10 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
     resistance_df.interpolate(method='linear', limit_direction='forward', axis=0)
-    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear', limit_direction='forward', axis=0)
-    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear', limit_direction='forward', axis=0)
-
+    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear',
+                                                                      limit_direction='forward', axis=0)
+    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear',
+                                                                      limit_direction='forward', axis=0)
 
     resistance_df.name = 'all'
     e_resistance_df.name = 'even'
@@ -436,10 +424,11 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
     return resistance_df_list
 
 
-def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=False, datapath=None, title=None):
+def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug=False, datapath=None, title=None):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
+
 
     :param df:          DataFrame to be fit
     :param start        middle point of the range to be analyzed
@@ -447,7 +436,7 @@ def calc_linear_fit(df, fit_range=1, start=0, method='ransac', column=1, debug=F
     :param method:      Method used to fit the data e.g. ransac or linreg
     :param column:      Index of column with y data
     :param debug:       Turns off/on the debug function: plotting the fit and displaying the return
-    :paran title:       Displayed Title
+    :param title:       Displayed Title
     :param datapath     Datapath being displayed in the debug plot
     :return:            Dictionarry with {coefficent, resistance, R2}
 
@@ -698,6 +687,7 @@ def find_null_value(df):
 
     return is_null, all_rows
 
+
 def make_colormap(values=1024):
     """creates an intermixed colormap of two color maps to distingush between odd and even sweeps
       :param values   Number of total colors required, i.e. number of sweeps
@@ -715,8 +705,6 @@ def make_colormap(values=1024):
     mymap = mcolors.LinearSegmentedColormap.from_list('my_colormap', colors)
 
     return mymap
-
-
 
 
 if __name__ == "__main__":
@@ -760,7 +748,7 @@ if __name__ == "__main__":
         ################
         # Wrangle Data #
         ################
-        for file in os.listdir(dirname):
+        for file in tqdm(os.listdir(dirname)):
             if file.endswith("IVSweep.txt"):
                 #############################
                 # Make Dataframes from file #
@@ -780,122 +768,114 @@ if __name__ == "__main__":
                 with open(f'{headerfile}-0_header.csv', 'w') as file:
                     [file.write('{0},{1}\n'.format(key, value)) for key, value in header.items()]
 
-                np_arrays = []
-                # make numpy array for every sweep and add data to list
-                for string in string_list:
-                    if string == "":
-                        continue
-                    np_arrays.append(string_to_numpy(string))
-                # turn both data into Pandas data frame, using voltage to join
-                both, odd, even = make_pandas_df(np_arrays, labels, header_values=header)
+                if int(header['Cycles']) > 1:
+                    np_arrays = []
+                    # make numpy array for every sweep and add data to list
+                    for string in string_list:
+                        if string == "":
+                            continue
+                        np_arrays.append(string_to_numpy(string))
+                    # turn both data into Pandas data frame, using voltage to join
+                    both, odd, even = make_pandas_df(np_arrays, labels, header_values=header,
+                                                     start_index=int(config['Parameters']['start_index']))
 
-                if odd is not None and even is not None:
-                    dfs = [both, odd, even]
-                    dfs_names = ['both', 'odd', 'even']
+                    if odd is not None and even is not None:
+                        dfs = [both, odd, even]
+                        dfs_names = ['both', 'odd', 'even']
 
-                    # get only currents
-                    currents = []
+                        # get only currents
+                        currents = []
 
-                    for d in range(0, len(dfs)):
-                        current = filter_df(dfs[d], filter)
-                        current.name = dfs_names[d]
-                        currents.append(current)
+                        for d in range(0, len(dfs)):
+                            current = filter_df(dfs[d], filter)
+                            current.name = dfs_names[d]
+                            currents.append(current)
 
-                    ###############################
-                    # Perform Calculations & Plot #
-                    ###############################
+                        ###############################
+                        # Perform Calculations & Plot #
+                        ###############################
 
-                    tosave= {}
+                        tosave = {}
 
-                    if 'Material-ID' in header:
-                        title = header['Material-ID']
-                    else:
-                        title = None
+                        if 'Material-ID' in header:
+                            title = header['Material-ID']
+                        else:
+                            title = None
 
+                        tosave["all-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0]
 
-                    tosave["all-"+config['Parameters']['filter'].replace(' ','_')] = currents[0]
+                        if config.getboolean('Calculate', 'absolute'):
+                            tosave["all_abs-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0].abs()
 
-                    if config.getboolean('Calculate','absolute'):
-                        tosave["all_abs-"+config['Parameters']['filter'].replace(' ','_')] = currents[0].abs()
+                            if config.getboolean('Plot', 'currents'):
+                                plot_sweeps(currents, filename,
+                                            suffix='all-' + config['Parameters']['filter'].replace(' ', '_'),
+                                            title=title)
 
-                        if config.getboolean('Plot', 'currents'):
-                            plot_sweeps(currents, filename,
-                                        suffix='all-'+config['Parameters']['filter'].replace(' ','_'), title=title)
+                        if config.getboolean('Calculate', 'stats'):
+                            # get stats on currents
+                            stats_df = calc_stats(currents)
+                            tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df
 
-                    if config.getboolean('Calculate','stats'):
-                        # get stats on currents
-                        stats_df = calc_stats(currents)
-                        tosave["stats-"+config['Parameters']['filter'].replace(' ','_')] = stats_df
+                            if config.getboolean('Calculate', 'stats'):
+                                plot_stats(stats_df, filename, y_label=filter,
+                                           suffix='all_stats-' + config['Parameters']['filter'].replace(' ', '_'),
+                                           title=title)
 
-                        if config.getboolean('Calculate','stats'):
-                            plot_stats(stats_df, filename, y_label=filter,
-                                       suffix='all_stats-'+config['Parameters']['filter'].replace(' ','_'), title=title)
+                        if config.getboolean('Calculate', 'fowler_nordheim'):
+                            # calculate fn data
+                            fn_df = calc_fowler_nordheim(currents)
+                            fn_stats = calc_stats(fn_df)
+                            tosave["fn"] = fn_df[0]
+                            tosave["fn_stats"] = fn_stats
 
+                            if config.getboolean('Plot', 'fowler_nordheim'):
+                                plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False, title=title)
+                            if config.getboolean('Plot', 'fn_stats'):
+                                plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats',
+                                           semilogy=False, take_abs=False, title=title)
 
-                    if config.getboolean('Calculate','fowler_nordheim'):
-                        # calculate fn data
-                        fn_df = calc_fowler_nordheim(currents)
-                        fn_stats = calc_stats(fn_df)
-                        tosave["fn"] = fn_df[0]
-                        tosave["fn_stats"] = fn_stats
+                        # Memory window
+                        if config.getboolean('Calculate', 'memory_window'):
+                            window_df = calc_memory_window(currents, method=config['Parameters']['mem_method'])
+                            window_stats = calc_stats([window_df])
+                            tosave['mwindow_' + config['Parameters']['mem_method']] = window_df
+                            tosave['mwindow_' + config['Parameters']['mem_method'] + '_stats'] = window_stats
 
-                        if config.getboolean('Plot','fowler_nordheim'):
-                            plot_sweeps(fn_df, filename, suffix='fn', semilogy=False, take_abs=False, title=title)
-                        if config.getboolean('Plot','fn_stats'):
-                            plot_stats(fn_stats, filename, y_label=r'$\ln{I/V^2}$', suffix='fn_stats', semilogy=False,
-                               take_abs=False, title=title)
+                            if config.getboolean('Plot', 'memory_window'):
+                                plot_sweeps([window_df], filename,
+                                            suffix='mwindow_' + config['Parameters']['mem_method'],
+                                            semilogy=True, take_abs=False, title=title)
+                                plot_stats([window_stats], filename, y_label=r'$\Delta I$',
+                                           suffix='mwindow_' + config['Parameters']['mem_method'] + '_stats',
+                                           title=title)
 
-                    # Memory window
-                    if config.getboolean('Calculate','memory_window'):
-                        window_df = calc_memory_window(currents, method=config['Parameters']['mem_method'])
-                        window_stats = calc_stats([window_df])
-                        tosave['mwindow_'+config['Parameters']['mem_method']] = window_df
-                        tosave['mwindow_'+config['Parameters']['mem_method']+'_stats'] = window_stats
+                        # linear fit --- TEST AREA
+                        # todo: change LBR Fit so that multiple columns can be processed!
+                        if config.getboolean('Calculate', 'differential_resistance'):
 
-                        if config.getboolean('Plot','memory_window'):
-                            plot_sweeps([window_df], filename, suffix='mwindow_'+config['Parameters']['mem_method'],
-                                        semilogy=True, take_abs=False, title=title)
-                            plot_stats([window_stats], filename, y_label=r'$\Delta I$',
-                                       suffix='mwindow_'+config['Parameters']['mem_method']+'_stats', title=title)
+                            resistance_dfs = calc_diff_resistance(currents[0])
+                            resistance_slice = get_slice(resistance_dfs[0],
+                                                         at=config['Parameters'].getfloat('resistance_slice'))
+                            resistance_stats = calc_stats(resistance_dfs)
+                            tosave['resistance'] = resistance_stats
 
+                            if config.getboolean('Plot', 'resistance'):
+                                # plot_sweeps(resistance_dfs, filename, suffix='resistance',
+                                #          semilogy=False, take_abs=False, title=title)
+                                plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
+                                           suffix='resistance_stats', title=title)
+                            if config.getboolean('Plot', 'resistance_slice'):
+                                plot_slice(resistance_slice, filename, 'LBR', title=title)
 
-                    # linear fit --- TEST AREA
-                    # todo: change LBR Fit so that multiple columns can be processed!
-                    if config.getboolean('Calculate','differential_resistance'):
+                        #################
+                        # Save To Files #
+                        #################
 
-                        resistance_dfs = calc_diff_resistance(currents[0])
-                        resistance_slice = get_slice(resistance_dfs[0], at=config['Parameters'].getfloat('resistance_slice'))
-                        resistance_stats = calc_stats(resistance_dfs)
-                        tosave['resistance'] = resistance_stats
+                        for key, value in tosave.items():
+                            save_df_to_file(value, filename, '_' + key)
 
-                        if config.getboolean('Plot','resistance'):
-                            # plot_sweeps(resistance_dfs, filename, suffix='resistance',
-                               #         semilogy=False, take_abs=False, title=title)
-                            plot_stats(resistance_stats, filename, y_label=r'Resistance [$\Omega$]',
-                                   suffix='resistance_stats', title=title)
-                        if config.getboolean('Plot','resistance_slice'):
-                            plot_slice(resistance_slice, filename, 'LBR', title=title)
-
-                    #################
-                    # Save To Files #
-                    #################
-
-                    for key, value in tosave.items():
-                        save_df_to_file(value, filename, '_' + key)
-
-
-
-                    # todo: clean up plot fn_stats
-
-
-
-
-
-
-
-
-
-
+                        # todo: clean up plot fn_stats
 
         again = messagebox.askyesno('Finished!', f'Finished wrangling files in {dirname}!\n Select another directory?')
 
