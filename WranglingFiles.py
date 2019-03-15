@@ -255,7 +255,7 @@ def calc_stats(dfs):
     return stats_df
 
 
-def calc_fowler_nordheim(dfs, alpha=2):
+def calc_fowler_nordheim(dfs, alpha=3):
     """Calculates ln(I/V^alpha) and 1/V and returns a df to plot a fowler nordheim plot
        :param  dfs:    List of pandas dfs: both, odd, even
        :param alpha:   value for alpha in the ln calculation
@@ -271,16 +271,15 @@ def calc_fowler_nordheim(dfs, alpha=2):
             y = np.absolute(np.asarray(df))
             # Calculate ln(I/V^alpha) and 1/V
             reciprocal = np.reciprocal(x)
-
             power = np.power(reciprocal, alpha)
             power = np.expand_dims(power, axis=0).transpose()
-            j_v = y * power
+            j_v = np.absolute(y * power)
             log = np.log(j_v)
 
             # make it a df again
             data_frame = pd.DataFrame(data=log)
             data_frame.set_index(reciprocal, inplace=True)
-
+            print(data_frame.head())
             columns = []
             for column in range(0, len(data_frame.columns)):
                 name = df.columns[column].split('_')[1]
@@ -288,10 +287,14 @@ def calc_fowler_nordheim(dfs, alpha=2):
 
             data_frame.columns = columns
             data_frame.index.name = '1/X'
+            data_frame = data_frame[np.absolute(data_frame.index) <= 1000]
             fn_dfs.append(data_frame)
+
     fn_df = fn_dfs[0].join(fn_dfs[1], how='outer', lsuffix='_odd', rsuffix='_even')
+    fn_df = fn_df[np.absolute(fn_df.index) <= 1000]
     fn_dfs.append(fn_df)
 
+    print(fn_df.head())
     fn_list = []
 
     for element in reversed(fn_dfs):
@@ -387,14 +390,18 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
     for c in range(len(df.columns)):
         df_column = df.iloc[:, [c]]
         resistance_list = []
+        coef_list = []
+        intercept_list = []
         r2_list = []
 
         for voltage in voltage_list:
             try:
                 fit_results = calc_linear_fit(df_column, column=0, start=voltage, method=fit_method,
-                                              fit_range=window_range)
+                                              fit_range=window_range, debug=False)
                 resistance_list.append(fit_results["resistance"])
                 r2_list.append(fit_results["r2"])
+                coef_list.append(fit_results["coeff"])
+                intercept_list.append(fit_results["intercept"])
             except:
                 resistance_list.append(np.nan)
         logging.info(f'RESISTANCE calculated for column {c+1}of {len(df.columns)}')
@@ -424,7 +431,7 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
     return resistance_df_list
 
 
-def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug=False, datapath=None, title=None):
+def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug=False, title=None):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
@@ -437,7 +444,6 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
     :param column:      Index of column with y data
     :param debug:       Turns off/on the debug function: plotting the fit and displaying the return
     :param title:       Displayed Title
-    :param datapath     Datapath being displayed in the debug plot
     :return:            Dictionarry with {coefficent, resistance, R2}
 
     """
@@ -473,19 +479,17 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
         if debug:
             print(f'Fit Function: y = {coef}x + {intercept}')
             print(f'R^2: {r2}')
-            print(f'Resistance: {resistance} $\Omega$')
+            print(f'Resistance: {resistance} Ohm')
 
             plt.scatter(x, y, color='yellowgreen', marker='.',
                         label='datapoints')
             plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
                      label='RANSAC regressor')
-
-            if title is None:
-                plt.title(os.path.splitext(os.path.basename(datapath))[0])
-            else:
-                plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+            plt.semilogy()
 
             plt.show()
+            plt.savefig('dif_res.jpg')
+
 
         return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
@@ -504,18 +508,16 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
         if debug:
             print(f'Fit Function: y = {coef}x + {intercept}')
             print(f'R^2: {r2}')
-            print(f'Resistance: {resistance} $\Omega$')
+            print(f'Resistance: {resistance} Ohm')
 
             plt.scatter(x, y, color='yellowgreen', marker='.',
                         label='datapoints')
-            plt.plot(line_x, line_y, color='cornflowerblue', linewidth=2,
-                     label='LINREG regressor')
-            if title is None:
-                plt.title(os.path.splitext(os.path.basename(datapath))[0])
-            else:
-                plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+            plt.plot(line_x, line_y_ransac, color='cornflowerblue', linewidth=2,
+                     label='RANSAC regressor')
+            plt.semilogy()
 
             plt.show()
+            plt.savefig('dif_res.jpg')
 
         return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
@@ -854,7 +856,8 @@ if __name__ == "__main__":
                         # todo: change LBR Fit so that multiple columns can be processed!
                         if config.getboolean('Calculate', 'differential_resistance'):
 
-                            resistance_dfs = calc_diff_resistance(currents[0])
+                            resistance_dfs = calc_diff_resistance(currents[0],
+                                                                  window_range=float(config['Parameters']['resistance_range']))
                             resistance_slice = get_slice(resistance_dfs[0],
                                                          at=config['Parameters'].getfloat('resistance_slice'))
                             resistance_stats = calc_stats(resistance_dfs)
