@@ -255,7 +255,7 @@ def calc_stats(dfs):
     return stats_df
 
 
-def calc_fowler_nordheim(dfs, alpha=3):
+def calc_fowler_nordheim(dfs, alpha=2):
     """Calculates ln(I/V^alpha) and 1/V and returns a df to plot a fowler nordheim plot
        :param  dfs:    List of pandas dfs: both, odd, even
        :param alpha:   value for alpha in the ln calculation
@@ -279,7 +279,7 @@ def calc_fowler_nordheim(dfs, alpha=3):
             # make it a df again
             data_frame = pd.DataFrame(data=log)
             data_frame.set_index(reciprocal, inplace=True)
-            print(data_frame.head())
+
             columns = []
             for column in range(0, len(data_frame.columns)):
                 name = df.columns[column].split('_')[1]
@@ -293,8 +293,6 @@ def calc_fowler_nordheim(dfs, alpha=3):
     fn_df = fn_dfs[0].join(fn_dfs[1], how='outer', lsuffix='_odd', rsuffix='_even')
     fn_df = fn_df[np.absolute(fn_df.index) <= 1000]
     fn_dfs.append(fn_df)
-
-    print(fn_df.head())
     fn_list = []
 
     for element in reversed(fn_dfs):
@@ -572,6 +570,14 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
         plt.title(os.path.splitext(os.path.basename(datapath))[0])
     else:
         plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+
+    y = df[0].iloc[:,1].values
+    x = df[0].index.values
+
+    annot_min(x,y, ax=ax2)
+
+
+
     plt.savefig(filename_all)
 
     plt.show()
@@ -628,6 +634,8 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
         else:
             ax = stats_df[stats_arr].plot(colormap=cmap_stats)
 
+
+
     ax.set_ylabel(y_label)
     if semilogy:
         plt.semilogy()
@@ -671,6 +679,18 @@ def plot_slice(df, datapath, suffix, title):
 #########################
 # Convenience Functions #
 #########################
+def annot_min(x,y, ax=None):
+    xmin = x[np.argmin(y)]
+    ymin = y.min()
+    print(xmin)
+    text= "x={:.3f}, y={:.3f}".format(xmin, ymin)
+    if not ax:
+        ax=plt.gca()
+    bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
+    arrowprops=dict(arrowstyle="->",connectionstyle="angle,angleA=0,angleB=60")
+    kw = dict(xycoords='data',textcoords="axes fraction",
+              arrowprops=arrowprops, bbox=bbox_props, ha="right", va="top")
+    ax.annotate(text, xy=(xmin, ymin), xytext=(0.94,0.96), **kw)
 
 def find_null_value(df):
     """
