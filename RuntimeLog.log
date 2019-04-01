@@ -4616,3 +4616,13 @@ INFO:root:RESISTANCE calculated for column 7of 9
 INFO:root:RESISTANCE calculated for column 8of 9
 INFO:root:RESISTANCE calculated for column 9of 9
 INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2019-04-01 21:17:52.267656
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-04-01 21:19:32.731450
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/M/MD0010/04\M0010-4a-PS101_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 5
+INFO:root:RESISTANCE calculated for column 2of 5
+INFO:root:RESISTANCE calculated for column 3of 5
+INFO:root:RESISTANCE calculated for column 4of 5
+INFO:root:RESISTANCE calculated for column 5of 5

@@ -279,7 +279,7 @@ def calc_fowler_nordheim(dfs, alpha=3):
             # make it a df again
             data_frame = pd.DataFrame(data=log)
             data_frame.set_index(reciprocal, inplace=True)
-            print(data_frame.head())
+
             columns = []
             for column in range(0, len(data_frame.columns)):
                 name = df.columns[column].split('_')[1]
@@ -294,7 +294,7 @@ def calc_fowler_nordheim(dfs, alpha=3):
     fn_df = fn_df[np.absolute(fn_df.index) <= 1000]
     fn_dfs.append(fn_df)
 
-    print(fn_df.head())
+
     fn_list = []
 
     for element in reversed(fn_dfs):
