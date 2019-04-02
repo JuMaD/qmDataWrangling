@@ -193,12 +193,12 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
         logging.debug('Data frames created')
 
     final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
 
     o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
     e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
 
     return final_df, o_final_df, e_final_df
 
@@ -251,7 +251,7 @@ def calc_stats(dfs):
 
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
-    stats_df = stats_df.interpolate(method='linear', limit_direction='forward', axis=0)
+    stats_df = stats_df.interpolate(method='akima', limit_direction='forward', axis=0)
     return stats_df
 
 
@@ -416,7 +416,7 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
         else:
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
-    resistance_df.interpolate(method='linear', limit_direction='forward', axis=0)
+    resistance_df.interpolate(method='akima', limit_direction='forward', axis=0)
     e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear',
                                                                       limit_direction='forward', axis=0)
     o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear',
