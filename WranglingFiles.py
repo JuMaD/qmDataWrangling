@@ -231,10 +231,11 @@ def join_dfs(ldf, rdf):
 # todo: implement LBR (Low bias resistance) estimator and save data
 # todo: encapsulate all calculations inside calculate
 
-def calc_stats(dfs):
+def calc_stats(dfs, absolute=False):
     """Calls pandas describe on both dataframes in list dfs
-    :param  dfs:    List of pandas dfs
-    :return         pd df with stats"""
+    :param  dfs:        List of pandas dfs
+    :param absolute:    Bool whether the absolute of the values should be returned
+    :return             pd df with stats"""
 
     # calculate stats for HRS & LRS
     oe_stats = []
@@ -252,6 +253,8 @@ def calc_stats(dfs):
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
     stats_df = stats_df.interpolate(method='akima', limit_direction='forward', axis=0)
+
+
     return stats_df
 
 
@@ -817,7 +820,7 @@ if __name__ == "__main__":
                         if config.getboolean('Calculate', 'stats'):
                             # get stats on currents
                             stats_df = calc_stats(currents)
-                            tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df
+                            tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df.abs()
 
                             if config.getboolean('Calculate', 'stats'):
                                 plot_stats(stats_df, filename, y_label=filter,
@@ -878,7 +881,6 @@ if __name__ == "__main__":
                         for key, value in tosave.items():
                             save_df_to_file(value, filename, '_' + key)
 
-                        # todo: clean up plot fn_stats
 
         again = messagebox.askyesno('Finished!', f'Finished wrangling files in {dirname}!\n Select another directory?')
 
