@@ -21,7 +21,7 @@ pd.options.compute.use_bottleneck = True
 
 # todo: make a higher level object / df / dict that acummulates all junctions in one directory
 # todo: implement tool that shows plots from several "higher level plots" in on figure
-# todo: implement calc_tools: calculate current density, low bias resistance, ...
+# todo: implement calc_tools: low bias resistance, ...
 
 #################
 # File Handling #
@@ -229,7 +229,6 @@ def join_dfs(ldf, rdf):
 # Calculations #
 ################
 # todo: implement LBR (Low bias resistance) estimator and save data
-# todo: encapsulate all calculations inside calculate
 
 def calc_stats(dfs, absolute=False):
     """Calls pandas describe on both dataframes in list dfs
@@ -308,6 +307,52 @@ def calc_fowler_nordheim(dfs, alpha=3):
         fn_list[i].name = dfs_names[i]
 
     return fn_list
+
+def calc_ndc(dfs):
+    """Calculate NDC = d logI/ d log V
+    :param dfs: List of data frames: both, odd, even
+    :return: Data frame containing the normalized differential conductanve of odd and even sweeps"""
+   #  todo:implement this!!
+    x = np.asarray(d)
+    y_odd = None
+    y_even = None
+    delta1 = None
+    delta2 = None
+
+    for df in dfs:
+        if df.name == 'odd':
+            y_odd = np.copy(np.asarray(df))
+        if df.name == 'even':
+            y_even = np.copy(np.asarray(df))
+
+    if len(y_even) < len(y_odd):
+        y_odd.resize(y_even.shape)
+        x.resize(y_even.shape[0])
+
+    elif len(y_even) > len(y_odd):
+        y_even.resize(y_odd.shape)
+
+        x.resize(y_odd.shape[0])
+
+    print("---------------------------------------")
+
+    ndc_odd = np.divide(np.gradient(np.log(np.abs(y_odd[0])), axis=0), np.gradient(np.log(np.abs(x)), axis=0))
+   # ndc_even =np.divide(np.gradient(np.log(np.abs(y_even))), np.gradient(np.log(np.abs(x))))
+
+    print(ndc_odd)
+
+    # make it a df again
+    data_frame = pd.DataFrame(data=ndc_odd)
+    data_frame.set_index(x, inplace=True)
+
+    columns = []
+    for column in range(0, len(data_frame.columns)):
+        name = dfs[0].columns[column].split('_')[1]
+        columns.append(f'$\Delta I$_{name}')
+
+    data_frame.columns = columns
+    data_frame.index.name = 'Voltage (V)'
+
 
 
 def calc_memory_window(dfs, method="divide"):
@@ -450,7 +495,7 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
     :return:            Dictionarry with {coefficent, resistance, R2}
 
     """
-    # todo: make it a rolling regression over the whole dataset
+
     # get x and y from df
     # get only a part of the data frame and extract numpy array
     mask = (df.index > -1 * fit_range / 2 + start) & (df.index <= fit_range / 2 + start)
@@ -527,10 +572,9 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
 
 def get_slice(resistance_df, at=0):
     """
-    #todo:refine get_slice docstring
     :param resistance_df:   datafrane to slice
-    :param at:  value that is compared to index value to slice
-    :return: slice at position
+    :param at:              voltage at which the resistance is returned. Closest value in df is considered.
+    :return:                slice at position
     """
     voltages = resistance_df.index.values.tolist()
     zero = voltages[np.abs(np.subtract(voltages, at)).argmin()]
@@ -689,6 +733,7 @@ def find_null_value(df):
         is_null = 0
 
     all_rows = df[df.isnull().any(axis=1)][null_columns].head()
+    print(all_rows)
 
     return is_null, all_rows
 
@@ -759,7 +804,7 @@ if __name__ == "__main__":
                 # Make Dataframes from file #
                 #############################
 
-                # todo: encapsulate make_dfs, perform_calculations & save_data
+
 
                 # open file and get data
                 filename = os.path.join(dirname, file)
@@ -801,6 +846,8 @@ if __name__ == "__main__":
                         ###############################
 
                         tosave = {}
+
+                        calc_ndc(currents)
 
                         if 'Material-ID' in header:
                             title = header['Material-ID']
