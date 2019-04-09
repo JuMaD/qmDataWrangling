@@ -13,7 +13,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 from matplotlib.ticker import (AutoMinorLocator)
-from scipy import interpolate
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 from tqdm import tqdm
@@ -310,70 +309,40 @@ def calc_fowler_nordheim(dfs, alpha=3):
 
     return fn_list
 
-
-def calc_ndc(dfs):
+def calc_ndc(df):
     """Calculate NDC = d logI/ d log V
-    :param dfs: List of data frames: both, odd, even
+    :param dfs: dataframw with I-V data
     :return: Data frame containing the normalized differential conductanve of odd and even sweeps"""
    # todo: turn results into dataframes and return list
-    x_odd = np.asarray(dfs[1].index.values.tolist())
-    x_even = np.asarray(dfs[2].index.values.tolist())
-    y_odd = None
-    y_even = None
+    x = np.asarray(df.index.values.tolist())
+    y = np.copy(np.asarray(df))
 
-    for df in dfs:
-        df.interpolate(method='akima', limit_direction='forward', axis=0)
-        if df.name == 'odd':
-            y_odd = np.copy(np.asarray(df))
-        if df.name == 'even':
-            y_even = np.copy(np.asarray(df))
-
-
-    if len(y_even) < len(y_odd):
-        y_odd.resize(y_even.shape)
-        x_odd.resize(y_even.shape[0])
-        x_even.resize(y_even.shape[0])
-
-
-    elif len(y_even) > len(y_odd):
-        y_even.resize(y_odd.shape)
-        x_odd.resize(y_odd.shape[0])
-        x_even.resize(y_odd.shape[0])
-
-
-    for column in range(0,y_odd.shape[1]):
-        ndc_odd = np.abs(np.divide(np.gradient(np.log(np.abs(y_odd[:,column]))), np.gradient(np.log(np.abs(x_odd)))))
-        plt.plot(x_odd, interpolate.Akima1DInterpolator(x_odd, ndc_odd)(x_odd))
+    for column in range(0,y.shape[1]):
+        ndc = np.abs(np.divide(np.gradient(np.log(np.abs(y[:,column]))), np.gradient(np.log(np.abs(x)))))
 
         if column == 0:
-            ndc_odd_df = pd.DataFrame({'Voltage [V]': x_odd,
-                                          f'NDC [dI/dV V/I]_{column}': ndc_odd})
-            ndc_odd_df.set_index('Voltage [V]', inplace=True)
-            ndc_odd_df.name = 'odd'
-            ndc_odd_df.index.name = 'Voltage (V)'
+            ndc_df = pd.DataFrame({'Voltage [V]': x,
+                                          f'NDC [dI/dV V/I]_{column}': ndc})
+            ndc_df.set_index('Voltage [V]', inplace=True)
+            ndc_df.name = 'both'
+            ndc_df.index.name = 'Voltage (V)'
         else:
-            ndc_odd_df[f'NDC [dI/dV V/I]_{column}'] = ndc_odd
+            ndc_df[f'NDC [dI/dV V/I]_{column}'] = ndc
 
+    ndc_df.interpolate(method='akima', limit_direction='forward', axis=0)
+    ndc_even_df = ndc_df.iloc[0:, 0::2].copy().interpolate(method='akima',
+                                                                      limit_direction='forward', axis=0)
+    ndc_odd_df = ndc_df.iloc[0:, 1::2].copy().interpolate(method='akima',
+                                                                      limit_direction='forward', axis=0)
 
-    for column in range(0, y_even.shape[1]):
-        ndc_even = np.abs(np.divide(np.gradient(np.log(np.abs(y_even[:, column]))), np.gradient(np.log(np.abs(x_even)))))
-        plt.plot(x_even, interpolate.Akima1DInterpolator(x_even, ndc_even)(x_even))
+    ndc_df.name = 'all'
+    ndc_even_df.name = 'even'
+    ndc_odd_df.name = 'odd'
 
-        if column == 0:
-            ndc_even_df = pd.DataFrame({'Voltage [V]': x_even,
-                                          f'NDC [dI/dV V/I]_{column}': ndc_even})
-            ndc_even_df.set_index('Voltage [V]', inplace=True)
-            ndc_even_df.name = 'even'
-            ndc_even_df.index.name = 'Voltage (V)'
-        else:
-            ndc_even_df[f'NDC [dI/dV V/I]_{column}'] = ndc_even
-    all_ndc = join_dfs(ndc_odd_df, ndc_even_df)
-
-    ndc_df_list = [all_ndc, ndc_odd_df, ndc_even_df]
+    ndc_df_list = [ndc_df, ndc_odd_df, ndc_even_df]
 
 
     return ndc_df_list
-
 
 def calc_memory_window(dfs, method="divide"):
     """
@@ -919,7 +888,7 @@ if __name__ == "__main__":
                         else:
                             title = None
 
-                        ndc = calc_ndc(currents)
+                        ndc = calc_ndc(currents[0])
                         ndc_stats = calc_stats(ndc)
                         plot_sweeps(ndc, filename, suffix='all_ndc', axline=True, semilogy=False,
                                     take_abs=False, title=title, ylimit=[0,6])
