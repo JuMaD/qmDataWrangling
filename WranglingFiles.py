@@ -12,6 +12,8 @@ import matplotlib.colors as mcolors
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from matplotlib.ticker import (AutoMinorLocator)
+from scipy import interpolate
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 from tqdm import tqdm
@@ -308,51 +310,69 @@ def calc_fowler_nordheim(dfs, alpha=3):
 
     return fn_list
 
+
 def calc_ndc(dfs):
     """Calculate NDC = d logI/ d log V
     :param dfs: List of data frames: both, odd, even
     :return: Data frame containing the normalized differential conductanve of odd and even sweeps"""
-   #  todo:implement this!!
-    x = np.asarray(d)
+   # todo: turn results into dataframes and return list
+    x_odd = np.asarray(dfs[1].index.values.tolist())
+    x_even = np.asarray(dfs[2].index.values.tolist())
     y_odd = None
     y_even = None
-    delta1 = None
-    delta2 = None
 
     for df in dfs:
+        df.interpolate(method='akima', limit_direction='forward', axis=0)
         if df.name == 'odd':
             y_odd = np.copy(np.asarray(df))
         if df.name == 'even':
             y_even = np.copy(np.asarray(df))
 
+
     if len(y_even) < len(y_odd):
         y_odd.resize(y_even.shape)
-        x.resize(y_even.shape[0])
+        x_odd.resize(y_even.shape[0])
+        x_even.resize(y_even.shape[0])
+
 
     elif len(y_even) > len(y_odd):
         y_even.resize(y_odd.shape)
+        x_odd.resize(y_odd.shape[0])
+        x_even.resize(y_odd.shape[0])
 
-        x.resize(y_odd.shape[0])
 
-    print("---------------------------------------")
+    for column in range(0,y_odd.shape[1]):
+        ndc_odd = np.abs(np.divide(np.gradient(np.log(np.abs(y_odd[:,column]))), np.gradient(np.log(np.abs(x_odd)))))
+        plt.plot(x_odd, interpolate.Akima1DInterpolator(x_odd, ndc_odd)(x_odd))
 
-    ndc_odd = np.divide(np.gradient(np.log(np.abs(y_odd[0])), axis=0), np.gradient(np.log(np.abs(x)), axis=0))
-   # ndc_even =np.divide(np.gradient(np.log(np.abs(y_even))), np.gradient(np.log(np.abs(x))))
+        if column == 0:
+            ndc_odd_df = pd.DataFrame({'Voltage [V]': x_odd,
+                                          f'NDC [dI/dV V/I]_{column}': ndc_odd})
+            ndc_odd_df.set_index('Voltage [V]', inplace=True)
+            ndc_odd_df.name = 'odd'
+            ndc_odd_df.index.name = 'Voltage (V)'
+        else:
+            ndc_odd_df[f'NDC [dI/dV V/I]_{column}'] = ndc_odd
 
-    print(ndc_odd)
 
-    # make it a df again
-    data_frame = pd.DataFrame(data=ndc_odd)
-    data_frame.set_index(x, inplace=True)
+    for column in range(0, y_even.shape[1]):
+        ndc_even = np.abs(np.divide(np.gradient(np.log(np.abs(y_even[:, column]))), np.gradient(np.log(np.abs(x_even)))))
+        plt.plot(x_even, interpolate.Akima1DInterpolator(x_even, ndc_even)(x_even))
 
-    columns = []
-    for column in range(0, len(data_frame.columns)):
-        name = dfs[0].columns[column].split('_')[1]
-        columns.append(f'$\Delta I$_{name}')
+        if column == 0:
+            ndc_even_df = pd.DataFrame({'Voltage [V]': x_even,
+                                          f'NDC [dI/dV V/I]_{column}': ndc_even})
+            ndc_even_df.set_index('Voltage [V]', inplace=True)
+            ndc_even_df.name = 'even'
+            ndc_even_df.index.name = 'Voltage (V)'
+        else:
+            ndc_even_df[f'NDC [dI/dV V/I]_{column}'] = ndc_even
+    all_ndc = join_dfs(ndc_odd_df, ndc_even_df)
 
-    data_frame.columns = columns
-    data_frame.index.name = 'Voltage (V)'
+    ndc_df_list = [all_ndc, ndc_odd_df, ndc_even_df]
 
+
+    return ndc_df_list
 
 
 def calc_memory_window(dfs, method="divide"):
@@ -465,9 +485,9 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
     resistance_df.interpolate(method='akima', limit_direction='forward', axis=0)
-    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear',
+    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='akima',
                                                                       limit_direction='forward', axis=0)
-    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear',
+    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='akima',
                                                                       limit_direction='forward', axis=0)
 
     resistance_df.name = 'all'
@@ -587,14 +607,15 @@ def get_slice(resistance_df, at=0):
 #  Visualizations #
 ###################
 
-def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
+def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, axline=False, ylimit=None):
     """"
     :param df:          List of dataframes to plot in one plot.
     :param datapath:    Path to plot to.
     :param semilogy:    Bool that decides whether y axis is plotted in log scale.
     :param take_abs:    Bool that decides whether absolute value is plotted.
     :param title:       Displayed Title of the Plot
-    :param suffix       Suffix to datapath for plots.
+    :param suffix:      Suffix to datapath for plots.
+    :param axline:      Bool whether or not to plot lines at x=0 and y=1
     """
     # make plt-close non-blocking
     plt.ion()
@@ -608,17 +629,42 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
     filename_all = filepath + "_" + suffix + ".png"
 
     if take_abs:
-        ax2 = df[0].abs().plot(colormap=cmap_oddeven)
+        ax = df[0].abs().plot(colormap=cmap_oddeven)
     else:
-        ax2 = df[0].plot(colormap=cmap_oddeven)
+        ax = df[0].plot(colormap=cmap_oddeven)
 
-    ax2.set_ylabel(df[0].columns.values[0].split('_')[0])
+    ax.set_ylabel(df[0].columns.values[0].split('_')[0], fontsize=14)
+
     if semilogy:
         plt.semilogy()
     if title is None:
         plt.title(os.path.splitext(os.path.basename(datapath))[0])
     else:
         plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+
+
+    minorLocator = AutoMinorLocator()
+    ax.xaxis.set_minor_locator(minorLocator)
+    if not semilogy:
+        yminorLocator = AutoMinorLocator()
+        ax.yaxis.set_minor_locator(yminorLocator)
+
+    if axline == True:
+        ax.axhline(1, color='k')
+        ax.axvline(0, color='k')
+
+    ax.tick_params(axis='both', direction='in', top=True, right=True, which='both', width=1, length=4)
+    ax.tick_params(axis='both', which='major', length=8)
+    ax.xaxis.label.set_size(14)
+
+    for side in ax.spines.keys():  # 'top', 'bottom', 'left', 'right'
+        ax.spines[side].set_linewidth(2)
+
+
+    if ylimit != None:
+        ax.set_ylim(ylimit)
+
+
     plt.savefig(filename_all)
 
     plt.show()
@@ -626,7 +672,8 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
-def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True, title=None):
+def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True, title=None,
+               axline=False):
     """
 
     :param stats_df:    Dataframe containing the stats.
@@ -675,7 +722,28 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
         else:
             ax = stats_df[stats_arr].plot(colormap=cmap_stats)
 
-    ax.set_ylabel(y_label)
+    ax.set_ylabel(y_label, fontsize=14)
+
+    minorLocator = AutoMinorLocator()
+    ax.xaxis.set_minor_locator(minorLocator)
+
+    if not semilogy:
+        yminorLocator = AutoMinorLocator()
+        ax.yaxis.set_minor_locator(yminorLocator)
+
+
+
+    if axline == True:
+        ax.axhline(1, color='k')
+        ax.axvline(0, color='k')
+
+    ax.tick_params(axis='both', direction='in', top=True, right=True, which='both', width=1, length=4)
+    ax.tick_params(axis='both', which='major', length=8)
+    ax.xaxis.label.set_size(14)
+
+    for side in ax.spines.keys():  # 'top', 'bottom', 'left', 'right'
+        ax.spines[side].set_linewidth(2)
+
     if semilogy:
         plt.semilogy()
 
@@ -703,7 +771,6 @@ def plot_slice(df, datapath, suffix, title):
     filename_all = filepath + "_" + suffix + ".png"
 
     plt.scatter(df.index, df)
-    # ax2.set_ylabel(df.values[0].split('_')[0])
 
     if title is None:
         plt.title(os.path.splitext(os.path.basename(datapath))[0])
@@ -847,12 +914,15 @@ if __name__ == "__main__":
 
                         tosave = {}
 
-                        calc_ndc(currents)
-
                         if 'Material-ID' in header:
                             title = header['Material-ID']
                         else:
                             title = None
+
+                        ndc = calc_ndc(currents)
+                        ndc_stats = calc_stats(ndc)
+                        plot_sweeps(ndc, filename, suffix='all_ndc', axline=True, semilogy=False,
+                                    take_abs=False, title=title, ylimit=[0,6])
 
                         tosave["all-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0]
 
