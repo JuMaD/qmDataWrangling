@@ -309,11 +309,12 @@ def calc_fowler_nordheim(dfs, alpha=3):
 
     return fn_list
 
+
 def calc_ndc(df):
     """Calculate NDC = d logI/ d log V
     :param dfs: dataframw with I-V data
     :return: Data frame containing the normalized differential conductanve of odd and even sweeps"""
-   # todo: turn results into dataframes and return list
+   # todo: interpolate current values
     x = np.asarray(df.index.values.tolist())
     y = np.copy(np.asarray(df))
 
@@ -343,6 +344,7 @@ def calc_ndc(df):
 
 
     return ndc_df_list
+
 
 def calc_memory_window(dfs, method="divide"):
     """
@@ -585,6 +587,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, 
     :param title:       Displayed Title of the Plot
     :param suffix:      Suffix to datapath for plots.
     :param axline:      Bool whether or not to plot lines at x=0 and y=1
+    :param ylimit:      Array with 2 values. If set, sets y-axis limits to [ymin,ymax]
     """
     # make plt-close non-blocking
     plt.ion()
@@ -642,7 +645,7 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, 
 
 # noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
 def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True, title=None,
-               axline=False):
+               axline=False, ylimit=None):
     """
 
     :param stats_df:    Dataframe containing the stats.
@@ -652,6 +655,7 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
     :param y_label      Label displayed at y-axis.
     :param semilogy:    Set the graph to semilog.
     :param take_abs:    Take abs before plotting if true.
+    :param ylimit:      Array with 2 values. If set, sets y-axis limits to [ymin,ymax]
     """
 
     if stats is None:
@@ -700,7 +704,8 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
         yminorLocator = AutoMinorLocator()
         ax.yaxis.set_minor_locator(yminorLocator)
 
-
+    if ylimit != None:
+        ax.set_ylim(ylimit)
 
     if axline == True:
         ax.axhline(1, color='k')
@@ -888,12 +893,15 @@ if __name__ == "__main__":
                         else:
                             title = None
 
-                        ndc = calc_ndc(currents[0])
-                        ndc_stats = calc_stats(ndc)
-                        plot_sweeps(ndc, filename, suffix='all_ndc', axline=True, semilogy=False,
-                                    take_abs=False, title=title, ylimit=[0,6])
-
-                        tosave["all-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0]
+                        if config.getboolean('Calculate', 'ndc'):
+                            ndc = calc_ndc(currents[0])
+                            ndc_stats = calc_stats(ndc)
+                            plot_sweeps(ndc, filename, suffix='all_ndc', axline=True, semilogy=False,
+                                        take_abs=False, title=title, ylimit=[0,6])
+                            plot_stats(ndc_stats, filename, y_label=r'NDC (dI/dV $\cdot$ V/I)',
+                                       suffix='ndc_stats', title=title, semilogy=False, axline=True, ylimit=[0, 6])
+                            tosave["ndc"] = ndc[0]
+                            tosave["ndc_stats"] =ndc_stats
 
                         if config.getboolean('Calculate', 'absolute'):
                             tosave["all_abs-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0].abs()
