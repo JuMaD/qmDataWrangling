@@ -11,6 +11,12 @@ It also performs the following calculations:
 ## Calculations
 TABLE OF PARAMETERS THAT CAN BE SET IN CONFIG
 
+|  section  | parameter   | type  | explanation  |   |
+|---        |---|---|---|---|
+| directory |   home_directory |  |  The directory where all folders with data can be found. Will automatically change to last one used and leaving it empty will set it to root  |   |
+|   |   |   |   |   |
+|   |   |   |   |   |
+
 [Directory]
 home_directory = H:/_all/Software/DataWrangling_new
 
