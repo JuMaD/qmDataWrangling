@@ -193,12 +193,12 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
         logging.debug('Data frames created')
 
     final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
 
     o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
     e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
-        method='linear', limit_direction='forward', axis=0)
+        method='akima', limit_direction='forward', axis=0)
 
     return final_df, o_final_df, e_final_df
 
@@ -231,10 +231,11 @@ def join_dfs(ldf, rdf):
 # todo: implement LBR (Low bias resistance) estimator and save data
 # todo: encapsulate all calculations inside calculate
 
-def calc_stats(dfs):
+def calc_stats(dfs, absolute=False):
     """Calls pandas describe on both dataframes in list dfs
-    :param  dfs:    List of pandas dfs
-    :return         pd df with stats"""
+    :param  dfs:        List of pandas dfs
+    :param absolute:    Bool whether the absolute of the values should be returned
+    :return             pd df with stats"""
 
     # calculate stats for HRS & LRS
     oe_stats = []
@@ -251,11 +252,13 @@ def calc_stats(dfs):
 
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
-    stats_df = stats_df.interpolate(method='linear', limit_direction='forward', axis=0)
+    stats_df = stats_df.interpolate(method='akima', limit_direction='forward', axis=0)
+
+
     return stats_df
 
 
-def calc_fowler_nordheim(dfs, alpha=2):
+def calc_fowler_nordheim(dfs, alpha=3):
     """Calculates ln(I/V^alpha) and 1/V and returns a df to plot a fowler nordheim plot
        :param  dfs:    List of pandas dfs: both, odd, even
        :param alpha:   value for alpha in the ln calculation
@@ -293,6 +296,8 @@ def calc_fowler_nordheim(dfs, alpha=2):
     fn_df = fn_dfs[0].join(fn_dfs[1], how='outer', lsuffix='_odd', rsuffix='_even')
     fn_df = fn_df[np.absolute(fn_df.index) <= 1000]
     fn_dfs.append(fn_df)
+
+
     fn_list = []
 
     for element in reversed(fn_dfs):
@@ -414,7 +419,7 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
         else:
             resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
-    resistance_df.interpolate(method='linear', limit_direction='forward', axis=0)
+    resistance_df.interpolate(method='akima', limit_direction='forward', axis=0)
     e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='linear',
                                                                       limit_direction='forward', axis=0)
     o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='linear',
@@ -570,14 +575,6 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None):
         plt.title(os.path.splitext(os.path.basename(datapath))[0])
     else:
         plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
-
-    y = df[0].iloc[:,1].values
-    x = df[0].index.values
-
-    annot_min(x,y, ax=ax2)
-
-
-
     plt.savefig(filename_all)
 
     plt.show()
@@ -634,8 +631,6 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
         else:
             ax = stats_df[stats_arr].plot(colormap=cmap_stats)
 
-
-
     ax.set_ylabel(y_label)
     if semilogy:
         plt.semilogy()
@@ -679,18 +674,6 @@ def plot_slice(df, datapath, suffix, title):
 #########################
 # Convenience Functions #
 #########################
-def annot_min(x,y, ax=None):
-    xmin = x[np.argmin(y)]
-    ymin = y.min()
-    print(xmin)
-    text= "x={:.3f}, y={:.3f}".format(xmin, ymin)
-    if not ax:
-        ax=plt.gca()
-    bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
-    arrowprops=dict(arrowstyle="->",connectionstyle="angle,angleA=0,angleB=60")
-    kw = dict(xycoords='data',textcoords="axes fraction",
-              arrowprops=arrowprops, bbox=bbox_props, ha="right", va="top")
-    ax.annotate(text, xy=(xmin, ymin), xytext=(0.94,0.96), **kw)
 
 def find_null_value(df):
     """
@@ -837,7 +820,7 @@ if __name__ == "__main__":
                         if config.getboolean('Calculate', 'stats'):
                             # get stats on currents
                             stats_df = calc_stats(currents)
-                            tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df
+                            tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df.abs()
 
                             if config.getboolean('Calculate', 'stats'):
                                 plot_stats(stats_df, filename, y_label=filter,
@@ -898,7 +881,6 @@ if __name__ == "__main__":
                         for key, value in tosave.items():
                             save_df_to_file(value, filename, '_' + key)
 
-                        # todo: clean up plot fn_stats
 
         again = messagebox.askyesno('Finished!', f'Finished wrangling files in {dirname}!\n Select another directory?')
 

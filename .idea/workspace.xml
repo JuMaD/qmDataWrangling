@@ -5,10 +5,13 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Fowler Nordheim Plots now ignore any 1/V &gt; 1000">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Ignoring all files with #Cycles &lt; start_index and added progress bar">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,20 +40,20 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ini" value="630" />
+          <entry key="ini" value="614" />
           <entry key="log" value="2" />
           <entry key="md" value="919" />
-          <entry key="py" value="3141" />
-          <entry key="txt" value="453" />
+          <entry key="py" value="2895" />
+          <entry key="txt" value="400" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ini" value="630" />
+          <entry key="Ini" value="614" />
           <entry key="Log" value="1" />
           <entry key="Markdown" value="919" />
-          <entry key="PLAIN_TEXT" value="454" />
-          <entry key="Python" value="3141" />
+          <entry key="PLAIN_TEXT" value="401" />
+          <entry key="Python" value="2895" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -61,25 +64,25 @@
           <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide" value="1" />
           <entry key="M0893-1b-Hg5_00_IVSweep_stats" value="1" />
           <entry key="M0893-1b-Hg5_00_IVSweep_stats_abs" value="1" />
-          <entry key="csv" value="8" />
+          <entry key="csv" value="6" />
           <entry key="info" value="1" />
           <entry key="ini" value="2" />
           <entry key="jpg" value="4" />
           <entry key="log" value="2" />
           <entry key="md" value="1" />
-          <entry key="png" value="63" />
-          <entry key="py" value="9" />
+          <entry key="png" value="56" />
+          <entry key="py" value="7" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="67" />
+          <entry key="Image" value="60" />
           <entry key="Ini" value="2" />
           <entry key="Log" value="2" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="Python" value="9" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="Python" value="7" />
         </counts>
       </usages-collector>
     </session>
@@ -88,19 +91,20 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="ini" value="15" />
-          <entry key="py" value="1466" />
+          <entry key="ini" value="16" />
+          <entry key="py" value="1468" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Ini" value="15" />
-          <entry key="Python" value="1466" />
+          <entry key="Ini" value="16" />
+          <entry key="Python" value="1468" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -126,8 +130,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="697" column="7" lean-forward="true" selection-start-line="697" selection-start-column="7" selection-end-line="697" selection-end-column="7" />
+            <state relative-caret-position="362">
+              <caret line="296" column="3" selection-start-line="296" selection-start-column="3" selection-end-line="296" selection-end-column="3" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -136,16 +140,54 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_resistance_stats.png">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1632">
+              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="371">
+              <caret line="1363" column="48" selection-start-line="1363" selection-start-column="48" selection-end-line="1363" selection-end-column="48" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
+      <find>inter</find>
+      <find>_stat</find>
+      <find>calc_stats(</find>
+      <find>resistance</find>
       <find>calc_diff_res</find>
+      <find>plot_sweeps</find>
+      <find>print</find>
       <find>interpolate</find>
+      <find>plot_stats</find>
       <find>range</find>
       <find>res</find>
       <find>def make_pandas_df</find>
@@ -166,14 +208,7 @@
       <find>if debug</find>
       <find>debug=true</find>
       <find>calc_fowler</find>
-      <find>print</find>
-      <find>plot</find>
-      <find>plot fn</find>
-      <find>plot_stats</find>
-      <find>plot_swe</find>
-      <find>plot_sweeps</find>
-      <find>annot</find>
-      <find>annot_min</find>
+      <find>print(</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,51 +235,29 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="412" />
-    <option name="y" value="12" />
-    <option name="width" value="1444" />
-    <option name="height" value="1160" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="159" />
+    <option name="y" value="14" />
+    <option name="width" value="1474" />
+    <option name="height" value="1123" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DataWrangling_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling_new" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataWrangling_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling_new" type="462c0819:PsiDirectoryNode" />
-              <item name="origin-filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataWrangling_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling_new" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataWrangling_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling_new" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
-              <item name="csv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DataWrangling_new" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling_new" type="462c0819:PsiDirectoryNode" />
-              <item name="testdata" type="462c0819:PsiDirectoryNode" />
-              <item name="plots" type="462c0819:PsiDirectoryNode" />
+              <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -371,14 +384,7 @@
       <option name="project" value="LOCAL" />
       <updated>1551169906186</updated>
     </task>
-    <task id="LOCAL-00010" summary="Fowler Nordheim Plots now ignore any 1/V &gt; 1000">
-      <created>1552661237913</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1552661237913</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TodoView">
@@ -391,16 +397,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="412" y="12" width="1444" height="1160" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6297872" visible="true" weight="0.42318633" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6297872" visible="true" weight="0.26238146" />
       <window_info id="Structure" order="1" sideWeight="0.37021276" side_tool="true" weight="0.26238146" />
       <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.32814023" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3962999" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3224568" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39693192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
@@ -444,6 +450,32 @@
       <window_info anchor="right" id="R Packages" order="4" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -459,8 +491,7 @@
     <MESSAGE value="Added &quot;info&quot; file to outsource some comments" />
     <MESSAGE value="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)" />
     <MESSAGE value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
-    <MESSAGE value="Fowler Nordheim Plots now ignore any 1/V &gt; 1000" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fowler Nordheim Plots now ignore any 1/V &gt; 1000" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -468,13 +499,15 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>214</line>
+          <line>212</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_mwindow_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_resistance_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_both.png" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/base.py" />
@@ -505,39 +538,9 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all.png" />
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_divide" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31739">
-          <caret line="1957" selection-start-line="1957" selection-end-line="1957" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/indexing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20536">
-          <caret line="1230" selection-start-line="1230" selection-end-line="1230" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="29" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="57766">
-          <caret line="3398" column="46" selection-start-line="3398" selection-start-column="46" selection-end-line="3398" selection-end-column="46" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1532" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/frame.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/indexing.py" />
+    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt" />
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -548,75 +551,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/M0001-2a-PS15u1_00_IVSweep.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_resistance.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dif_res.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn_stats.csv">
+    <entry file="file://$PROJECT_DIR$/testdata/M0001-2a-PS15u1_00_IVSweep.txt" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all_stats-Current_[A].png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all-Current_[A].png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_resistance_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_resistance.csv" />
+    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn.csv" />
+    <entry file="file://$PROJECT_DIR$/dif_res.jpg" />
+    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn_stats.csv" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn_stats.png" />
+    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="1632">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn.csv">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="60" lean-forward="true" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+        <state relative-caret-position="833">
+          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="371">
+          <caret line="1363" column="48" selection-start-line="1363" selection-start-column="48" selection-end-line="1363" selection-end-column="48" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-1532" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="102">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_resistance_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn_stats.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="3080" selection-start-line="3080" selection-end-line="3080" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="1688" selection-start-line="1688" selection-end-line="1688" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all_stats-Current_[A].png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all-Current_[A].png">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="697" column="7" lean-forward="true" selection-start-line="697" selection-start-column="7" selection-end-line="697" selection-end-column="7" />
+        <state relative-caret-position="362">
+          <caret line="296" column="3" selection-start-line="296" selection-start-column="3" selection-end-line="296" selection-end-column="3" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
