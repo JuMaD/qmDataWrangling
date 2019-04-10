@@ -1,4 +1,4 @@
-# qMem_Datawrangler
+# qMem Datawrangler
 This script processes output of qMem measurement software into an Origin &reg; compatible *.csv files and matplotlib graphs to quickly visualy analyze data.
 It also performs the following calculations:
 - Absolute values of current / current density (for semi-log plots)
