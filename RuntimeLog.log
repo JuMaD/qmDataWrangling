@@ -4626,3 +4626,228 @@ INFO:root:RESISTANCE calculated for column 2of 5
 INFO:root:RESISTANCE calculated for column 3of 5
 INFO:root:RESISTANCE calculated for column 4of 5
 INFO:root:RESISTANCE calculated for column 5of 5
+INFO:root:LOGGING STARTED:2019-04-03 16:14:24.411544
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-04-03 16:14:47.661618
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-03 16:17:48.810961
+INFO:root:Config file read and parameters set.
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2019-04-03 16:18:03.740041
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS50u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS35u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS20u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS10u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/1\M0001-2a-PS5u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS50u12_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS35u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS35u9_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS35u11_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u19_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u14_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u13_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u12_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u11_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u10_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u9_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u8_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u7_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/2\M0002-1a-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_02_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_03_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_04_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_05_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u3_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u5_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u7_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u5_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-03 16:43:04.398566
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_02_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_03_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_04_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u3_05_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u3_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS50u5_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS35u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS20u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS15u7_01_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS10u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u6_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u7_00_IVSweep.txt
+INFO:root:Opening file: M:/share/students/Deepthi_Devendra/Experiments/3\M0003-1a-PS5u8_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:07:05.030466
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-04-08 15:21:52.878468
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-04-08 15:24:53.288468
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:26:38.570468
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:27:25.293468
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:28:38.528171
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:29:32.287546
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:31:34.799796
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:34:34.782793
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:36:15.811894
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-04-08 15:36:45.395853
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:37:52.357548
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:39:15.385850
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:40:52.730584
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:41:46.525963
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:42:58.955205
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-04-08 15:43:32.152524
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt

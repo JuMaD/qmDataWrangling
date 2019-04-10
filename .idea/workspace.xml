@@ -5,7 +5,8 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Ignoring all files with #Cycles &lt; start_index and added progress bar">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
+      <change afterPath="$PROJECT_DIR$/FileCompare.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -19,106 +20,6 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1197003023">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="9" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.105" value="1" />
-          <entry key="project.open.time.134" value="1" />
-          <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.29" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.5" value="1" />
-          <entry key="project.open.time.52" value="1" />
-          <entry key="project.opened" value="11" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="ini" value="614" />
-          <entry key="log" value="2" />
-          <entry key="md" value="919" />
-          <entry key="py" value="2895" />
-          <entry key="txt" value="400" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Ini" value="614" />
-          <entry key="Log" value="1" />
-          <entry key="Markdown" value="919" />
-          <entry key="PLAIN_TEXT" value="401" />
-          <entry key="Python" value="2895" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="M0893-1b-Hg5_00_IVSweep_all_abs" value="4" />
-          <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_divide" value="1" />
-          <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_stats" value="1" />
-          <entry key="M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide" value="1" />
-          <entry key="M0893-1b-Hg5_00_IVSweep_stats" value="1" />
-          <entry key="M0893-1b-Hg5_00_IVSweep_stats_abs" value="1" />
-          <entry key="csv" value="6" />
-          <entry key="info" value="1" />
-          <entry key="ini" value="2" />
-          <entry key="jpg" value="4" />
-          <entry key="log" value="2" />
-          <entry key="md" value="1" />
-          <entry key="png" value="56" />
-          <entry key="py" value="7" />
-          <entry key="txt" value="3" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Image" value="60" />
-          <entry key="Ini" value="2" />
-          <entry key="Log" value="2" />
-          <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="19" />
-          <entry key="Python" value="7" />
-        </counts>
-      </usages-collector>
-    </session>
-    <session id="-134128678">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="ini" value="16" />
-          <entry key="py" value="1468" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="Ini" value="16" />
-          <entry key="Python" value="1468" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="py" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="Python" value="2" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
   <component name="FavoritesManager">
     <favorites_list name="DataWrangling">
       <favorite_root url="file://$PROJECT_DIR$/WranglingFiles.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
@@ -130,29 +31,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="296" column="3" selection-start-line="296" selection-start-column="3" selection-end-line="296" selection-end-column="3" />
+            <state relative-caret-position="220">
+              <caret line="337" column="97" selection-start-line="337" selection-start-column="97" selection-end-line="337" selection-end-column="97" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#8080#8848#0" />
+                <element signature="e#8895#10543#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="110" selection-start-line="110" selection-end-line="110" />
+            <state relative-caret-position="227">
+              <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+            <state relative-caret-position="227">
+              <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FileCompare.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -160,29 +72,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-          <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="371">
-              <caret line="1363" column="48" selection-start-line="1363" selection-start-column="48" selection-end-line="1363" selection-end-column="48" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80937">
+              <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>inter</find>
-      <find>_stat</find>
-      <find>calc_stats(</find>
-      <find>resistance</find>
       <find>calc_diff_res</find>
       <find>plot_sweeps</find>
       <find>print</find>
@@ -209,6 +124,10 @@
       <find>debug=true</find>
       <find>calc_fowler</find>
       <find>print(</find>
+      <find>low bias resistance</find>
+      <find>find_null_value</find>
+      <find>save_df_to_file</find>
+      <find>join_dfs</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -230,6 +149,7 @@
         <option value="$PROJECT_DIR$/info" />
         <option value="$PROJECT_DIR$/RuntimeLog.log" />
         <option value="$PROJECT_DIR$/Readme.md" />
+        <option value="$PROJECT_DIR$/FileCompare.py" />
         <option value="$PROJECT_DIR$/config.ini" />
         <option value="$PROJECT_DIR$/WranglingFiles.py" />
       </list>
@@ -246,18 +166,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
+              <item name="DataWrangling2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataWrangling2" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +203,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Standard Config">
+    <configuration name="FileCompare" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="qMem_DataWrangling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\ga27jaf\AppData\Local\Continuum\anaconda3\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileCompare.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Standard Config" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="qMem_DataWrangling" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -291,9 +232,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\ga27jaf\AppData\Local\Continuum\anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WranglingFiles.py" />
@@ -308,6 +249,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.Standard Config" />
+        <item itemvalue="Python.FileCompare" />
       </list>
     </recent_temporary>
   </component>
@@ -405,11 +347,11 @@
       <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3224568" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3218391" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39693192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
@@ -475,9 +417,20 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -502,12 +455,15 @@
           <line>212</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
+          <line>352</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_fn_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_mwindow_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_resistance_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_both.png" />
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/base.py" />
@@ -527,9 +483,8 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_resistance_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_fn.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_fn_stats.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/configparser.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/configparser.py" />
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_all_abs" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/numpy/core/numeric.py" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide" />
@@ -538,8 +493,8 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all.png" />
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_divide" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda3/Lib/site-packages/pandas/core/indexing.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/pandas/core/frame.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/pandas/core/indexing.py" />
     <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt" />
     <entry file="file://$PROJECT_DIR$/Readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -563,43 +518,51 @@
     <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn_stats.csv" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn_stats.png" />
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py" />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
+    <entry file="file://$PROJECT_DIR$/FileCompare.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        <state relative-caret-position="578">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="101" column="33" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="371">
-          <caret line="1363" column="48" selection-start-line="1363" selection-start-column="48" selection-end-line="1363" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="-1532" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        <state relative-caret-position="255">
+          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80937">
+          <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="296" column="3" selection-start-line="296" selection-start-column="3" selection-end-line="296" selection-end-column="3" />
+        <state relative-caret-position="220">
+          <caret line="337" column="97" selection-start-line="337" selection-start-column="97" selection-end-line="337" selection-end-column="97" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#8080#8848#0" />
+            <element signature="e#8895#10543#0" />
           </folding>
         </state>
       </provider>
