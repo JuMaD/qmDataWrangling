@@ -7,3 +7,30 @@ It also performs the following calculations:
 
 ## Calculations
 TABLE OF PARAMETERS THAT CAN BE SET IN CONFIG
+
+[Directory]
+home_directory = H:/_all/Software/DataWrangling_new
+
+[Parameters]
+filter = Current [A]
+resistance_slice = 0.1
+resistance_range = 0.4
+mem_method = divide
+start_index = 2
+
+[Calculate]
+absolute = True
+stats = True
+fowler_nordheim = True
+memory_window = True
+differential_resistance = True
+
+[Plot]
+currents = True
+stats = True
+fowler_nordheim = True
+fn_stats = True
+memory_window = True
+resistance = True
+resistance_slice = False
+
