@@ -5,10 +5,7 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
-      <change afterPath="$PROJECT_DIR$/FileCompare.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Started on Calc_NDC">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
@@ -31,13 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="337" column="97" selection-start-line="337" selection-start-column="97" selection-end-line="337" selection-end-column="97" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-                <element signature="e#8080#8848#0" />
-                <element signature="e#8895#10543#0" />
-              </folding>
+            <state relative-caret-position="471">
+              <caret line="197" column="30" lean-forward="true" selection-start-line="197" selection-start-column="30" selection-end-line="197" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -45,7 +37,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="25772">
               <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
             </state>
           </provider>
@@ -54,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="28050">
               <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
             </state>
           </provider>
@@ -63,7 +55,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FileCompare.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="595">
               <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
@@ -72,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="68">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -81,8 +73,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80937">
-              <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
+            <state relative-caret-position="-4167">
+              <caret line="5101" column="48" selection-start-line="5101" selection-start-column="48" selection-end-line="5101" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -326,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1551169906186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Started on Calc_NDC">
+      <created>1554731081640</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554731081640</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TodoView">
@@ -347,12 +346,12 @@
       <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3218391" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.28448275" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39693192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2902299" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
       <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
@@ -444,7 +443,8 @@
     <MESSAGE value="Added &quot;info&quot; file to outsource some comments" />
     <MESSAGE value="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)" />
     <MESSAGE value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
+    <MESSAGE value="Started on Calc_NDC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started on Calc_NDC" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -452,12 +452,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>212</line>
+          <line>213</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>352</line>
+          <line>344</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -520,50 +520,45 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$PROJECT_DIR$/FileCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80937">
-          <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="25772">
           <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="28050">
           <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileCompare.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4167">
+          <caret line="5101" column="48" selection-start-line="5101" selection-start-column="48" selection-end-line="5101" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="337" column="97" selection-start-line="337" selection-start-column="97" selection-end-line="337" selection-end-column="97" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <element signature="e#8080#8848#0" />
-            <element signature="e#8895#10543#0" />
-          </folding>
+        <state relative-caret-position="471">
+          <caret line="197" column="30" lean-forward="true" selection-start-line="197" selection-start-column="30" selection-end-line="197" selection-end-column="30" />
         </state>
       </provider>
     </entry>

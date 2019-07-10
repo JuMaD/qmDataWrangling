@@ -192,14 +192,14 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
                     o_final_df = join_dfs(o_final_df, data_frame)
 
         logging.debug('Data frames created')
-
-    final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
-        method='akima', limit_direction='forward', axis=0)
-
-    o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
-        method='akima', limit_direction='forward', axis=0)
-    e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
-        method='akima', limit_direction='forward', axis=0)
+    if final_df is not None:
+        final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
+            method='akima', limit_direction='forward', axis=0)
+    if o_final_df is not None:
+        o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
+            method='akima', limit_direction='forward', axis=0)
+        e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
+            method='akima', limit_direction='forward', axis=0)
 
     return final_df, o_final_df, e_final_df
 
