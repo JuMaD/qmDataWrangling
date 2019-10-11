@@ -4851,3 +4851,649 @@ INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS1
 INFO:root:LOGGING STARTED:2019-04-08 15:43:32.152524
 INFO:root:Config file read and parameters set.
 INFO:root:Opening file: H:/_all/Software/DataWrangling_new/testdata\M0001-2a-PS15u1_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-06-19 12:48:40.490805
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-06-26 14:45:51.424009
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-06-26 15:26:55.707670
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u4_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u4_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u5_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u5_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u3_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u3_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u4_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u4_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u1_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-06-26 15:30:48.621244
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u1_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u1_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u2_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u3_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u4_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u4_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u5_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS50u5_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u2_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u3_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u3_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u4_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u4_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS35u5_02_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u1_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u2_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u2_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u3_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u3_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u4_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u5_00_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Opening file: M:/share/students/Xinrui/13\M0013-1b-PS20u5_01_IVSweep.txt
+INFO:root:RESISTANCE calculated for column 1of 7
+INFO:root:RESISTANCE calculated for column 2of 7
+INFO:root:RESISTANCE calculated for column 3of 7
+INFO:root:RESISTANCE calculated for column 4of 7
+INFO:root:RESISTANCE calculated for column 5of 7
+INFO:root:RESISTANCE calculated for column 6of 7
+INFO:root:RESISTANCE calculated for column 7of 7
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2019-07-10 09:39:57.146852
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-07-10 09:43:29.752111
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-07-10 09:44:43.937528
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_03_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u3_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-07-10 09:46:28.290963
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u3_03_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS50u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS35u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS20u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS15u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u1_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u1_03_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/2\M0013-2-PS5u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u1_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u1_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u2_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u2_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u3_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u4_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS50u5_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u2_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u2_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u4_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u5_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS35u5_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u2_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS20u5_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u1_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u2_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u3_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u3_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u4_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u4_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u5_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS10u5_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u1_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u1_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u1_02_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u2_00_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u2_01_IVSweep.txt
+INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u3_00_IVSweep.txt

@@ -11,6 +11,20 @@ It also performs the following calculations:
 ## Calculations
 TABLE OF PARAMETERS THAT CAN BE SET IN CONFIG
 
+|  section  | parameter   | type  | explanation  |   
+|---        |---          |---    |           ---|
+| Directory |   home_directory |  Bool |  The directory where all folders with data can be found.\\Will automatically change to last one used and leaving it empty will set it to root    |
+ |  Parameters |             |        |           | 
+ |  Parameters | filter = Current [A]   |   |        |           |    
+|  Parameters | resistance_slice = 0.1 | |        |           | 
+|  Parameters | resistance_range = 0.4 |  |        |           | 
+|  Parameters | mem_method = divide    |  |        |           | 
+|  Parameters | start_index = 2        |  |        |           | 
+  |  Parameters |             |        | |        |           |            |    
+|  Calculate |             |        |           |   
+    
+|  Plot |             |        |           |   
+
 [Directory]
 home_directory = H:/_all/Software/DataWrangling_new
 
