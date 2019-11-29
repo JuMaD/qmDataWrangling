@@ -5,11 +5,9 @@
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Started on Calc_NDC">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,29 +23,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="471">
-              <caret line="197" column="30" lean-forward="true" selection-start-line="197" selection-start-column="30" selection-end-line="197" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25772">
-              <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28050">
-              <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
+            <state relative-caret-position="5440">
+              <caret line="337" selection-start-line="337" selection-end-line="337" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -61,11 +44,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -73,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4167">
-              <caret line="5101" column="48" selection-start-line="5101" selection-start-column="48" selection-end-line="5101" selection-end-column="48" />
+            <state relative-caret-position="80937">
+              <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -158,21 +141,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="DataWrangling2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DataWrangling2" type="462c0819:PsiDirectoryNode" />
+              <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="last_opened_file_path" value="H:/Private/software" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -224,7 +208,7 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\ga27jaf\AppData\Local\Continuum\anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -238,6 +222,10 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.FileCompare" />
+      <item itemvalue="Python.Standard Config" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Standard Config" />
@@ -318,17 +306,10 @@
       <option name="project" value="LOCAL" />
       <updated>1551169906186</updated>
     </task>
-    <task id="LOCAL-00010" summary="Started on Calc_NDC">
-      <created>1554731081640</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1554731081640</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -339,24 +320,23 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6297872" visible="true" weight="0.26238146" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5565134" visible="true" weight="0.26238146" />
       <window_info id="Structure" order="1" sideWeight="0.37021276" side_tool="true" weight="0.26238146" />
-      <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
+      <window_info id="Favorites" order="2" sideWeight="0.4434866" side_tool="true" weight="0.26238146" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.28448275" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" weight="0.3218391" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39693192" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.2902299" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854405" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32950193" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
       <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
       <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.7409382" weight="0.49269718" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.641419" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.6408046" />
       <window_info anchor="bottom" id="Regex Tester" order="13" weight="0.32981783" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.32911393" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -443,8 +423,7 @@
     <MESSAGE value="Added &quot;info&quot; file to outsource some comments" />
     <MESSAGE value="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)" />
     <MESSAGE value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
-    <MESSAGE value="Started on Calc_NDC" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started on Calc_NDC" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -452,12 +431,12 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>213</line>
+          <line>212</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>344</line>
+          <line>352</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
@@ -520,17 +499,15 @@
     <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py" />
     <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py" />
+    <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25772">
-          <caret line="1535" selection-start-line="1535" selection-end-line="1535" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28050">
-          <caret line="1682" selection-start-line="1682" selection-end-line="1682" />
+        <state relative-caret-position="5440">
+          <caret line="337" selection-start-line="337" selection-end-line="337" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -543,22 +520,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4167">
-          <caret line="5101" column="48" selection-start-line="5101" selection-start-column="48" selection-end-line="5101" selection-end-column="48" />
+        <state relative-caret-position="80937">
+          <caret line="4761" column="58" selection-start-line="4761" selection-start-column="58" selection-end-line="4761" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="471">
-          <caret line="197" column="30" lean-forward="true" selection-start-line="197" selection-start-column="30" selection-end-line="197" selection-end-column="30" />
+        <state relative-caret-position="255">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
         </state>
       </provider>
     </entry>
