@@ -5497,3 +5497,29 @@ INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u1_02_IVSweep.t
 INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u2_00_IVSweep.txt
 INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u2_01_IVSweep.txt
 INFO:root:Opening file: H:/_all/Lab/Results/MD0013/1\M0013-1b-PS5u3_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2019-11-29 15:15:16.570296
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2019-11-29 15:15:51.513790
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_02_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_05_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_06_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u13_07_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u14_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u14_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u15_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u15_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u16_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0021-1a-PS50u16_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS20u13_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS20u15_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS20u16_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS35u14_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS35u15_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS35u16_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/ga27jaf/temp/MD0022\M0022-1a-PS35u17_00_IVSweep.txt
+INFO:root:Saved config file

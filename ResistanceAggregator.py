@@ -9,6 +9,8 @@ import os
 import tkinter as tk
 from tkinter import filedialog
 import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.ticker import (AutoMinorLocator)
 
 import pandas as pd
 from tqdm import tqdm
@@ -22,6 +24,22 @@ def open_file(fpath):
     with open(fpath, 'r') as myfile:
         content = myfile.read()
     return content
+
+
+def save_df_to_file(df, datapath, suffix):
+    """
+    Saves the data frame to the specified path
+    :param df:          Dataframe to be saved
+    :param datapath:    relative path to save location
+    :param suffix:      File suffix = name after datapath
+    :return:            true for successful save
+    """
+    # generate filename to save to
+    file_dir = os.path.join(os.path.dirname(datapath), 'R_csv')
+    filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
+    savepath = filepath + suffix + '.csv'
+
+    df.to_csv(savepath, sep='\t')
 
 
 def string_to_numpy(string, seperator='\t'):
@@ -46,11 +64,63 @@ def string_to_numpy(string, seperator='\t'):
 
     return np_array
 
+
+def plot_resistance_diff(df, datapath, suffix, title=None):
+    """"
+    :param df:          dataframe to plot.
+    :param datapath:    Path to plot to.
+    :param semilogy:    Bool that decides whether y axis is plotted in log scale.
+    :param take_abs:    Bool that decides whether absolute value is plotted.
+    :param title:       Displayed Title of the Plot
+    :param suffix:      Suffix to datapath for plots.
+    """
+    # make plt-close non-blocking
+    plt.ion()
+
+    # generate filename to save to
+    file_dir = os.path.join(os.path.dirname(datapath), 'R_plots')
+    filepath = os.path.join(file_dir, os.path.splitext(os.path.basename(datapath))[0])
+    filename_all = filepath + "_" + suffix + ".png"
+    ax = df.plot()
+    ax.set_ylabel('Resistance Ratio', fontsize=14)
+
+    if title is None:
+        plt.title(os.path.splitext(os.path.basename(datapath))[0])
+    else:
+        plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
+
+
+    minorLocator = AutoMinorLocator()
+    ax.xaxis.set_minor_locator(minorLocator)
+    yminorLocator = AutoMinorLocator()
+    ax.yaxis.set_minor_locator(yminorLocator)
+
+
+    ax.tick_params(axis='both', direction='in', top=True, right=True, which='both', width=1, length=4)
+    ax.tick_params(axis='both', which='major', length=8)
+    ax.xaxis.label.set_size(14)
+
+    for side in ax.spines.keys():  # 'top', 'bottom', 'left', 'right'
+        ax.spines[side].set_linewidth(2)
+
+
+
+
+    plt.savefig(filename_all)
+
+    plt.show()
+    plt.close('all')
+
+
+
 if __name__ == "__main__":
     start_row = 2 #todo: make this an external parameter
     root = tk.Tk()
     root.withdraw()
     dirname = filedialog.askdirectory()
+    if not os.path.exists(os.path.join(dirname, 'R_csv')):
+        os.makedirs(os.path.join(dirname, 'R_csv'))
+        os.makedirs(os.path.join(dirname, 'R_plots'))
 
     for file in tqdm(os.listdir(dirname)):
         if file.endswith("Resistance.txt"):
@@ -65,9 +135,14 @@ if __name__ == "__main__":
             df["Residue[\u03A9]"] = df["Residue[\u03A9]"].astype(float)
             print(df)
             diff_df = df / df.shift(1)
-            df2 = diff_df[diff_df.index % 2 != 0]
-            df3 = diff_df[diff_df.index % 2 == 0]
-            print(df2, df3)
+            df1 = diff_df[diff_df.index % 2 != 0]
+            df2 = diff_df[diff_df.index % 2 == 0]
+
+
+            save_df_to_file(df1, filename, '_diff1')
+            save_df_to_file(df2, filename, '_diff2')
+            plot_resistance_diff(df1, filename, '_diff1')
+            plot_resistance_diff(df2, filename, '_diff2')
 
 
 
