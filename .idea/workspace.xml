@@ -4,11 +4,19 @@
     <option name="SCOPE_TYPE" value="8" />
     <option name="CUSTOM_SCOPE_NAME" value="Current File" />
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/Readme.md" line="17" mnemonic="2" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="removed print output">
+      <change afterPath="$PROJECT_DIR$/.idea/DataWrangling.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/qMem_DataWrangling.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ResistanceAggregator.py" beforeDir="false" afterPath="$PROJECT_DIR$/ResistanceAggregator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,20 +25,87 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-134128678">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="20" />
+          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="4" />
+          <entry key="project.open.time.5" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="6" />
+          <entry key="project.opened" value="30" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="ini" value="1" />
+          <entry key="log" value="1" />
+          <entry key="md" value="1" />
+          <entry key="py" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Ini" value="1" />
+          <entry key="Log" value="1" />
+          <entry key="Markdown" value="1" />
+          <entry key="Python" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="ini" value="94" />
+          <entry key="md" value="3187" />
+          <entry key="py" value="305" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Ini" value="94" />
+          <entry key="Markdown" value="3187" />
+          <entry key="Python" value="305" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FavoritesManager">
-    <favorites_list name="DataWrangling" />
+    <favorites_list name="DataWrangling">
+      <favorite_root url="file://$PROJECT_DIR$/WranglingFiles.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/RuntimeLog.log" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ResistanceAggregator.py">
+        <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+            <state relative-caret-position="-1904">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
-                <element signature="e#295#536#0" />
-                <element signature="e#584#1111#0" />
-                <element signature="e#588#1223#0" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,89 +113,81 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="48" />
-              <folding>
-                <element signature="e#804#1046#0" />
-                <element signature="e#1098#1733#0" />
-                <element signature="e#1816#3359#0" />
-                <element signature="e#4105#7421#0" />
-                <element signature="e#7476#7803#0" />
-                <element signature="e#7834#8047#0" />
-                <element signature="e#8211#8979#0" />
-                <element signature="e#9026#10674#0" />
-                <element signature="e#10699#12090#0" />
-                <element signature="e#12143#13945#0" />
-                <element signature="e#14021#16754#0" />
-                <element signature="e#16862#20005#0" />
-                <element signature="e#20048#20431#0" />
-                <element signature="e#22883#25662#0" />
-                <element signature="e#26463#26842#0" />
-                <element signature="e#26881#27587#0" />
-              </folding>
+          <provider selected="true" editor-type-id="LogFileEditorProvider">
+            <state relative-caret-position="210086">
+              <caret line="12358" column="132" selection-start-line="12358" selection-start-column="132" selection-end-line="12358" selection-end-column="132" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FileCompare.py">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="748">
+                <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#14#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/lib/function_base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="66844">
+              <caret line="3967" selection-start-line="3967" selection-end-line="3967" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/scipy/interpolate/_cubic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="833">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/missing.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4998">
+              <caret line="310" selection-start-line="310" selection-end-line="310" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/internals/blocks.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="20060">
+              <caret line="1267" selection-start-line="1267" selection-end-line="1267" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>start_index</find>
-      <find>start_o</find>
-      <find>fit_results</find>
-      <find>title</find>
-      <find>resistance_slice</find>
-      <find>plot_slice</find>
-      <find>calc_diff_resistance</find>
-      <find>calc_dif</find>
-      <find>blocking</find>
-      <find>path</find>
-      <find>calc_diff</find>
-      <find>calc_linear_fit</find>
-      <find>calc_linear</find>
-      <find>if debug</find>
-      <find>debug=true</find>
-      <find>calc_fowler</find>
-      <find>print(</find>
-      <find>low bias resistance</find>
-      <find>find_null_value</find>
-      <find>join_dfs</find>
-      <find>filename</find>
-      <find>datapath</find>
+      <find>density</find>
+      <find># todo</find>
+      <find>_ndc</find>
+      <find>ndc</find>
+      <find>stats</find>
       <find>save</find>
-      <find>save_df</find>
-      <find>save_df_to</find>
-      <find>filename =</find>
-      <find>save_df_to_file</find>
-      <find>'plots'</find>
-      <find>plot</find>
-      <find>def plot</find>
+      <find>import</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,36 +205,48 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/oo_WranglingFiles.py" />
-        <option value="$PROJECT_DIR$/info" />
-        <option value="$PROJECT_DIR$/RuntimeLog.log" />
-        <option value="$PROJECT_DIR$/Readme.md" />
-        <option value="$PROJECT_DIR$/FileCompare.py" />
         <option value="$PROJECT_DIR$/config.ini" />
+        <option value="$PROJECT_DIR$/Readme.md" />
         <option value="$PROJECT_DIR$/WranglingFiles.py" />
-        <option value="$PROJECT_DIR$/ResistanceAggregator.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="161" />
-    <option name="y" value="-18" />
-    <option name="width" value="1474" />
-    <option name="height" value="1123" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1167" />
   </component>
+  <component name="ProjectId" id="1RNGni8dMSUwHnTTYq2euFAyESI" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DataWrangling" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DataWrangling" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
-    <property name="last_opened_file_path" value="H:/Private/software" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/mPythonTests" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -188,61 +267,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ResistanceAggregator">
-    <configuration name="FileCompare" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="qMem_DataWrangling" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\ga27jaf\AppData\Local\Continuum\anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileCompare.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ResistanceAggregator" type="PythonConfigurationType" factoryName="Python">
-      <module name="qMem_DataWrangling" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ResistanceAggregator.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="Standard Config" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="qMem_DataWrangling" />
+      <module name="DataWrangling" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\python.exe" />
+      <option name="SDK_HOME" value="C:\Users\Julian\GitHub\DataWrangling\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/WranglingFiles.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -252,15 +290,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Python.ResistanceAggregator" />
-      <item itemvalue="Python.FileCompare" />
-      <item itemvalue="Python.Standard Config" />
-    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.Standard Config" />
-        <item itemvalue="Python.FileCompare" />
       </list>
     </recent_temporary>
   </component>
@@ -273,6 +305,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1521836430150</updated>
+      <workItem from="1569500309281" duration="1012000" />
+      <workItem from="1585060987819" duration="53000" />
+      <workItem from="1585061053977" duration="679000" />
+      <workItem from="1589460453909" duration="2958000" />
     </task>
     <task id="LOCAL-00001" summary="Cleaned up code and corrected memory window calculation">
       <created>1537187154281</created>
@@ -337,10 +373,52 @@
       <option name="project" value="LOCAL" />
       <updated>1551169906186</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="removed print output">
+      <created>1554146499203</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1554146499203</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Changed interpolation method to continuously differentiable sub-splines built from piecewise cubic polynomials">
+      <created>1554211694628</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1554211694628</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added abs to stats output">
+      <created>1554216731863</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1554216731863</updated>
+    </task>
+    <task id="LOCAL-00013" summary="First version of calculating NDC">
+      <created>1554841363750</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1554841363750</updated>
+    </task>
+    <task id="LOCAL-00014" summary="improved NDC calculations">
+      <created>1554841919736</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1554841919736</updated>
+    </task>
+    <task id="LOCAL-00015" summary="further improvements on ndc  &amp; graphs">
+      <created>1554881790068</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1554881790068</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="3">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -353,55 +431,28 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5996169" visible="true" weight="0.24973656" />
-      <window_info id="Structure" order="1" sideWeight="0.40038314" side_tool="true" weight="0.24973656" />
-      <window_info x="560" y="1104" width="474" height="1044" id="Favorites" order="2" sideWeight="0.40038314" side_tool="true" type="FLOATING" weight="0.24973656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20126449" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49841937" visible="true" weight="0.3218391" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39693192" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32821497" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32950193" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32854405" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32950193" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5015806" side_tool="true" visible="true" weight="0.3218391" />
-      <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
-      <window_info anchor="bottom" id="Inspection Results" order="11" sideWeight="0.7409382" weight="0.49269718" />
-      <window_info anchor="bottom" id="Python Console" order="12" sideWeight="0.49947312" weight="0.20498085" />
-      <window_info anchor="bottom" id="Regex Tester" order="13" weight="0.32981783" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32911393" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32917467" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Inspection Results" order="11" weight="0.32917467" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
     </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6297872" visible="true" weight="0.26238146" />
-      <window_info id="Structure" order="1" sideWeight="0.37021276" side_tool="true" visible="true" weight="0.26238146" />
-      <window_info id="Favorites" order="2" sideWeight="0.5007153" side_tool="true" weight="0.18656716" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49253732" weight="0.32981783" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989339" visible="true" weight="0.3240652" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39922103" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32981783" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32981783" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32981783" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5010661" side_tool="true" weight="0.3240652" />
-      <window_info anchor="bottom" id="SonarLint" order="10" sideWeight="0.49946696" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="11" sideWeight="0.7409382" visible="true" weight="0.4928092" />
-      <window_info anchor="bottom" id="Python Console" order="12" weight="0.641419" />
-      <window_info anchor="bottom" id="Regex Tester" order="13" weight="0.32981783" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32981783" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" />
-    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -415,33 +466,15 @@
               <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
                 <collection />
               </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
@@ -455,137 +488,92 @@
     <MESSAGE value="Added &quot;info&quot; file to outsource some comments" />
     <MESSAGE value="Pushed options what to calculate and plot to config.ini and made current density available. &#10;CAREFUL: Don't use Current Density and &quot;Resistance&quot; or &quot;fowler_nordheim&quot; (current, NOT density needed)" />
     <MESSAGE value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ignoring all files with #Cycles &lt; start_index and added progress bar" />
+    <MESSAGE value="removed print output" />
+    <MESSAGE value="Changed interpolation method to continuously differentiable sub-splines built from piecewise cubic polynomials" />
+    <MESSAGE value="added abs to stats output" />
+    <MESSAGE value="First version of calculating NDC" />
+    <MESSAGE value="improved NDC calculations" />
+    <MESSAGE value="further improvements on ndc  &amp; graphs" />
+    <option name="LAST_COMMIT_MESSAGE" value="further improvements on ndc  &amp; graphs" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>212</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/WranglingFiles.py</url>
-          <line>352</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/DataWrangling$Standard_Config.coverage" NAME="Standard Config Coverage Results" MODIFIED="1589465065228" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_both.png" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/base.py" />
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/pandas/core/series.py" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/D0013-2a-Hg3_03_IVSweep_all_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/D0013-2a-Hg3_03_IVSweep.txt" />
-    <entry file="file://$PROJECT_DIR$/info">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt-0_header.csv" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep-0_header.csv" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_stats" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_stats_abs" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_stats" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_resistance.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_resistance_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_fn.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_fn_stats.png" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/configparser.py" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_all_abs" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_statsdivide" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_mwindow_divide_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0893-1b-Hg5_00_IVSweep_all.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0893-1b-Hg5_00_IVSweep_mwindow_divide" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/pandas/core/frame.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/pandas/core/indexing.py" />
-    <entry file="file://$PROJECT_DIR$/testdata/M0893-1b-Hg5_00_IVSweep.txt" />
-    <entry file="file://$PROJECT_DIR$/Readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="136">
-            <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45679">
+          <caret line="2805" selection-start-line="2805" selection-end-line="2805" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testdata/M0001-2a-PS15u1_00_IVSweep.txt" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all_stats-Current_[A].png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_all-Current_[A].png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_mwindow_divide.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_resistance_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_resistance.csv" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn.csv" />
-    <entry file="file://$PROJECT_DIR$/dif_res.jpg" />
-    <entry file="file://$PROJECT_DIR$/testdata/csv/M0001-2a-PS15u1_00_IVSweep_fn_stats.csv" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn_stats.png" />
-    <entry file="file://$PROJECT_DIR$/testdata/plots/M0001-2a-PS15u1_00_IVSweep_fn.png" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/scale.py" />
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/core/numeric.py" />
-    <entry file="file://$USER_HOME$/AppData/Local/Continuum/anaconda3/Lib/site-packages/numpy/lib/function_base.py" />
-    <entry file="file://$PROJECT_DIR$/config.ini">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/internals/construction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FileCompare.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="40" column="44" selection-start-line="40" selection-start-column="44" selection-end-line="40" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="617">
+          <caret line="209" selection-start-line="209" selection-end-line="209" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WranglingFiles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="48" />
+        <state relative-caret-position="-1904">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#804#1046#0" />
-            <element signature="e#1098#1733#0" />
-            <element signature="e#1816#3359#0" />
-            <element signature="e#4105#7421#0" />
-            <element signature="e#7476#7803#0" />
-            <element signature="e#7834#8047#0" />
-            <element signature="e#8211#8979#0" />
-            <element signature="e#9026#10674#0" />
-            <element signature="e#10699#12090#0" />
-            <element signature="e#12143#13945#0" />
-            <element signature="e#14021#16754#0" />
-            <element signature="e#16862#20005#0" />
-            <element signature="e#20048#20431#0" />
-            <element signature="e#22883#25662#0" />
-            <element signature="e#26463#26842#0" />
-            <element signature="e#26881#27587#0" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RuntimeLog.log">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="210086">
+          <caret line="12358" column="132" selection-start-line="12358" selection-start-column="132" selection-end-line="12358" selection-end-column="132" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ResistanceAggregator.py">
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="748">
+            <caret line="44" column="2" selection-start-line="44" selection-start-column="2" selection-end-line="44" selection-end-column="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
-          <folding>
-            <element signature="e#295#536#0" />
-            <element signature="e#584#1111#0" />
-            <element signature="e#588#1223#0" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/numpy/lib/function_base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66844">
+          <caret line="3967" selection-start-line="3967" selection-end-line="3967" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/scipy/interpolate/_cubic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/missing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4998">
+          <caret line="310" selection-start-line="310" selection-end-line="310" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/pandas/core/internals/blocks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20060">
+          <caret line="1267" selection-start-line="1267" selection-end-line="1267" />
         </state>
       </provider>
     </entry>

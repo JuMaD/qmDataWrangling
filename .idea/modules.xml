@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../DataWrangling_2019/.idea/qMem_DataWrangling.iml" filepath="$PROJECT_DIR$/../DataWrangling_2019/.idea/qMem_DataWrangling.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/DataWrangling.iml" filepath="$PROJECT_DIR$/.idea/DataWrangling.iml" />
     </modules>
   </component>
 </project>

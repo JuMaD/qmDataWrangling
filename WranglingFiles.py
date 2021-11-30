@@ -20,10 +20,6 @@ from tqdm import tqdm
 pd.options.compute.use_bottleneck = True
 
 
-# todo: make a higher level object / df / dict that acummulates all junctions in one directory
-# todo: implement tool that shows plots from several "higher level plots" in on figure
-# todo: implement calc_tools: low bias resistance, ...
-
 #################
 # File Handling #
 #################
@@ -72,12 +68,11 @@ def split_string(string, measurement_procedure='sweep', keyword='#Sweep:'):
     """
     labels = None
     all_string_lists = None
+    header_values = {}
 
     if measurement_procedure == 'sweep':
         # split header and main string
         parts = string.split("\n\n")
-
-        header_values = {}
 
         header_lines = parts[0].split('\n')
         for line in header_lines:
@@ -229,7 +224,6 @@ def join_dfs(ldf, rdf):
 ################
 # Calculations #
 ################
-# todo: implement LBR (Low bias resistance) estimator and save data
 
 def calc_stats(dfs, absolute=False):
     """Calls pandas describe on both dataframes in list dfs
@@ -253,7 +247,6 @@ def calc_stats(dfs, absolute=False):
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
     stats_df = stats_df.interpolate(method='akima', limit_direction='forward', axis=0)
-
 
     return stats_df
 
@@ -297,7 +290,6 @@ def calc_fowler_nordheim(dfs, alpha=3):
     fn_df = fn_df[np.absolute(fn_df.index) <= 1000]
     fn_dfs.append(fn_df)
 
-
     fn_list = []
 
     for element in reversed(fn_dfs):
@@ -312,18 +304,19 @@ def calc_fowler_nordheim(dfs, alpha=3):
 
 def calc_ndc(df):
     """Calculate NDC = d logI/ d log V
-    :param dfs: dataframw with I-V data
+    :param df: dataframe with I-V data
     :return: Data frame containing the normalized differential conductanve of odd and even sweeps"""
-   # todo: interpolate current values
+
     x = np.asarray(df.index.values.tolist())
     y = np.copy(np.asarray(df))
+    ndc_df = None
 
-    for column in range(0,y.shape[1]):
-        ndc = np.abs(np.divide(np.gradient(np.log(np.abs(y[:,column]))), np.gradient(np.log(np.abs(x)))))
+    for column in range(0, y.shape[1]):
+        ndc = np.abs(np.divide(np.gradient(np.log(np.abs(y[:, column]))), np.gradient(np.log(np.abs(x)))))
 
         if column == 0:
             ndc_df = pd.DataFrame({'Voltage [V]': x,
-                                          f'NDC [dI/dV V/I]_{column}': ndc})
+                                   f'NDC [dI/dV V/I]_{column}': ndc})
             ndc_df.set_index('Voltage [V]', inplace=True)
             ndc_df.name = 'both'
             ndc_df.index.name = 'Voltage (V)'
@@ -332,16 +325,15 @@ def calc_ndc(df):
 
     ndc_df.interpolate(method='akima', limit_direction='forward', axis=0)
     ndc_even_df = ndc_df.iloc[0:, 0::2].copy().interpolate(method='akima',
-                                                                      limit_direction='forward', axis=0)
+                                                           limit_direction='forward', axis=0)
     ndc_odd_df = ndc_df.iloc[0:, 1::2].copy().interpolate(method='akima',
-                                                                      limit_direction='forward', axis=0)
+                                                          limit_direction='forward', axis=0)
 
     ndc_df.name = 'all'
     ndc_even_df.name = 'even'
     ndc_odd_df.name = 'odd'
 
     ndc_df_list = [ndc_df, ndc_odd_df, ndc_even_df]
-
 
     return ndc_df_list
 
@@ -426,6 +418,8 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
 
     voltage_list = [num for num in voltages if first <= num <= last]
 
+    resistance_df = None
+
     for c in range(len(df.columns)):
         df_column = df.iloc[:, [c]]
         resistance_list = []
@@ -470,7 +464,7 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
     return resistance_df_list
 
 
-def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug=False, title=None):
+def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug=False):
     """
     Fits the slice [ start - 1 * fit_range / 2, start + fit_range / 2] of given Data.
     X values are assumed to be index of the df.
@@ -482,7 +476,6 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
     :param method:      Method used to fit the data e.g. ransac or linreg
     :param column:      Index of column with y data
     :param debug:       Turns off/on the debug function: plotting the fit and displaying the return
-    :param title:       Displayed Title
     :return:            Dictionarry with {coefficent, resistance, R2}
 
     """
@@ -497,6 +490,8 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
     # reshape to 2d so sklearn can work with it
     x = x.reshape((x.shape[0], 1))
     y = y.reshape((y.shape[0], 1))
+
+    line_y_ransac = None
 
     # Fit data accordingly
 
@@ -528,7 +523,6 @@ def calc_linear_fit(df, fit_range=1.0, start=0, method='ransac', column=1, debug
 
             plt.show()
             plt.savefig('dif_res.jpg')
-
 
         return {'coefficient': coef, 'resistance': resistance, 'intercept': intercept, 'R2': r2}
 
@@ -614,14 +608,13 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, 
     else:
         plt.title(title + ": " + os.path.splitext(os.path.basename(datapath))[0])
 
-
-    minorLocator = AutoMinorLocator()
-    ax.xaxis.set_minor_locator(minorLocator)
+    minor_locator = AutoMinorLocator()
+    ax.xaxis.set_minor_locator(minor_locator)
     if not semilogy:
-        yminorLocator = AutoMinorLocator()
-        ax.yaxis.set_minor_locator(yminorLocator)
+        yminor_locator = AutoMinorLocator()
+        ax.yaxis.set_minor_locator(yminor_locator)
 
-    if axline == True:
+    if axline:
         ax.axhline(1, color='k')
         ax.axvline(0, color='k')
 
@@ -632,10 +625,8 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, 
     for side in ax.spines.keys():  # 'top', 'bottom', 'left', 'right'
         ax.spines[side].set_linewidth(2)
 
-
-    if ylimit != None:
+    if ylimit is not None:
         ax.set_ylim(ylimit)
-
 
     plt.savefig(filename_all)
 
@@ -643,7 +634,6 @@ def plot_sweeps(df, datapath, suffix, semilogy=True, take_abs=True, title=None, 
     plt.close('all')
 
 
-# noinspection PyShadowingNames,PyShadowingNames,PyShadowingNames
 def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', semilogy=True, take_abs=True, title=None,
                axline=False, ylimit=None):
     """
@@ -656,6 +646,8 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
     :param semilogy:    Set the graph to semilog.
     :param take_abs:    Take abs before plotting if true.
     :param ylimit:      Array with 2 values. If set, sets y-axis limits to [ymin,ymax]
+    :param title:       Title displayed above the plot
+    :param axline       Bool to show or hide x-axis line
     """
 
     if stats is None:
@@ -697,17 +689,17 @@ def plot_stats(stats_df, datapath, suffix, stats=None, y_label='Current [A]', se
 
     ax.set_ylabel(y_label, fontsize=14)
 
-    minorLocator = AutoMinorLocator()
-    ax.xaxis.set_minor_locator(minorLocator)
+    minor_locator = AutoMinorLocator()
+    ax.xaxis.set_minor_locator(minor_locator)
 
     if not semilogy:
-        yminorLocator = AutoMinorLocator()
-        ax.yaxis.set_minor_locator(yminorLocator)
+        yminor_locator = AutoMinorLocator()
+        ax.yaxis.set_minor_locator(yminor_locator)
 
-    if ylimit != None:
+    if ylimit is not None:
         ax.set_ylim(ylimit)
 
-    if axline == True:
+    if axline:
         ax.axhline(1, color='k')
         ax.axvline(0, color='k')
 
@@ -808,7 +800,7 @@ if __name__ == "__main__":
 
     config.read('config.ini')
 
-    filter = config['Parameters']['Filter']
+    filter_selected = config['Parameters']['Filter']
 
     try:
         initial_dir = config['Directory']['home_directory']
@@ -845,8 +837,6 @@ if __name__ == "__main__":
                 # Make Dataframes from file #
                 #############################
 
-
-
                 # open file and get data
                 filename = os.path.join(dirname, file)
                 logging.info(f'Opening file: {filename}')
@@ -878,7 +868,7 @@ if __name__ == "__main__":
                         currents = []
 
                         for d in range(0, len(dfs)):
-                            current = filter_df(dfs[d], filter)
+                            current = filter_df(dfs[d], filter_selected)
                             current.name = dfs_names[d]
                             currents.append(current)
 
@@ -897,11 +887,11 @@ if __name__ == "__main__":
                             ndc = calc_ndc(currents[0])
                             ndc_stats = calc_stats(ndc)
                             plot_sweeps(ndc, filename, suffix='all_ndc', axline=True, semilogy=False,
-                                        take_abs=False, title=title, ylimit=[0,6])
+                                        take_abs=False, title=title, ylimit=[0, 6])
                             plot_stats(ndc_stats, filename, y_label=r'NDC (dI/dV $\cdot$ V/I)',
                                        suffix='ndc_stats', title=title, semilogy=False, axline=True, ylimit=[0, 6])
                             tosave["ndc"] = ndc[0]
-                            tosave["ndc_stats"] =ndc_stats
+                            tosave["ndc_stats"] = ndc_stats
 
                         if config.getboolean('Calculate', 'absolute'):
                             tosave["all_abs-" + config['Parameters']['filter'].replace(' ', '_')] = currents[0].abs()
@@ -917,7 +907,7 @@ if __name__ == "__main__":
                             tosave["stats-" + config['Parameters']['filter'].replace(' ', '_')] = stats_df.abs()
 
                             if config.getboolean('Calculate', 'stats'):
-                                plot_stats(stats_df, filename, y_label=filter,
+                                plot_stats(stats_df, filename, y_label=filter_selected,
                                            suffix='all_stats-' + config['Parameters']['filter'].replace(' ', '_'),
                                            title=title)
 
@@ -950,11 +940,12 @@ if __name__ == "__main__":
                                            title=title)
 
                         # linear fit --- TEST AREA
-                        # todo: change LBR Fit so that multiple columns can be processed!
+
                         if config.getboolean('Calculate', 'differential_resistance'):
 
                             resistance_dfs = calc_diff_resistance(currents[0],
-                                                                  window_range=float(config['Parameters']['resistance_range']))
+                                                                  window_range=float(
+                                                                      config['Parameters']['resistance_range']))
                             resistance_slice = get_slice(resistance_dfs[0],
                                                          at=config['Parameters'].getfloat('resistance_slice'))
                             resistance_stats = calc_stats(resistance_dfs)
@@ -974,7 +965,6 @@ if __name__ == "__main__":
 
                         for key, value in tosave.items():
                             save_df_to_file(value, filename, '_' + key)
-
 
         again = messagebox.askyesno('Finished!', f'Finished wrangling files in {dirname}!\n Select another directory?')
 
