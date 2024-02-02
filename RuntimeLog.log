@@ -12656,3 +12656,321 @@ INFO:root:Opening file: D:/Til/Til Friebe/Messung 18_06_21/THF\M0003-11-Hg02_00_
 INFO:root:Opening file: D:/Til/Til Friebe/Messung 18_06_21/THF\M0003-11-Hg03_00_IVSweep.txt
 INFO:root:LOGGING STARTED:2021-11-19 13:48:35.439454
 INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2021-12-08 16:12:57.615424
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u17_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u18_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u19_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u20_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u20_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u20_02_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2021-12-11 15:30:57.253385
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u17_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/C6 new analysis\M0013-1a-PS15u18_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2021-12-11 15:31:26.790143
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS20u10_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS20u9_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u14_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u16_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u17_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u18_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u19_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/temp/deepthi/PA-C6 again\M0013-1a-PS35u20_00_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2022-03-13 12:05:35.020926
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u09_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-13 12:06:37.782056
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u09_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-13 12:07:57.937664
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_03_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u11_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u12_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u12_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u13_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u13_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u08_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u09_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u09_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u04_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u06_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u08_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u01_03_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u07_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-13 12:10:55.176596
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u10_03_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u11_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u12_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u12_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u13_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS10u13_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u08_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u09_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u09_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS15u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u04_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u06_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u08_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u09_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS20u10_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u01_03_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u02_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u04_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u05_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u06_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u08_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u09_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u09_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u09_02_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u10_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u11_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0033/1\M0033-1a-PS5u12_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-14 14:19:22.437011
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u16_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u18_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u19_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-14 14:21:19.365260
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u16_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u18_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u19_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-14 14:24:11.053042
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u16_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u18_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u19_00_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2022-03-14 14:31:45.831204
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u16_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u18_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/Gen1-2 Compare/DATA\M0021-1a-PS20u19_00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-15 08:56:38.368330
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/72\M0037-1a-PS15u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/72\M0037-1a-PS15u01_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/72\M0037-1a-PS15u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/72\M0037-1a-PS15u03_11_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/72\M0037-1a-PS15u03_18_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-18 17:41:11.645172
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS10u01_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS10u01_02_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-18 17:42:51.066294
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS10u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS10u01_01_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_08_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_16_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_17_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_18_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_19_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_20_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_21_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u01_22_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u03_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0037/QM85\M0037-2a-PS15u03_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-18 17:48:55.781951
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_08_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_16_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_17_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_18_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_19_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_20_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_21_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u01_22_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u07_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/_Clustering everything/Origin/85\M0037-2a-PS15u07_01_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2022-03-22 20:15:22.427695
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2022-03-22 21:41:52.977772
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0038-QM15\M0038-1a-PS20u20_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0038-QM15\M0038-1a-PS20u20_01_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-03-22 21:42:24.475786
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0038-QM15\M0038-1a-PS20u20_00_IVSweep.txt
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0038-QM15\M0038-1a-PS20u20_01_IVSweep.txt
+INFO:root:Saved config file
+INFO:root:LOGGING STARTED:2022-03-22 21:43:14.680952
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: D:/phd-documents/Electrical Measurements/MD0038-QM15/new\M0038-1a-PS20u19_seq00-00_IVSweep.txt
+INFO:root:LOGGING STARTED:2022-05-24 17:40:11.752099
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2024-01-31 22:17:36.346989
+INFO:root:Config file read and parameters set.
+INFO:root:LOGGING STARTED:2024-01-31 22:20:08.181720
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_02_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_05_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_06_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_07_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_08_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_09_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_10_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_11_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_12_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_13_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_14_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM69\D0002-3TiN-Hg03_15_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:22:47.616838
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_02_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_05_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_06_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_07_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_08_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_09_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_10_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:23:17.719339
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_00_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_01_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_02_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_03_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_04_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_05_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_06_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_07_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_08_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_09_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_10_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:24:11.959685
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_05_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_06_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_07_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_08_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_09_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_10_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:27:38.318791
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_10_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:28:36.888287
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_12_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_13_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_16_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_17_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_18_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:29:17.600856
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_12_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_13_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_16_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_17_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_25_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_26_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:30:07.906640
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_12_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_13_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_16_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_17_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_25_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_29_IVSweep.txt
+INFO:root:LOGGING STARTED:2024-01-31 22:31:00.867512
+INFO:root:Config file read and parameters set.
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_12_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_13_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_16_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_17_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_25_IVSweep.txt
+INFO:root:Opening file: C:/Users/Julian/Desktop/angewandte/QM102\D0002-3TiN-Hg03_30_IVSweep.txt

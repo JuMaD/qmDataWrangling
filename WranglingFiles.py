@@ -18,7 +18,7 @@ from sklearn.metrics import r2_score
 from tqdm import tqdm
 
 pd.options.compute.use_bottleneck = True
-
+interpolation_method = 'pchip'
 
 #################
 # File Handling #
@@ -141,10 +141,10 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
             # assume that the last, missing column is current density
 
             try:
-                suffix = re.findall('\D+', header_values["Size"])[0]
+                suffix = re.findall(r'\D+', header_values["Size"])[0]
             except IndexError:
                 suffix = 'u'
-            size = int(re.findall('\d+', header_values["Size"])[0])
+            size = int(re.findall(r'\d+', header_values["Size"])[0])
             if suffix == 'u':
                 area = np.multiply(size ** 2, 1e-12)
             if suffix == 'm':
@@ -189,12 +189,12 @@ def make_pandas_df(np_arrays, labels, header_values, index_column=1, start_index
         logging.debug('Data frames created')
     if final_df is not None:
         final_df = final_df[final_df.columns[2 * start_index:final_df.shape[0]]].interpolate(
-            method='akima', limit_direction='forward', axis=0)
+            method=interpolation_method, limit_direction='forward', axis=0)
     if o_final_df is not None:
         o_final_df = o_final_df[o_final_df.columns[start_index:o_final_df.shape[0]]].interpolate(
-            method='akima', limit_direction='forward', axis=0)
+            method=interpolation_method, limit_direction='forward', axis=0)
         e_final_df = e_final_df[e_final_df.columns[start_index:e_final_df.shape[0]]].interpolate(
-            method='akima', limit_direction='forward', axis=0)
+            method=interpolation_method, limit_direction='forward', axis=0)
 
     return final_df, o_final_df, e_final_df
 
@@ -246,7 +246,7 @@ def calc_stats(dfs, absolute=False):
 
         stats_df = oe_stats[0].join(oe_stats[1], how='outer', lsuffix='_odd', rsuffix='_even')
 
-    stats_df = stats_df.interpolate(method='akima', limit_direction='forward', axis=0)
+    stats_df = stats_df.interpolate(method=interpolation_method, limit_direction='forward', axis=0)
 
     return stats_df
 
@@ -323,10 +323,10 @@ def calc_ndc(df):
         else:
             ndc_df[f'NDC [dI/dV V/I]_{column}'] = ndc
 
-    ndc_df.interpolate(method='akima', limit_direction='forward', axis=0)
-    ndc_even_df = ndc_df.iloc[0:, 0::2].copy().interpolate(method='akima',
+    ndc_df.interpolate(method=interpolation_method, limit_direction='forward', axis=0)
+    ndc_even_df = ndc_df.iloc[0:, 0::2].copy().interpolate(method=interpolation_method,
                                                            limit_direction='forward', axis=0)
-    ndc_odd_df = ndc_df.iloc[0:, 1::2].copy().interpolate(method='akima',
+    ndc_odd_df = ndc_df.iloc[0:, 1::2].copy().interpolate(method=interpolation_method,
                                                           limit_direction='forward', axis=0)
 
     ndc_df.name = 'all'
@@ -387,7 +387,7 @@ def calc_memory_window(dfs, method="divide"):
     columns = []
     for column in range(0, len(data_frame.columns)):
         name = dfs[0].columns[column].split('_')[1]
-        columns.append(f'$\Delta I$_{name}')
+        columns.append(f'\u0394 I_{name}')
 
     data_frame.columns = columns
     data_frame.index.name = 'Voltage (V)'
@@ -444,15 +444,15 @@ def calc_diff_resistance(df, window_range=0.2, fit_method='ransac'):
 
         if c == 0:
             resistance_df = pd.DataFrame({'Voltage [V]': voltage_list,
-                                          f'Resistance [$\Omega$]_{c}': resistance_list})
+                                          f'Resistance [\u03A9]_{c}': resistance_list})
             resistance_df.set_index('Voltage [V]', inplace=True)
         else:
-            resistance_df[f'Resistance [$\Omega$]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
+            resistance_df[f'Resistance [\u03A9]_{c}'] = pd.Series(resistance_list, index=resistance_df.index)
 
-    resistance_df.interpolate(method='akima', limit_direction='forward', axis=0)
-    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method='akima',
+    resistance_df.interpolate(method=interpolation_method, limit_direction='forward', axis=0)
+    e_resistance_df = resistance_df.iloc[0:, 0::2].copy().interpolate(method=interpolation_method,
                                                                       limit_direction='forward', axis=0)
-    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method='akima',
+    o_resistance_df = resistance_df.iloc[0:, 1::2].copy().interpolate(method=interpolation_method,
                                                                       limit_direction='forward', axis=0)
 
     resistance_df.name = 'all'
