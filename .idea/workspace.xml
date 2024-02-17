@@ -11,14 +11,8 @@
     <bookmark url="file://$PROJECT_DIR$/Readme.md" line="17" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="removed print output">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/DataWrangling.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/DataWrangling.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RuntimeLog.log" beforeDir="false" afterPath="$PROJECT_DIR$/RuntimeLog.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WranglingFiles.py" beforeDir="false" afterPath="$PROJECT_DIR$/WranglingFiles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1638264674089</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added requirements.txt and adjusted code base to run with python 3.12">
+      <option name="closed" value="true" />
+      <created>1706907539942</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1706907539942</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView">
@@ -377,7 +379,8 @@
     <MESSAGE value="improved NDC calculations" />
     <MESSAGE value="further improvements on ndc  &amp; graphs" />
     <MESSAGE value="removed print output" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed print output" />
+    <MESSAGE value="Added requirements.txt and adjusted code base to run with python 3.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added requirements.txt and adjusted code base to run with python 3.12" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
