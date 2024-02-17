@@ -11,8 +11,46 @@
     <bookmark url="file://$PROJECT_DIR$/Readme.md" line="17" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="">
+    <list default="true" id="5d4d2712-6469-45b1-a8c5-0852f22d85a6" name="Default" comment="Added requirements.txt and adjusted code base to run with python 3.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FileCompare.py" beforeDir="false" afterPath="$PROJECT_DIR$/AggregateAverages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ResistanceAggregator.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_sources/index.rst.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/alabaster.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/basic.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/comment-bright.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/comment-close.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/comment.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/doctools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/down-pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/file.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/jquery-3.1.0.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/minus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/plus.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/pygments.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/searchtools.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/underscore-1.3.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/underscore.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/up-pressed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/_static/websupport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/conf.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/genindex.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.rst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/make.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/objects.inv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/search.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/searchindex.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/origin-filter/DataWrangling_output.oif" beforeDir="false" afterPath="$PROJECT_DIR$/OriginProcessing/DataWrangling_output.oif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/origin-filter/_qMem-IV.oth" beforeDir="false" afterPath="$PROJECT_DIR$/OriginProcessing/_qMem-IV.oth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/origin-filter/origin-filter_DataWrangling_stats.oif" beforeDir="false" afterPath="$PROJECT_DIR$/OriginProcessing/origin-filter_DataWrangling_stats.oif" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +151,28 @@
       <recent name="H:\_all\Software\DataWrangling_new\testdata" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Standard Config">
+  <component name="RunManager" selected="Python.AggregateAverages">
+    <configuration name="AggregateAverages" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataWrangling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Julian\GitHub\DataWrangling\AggregateAverages.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="PlotEachVideosStats" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="DataWrangling" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -127,6 +186,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../TEDx-YTT/PlotEachVideosStats.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ResistanceAggregator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DataWrangling" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ResistanceAggregator.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -159,11 +239,15 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.AggregateAverages" />
+      <item itemvalue="Python.ResistanceAggregator" />
       <item itemvalue="Python.PlotEachVideosStats" />
       <item itemvalue="Python.Standard Config" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.AggregateAverages" />
+        <item itemvalue="Python.ResistanceAggregator" />
         <item itemvalue="Python.Standard Config" />
         <item itemvalue="Python.PlotEachVideosStats" />
       </list>
@@ -311,7 +395,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706907539942</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Added requirements.txt and adjusted code base to run with python 3.12">
+      <option name="closed" value="true" />
+      <created>1708171823421</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1708171823421</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
